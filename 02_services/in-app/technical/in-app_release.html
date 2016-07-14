@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
+	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+	<!-- Import common templates -->
+	<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function(){
+			jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+			$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+			$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+			$("#sd2_partial_lnb").load("/common/partials/lnb_service.html?v="+(new Date()).getTime());
+			$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+			jQuery.ajaxSetup({async:true});
+		});
+		// ]]>
+	</script>
+	<!-- //Import common templates -->
+	<script type="text/javascript" src="/common/js/gnb.js"></script>
+	<script type="text/javascript" src="/common/js/lnb.js"></script>
+	<script type="text/javascript" src="/common/js/content.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div id="sd2_wrap">
+	<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<div id="sd2_partial_gnb_1"></div>
+	<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<!-- header_2_wrap -->
+	<div class="sd2_header_2_wrap">
+		<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+		<div id="sd2_partial_gnb_2"></div>
+		<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+	</div><!-- //header_2_wrap -->
+	<!-- content_wrap -->
+	<div class="sd2_content_wrap">
+		<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+		<div id="sd2_partial_lnb"></div>
+		<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+		<!-- substance_wrap -->
+		<div class="sd2_substance_wrap">
+			<!-- location -->
+			<div class="sd2_location sd2_con_margin">
+				<ol>
+					<li><a href="/02_services/services/services_services.html">SERVICES</a></li>
+					<li><a href="/02_services/in-app/services_in-app.html">Samsung In-App Purchase</a></li>
+					<li class="sd2_now"><a href="#">Release Note</a></li>
+				</ol>
+			</div><!-- //location -->
+			<!-- page_title -->
+			<div class="sd2_page_title sd2_con_margin">
+				<h3>Release Note<span class="sd2_page_title_side">Oct 6, 2014</span></h3>
+			</div><!-- //page_title -->
+			<!-- sd2_intro_wrap -->
+			<div class="sd2_intro_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+				<h4 class="sd2_body_min_title1">Introduction</h4>
+				<!-- sd2_con_list -->
+				<ul class="sd2_con_list fl_list">
+					<li>
+						<h5>Release Version</h5>
+						<p>In-App Purchase 3.0.1</p>
+					</li>
+					<li>
+						<h5>Release Date</h5>
+						<p>Feb 4, 2016</p>
+					</li>
+					<li><h5>Release Contents</h5>
+						<!-- sd2_table -->
+						<table class="sd2_table">
+							<caption>Release Contents</caption>
+							<colgroup>
+								<col width="126px"/><col width="123px"/><col/>
+							</colgroup>
+							<tr>
+								<th rowspan="2">SDK</th><th>Libraries</th><td>Provides the Samsung Gesture SDK libraries.</td>
+							</tr>
+							<tr>
+								<th>Sample</th><td>Provides a sample application.</td>
+							</tr>
+							<tr>
+								<th rowspan="2">Documents</th><th>API References</th><td>For more information about Gesture APIs, see API Reference</td>
+							</tr>
+							<tr>
+								<th>Programming Guides</th><td>The programming guide includes an overview, Hello Gesture application, and feature descriptions.</td>
+							</tr>
+						</table><!-- //sd2_table -->
+					</li>
+				</ul><!-- //sd2_con_list -->
+			</div><!-- //sd2_intro_wrap -->
+			<!-- sd2_change_wrap -->
+			<div class="sd2_change_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+				<h4 class="sd2_body_min_title1">Change History</h4>
+				<ul class="other sd2_toggle_list sd2_border_b">
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">2016.01.15 Samsung In-App Purchase 3.0.1.zip</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Added an Edge simulator.</p></li>
+								</ul>
+								<p>In-App Purchase 2.0 supports three item types (consumable, non-consumable, and subscription) to provide greater convenience for app development.
+									Previous IMEI-based item purchase history management is replaced by account-based management. Non-consumable items purchased while signed in using a user account can be recovered after app reinstallation if the account’s purchase history can be confirmed.
+									Supports Single Sign-On, which allows users to access all content services supported by Samsung after signing in with their Samsung account within In-App Purchase.
+									In-App Purchase v2.0 now supports sales of items in the United States, which is the world’s largest market. US users can purchases items using a credit card within apps that utilize In-App Purchase 2.0.
+									In-App Purchase 2.0 features the UX of the latest version of Samsung Apps, offering a better UX (User eXperience).
+									The previous library is switched to a stand-alone-type APK, providing easier synchronizing between apps and In-App Purchase.</p>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">2015.05.21 Samsung In-App Purchase 3.0.0.zip</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>In-App Purchase 3.0 supports Auto-Recurring Subscriptions to let app developers sell in-app items every month with automated and recurring billing.</p></li>
+									<li><p>ItemGroupId is replaced by package name of 3rd party application. As a result, ItemGroupId is deprecated.</p></li>
+									<li><p>In-App Purchase 3.0 supports the use of custom item IDs like "GUN", "machinegun", "bullet", and so on.</p></li>
+									<li><p>New method to get cached inbox list is added. This method gets the purchased item list just for specified product item IDs. Especially, this new method gets fast response because client caching is supported.</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">2014.12.31 Samsung In-App Purchase 2.0.1.zip</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Fixed a bug rising from Android 5.0 Policy Changes. (Samsung In-App Purchase library has been modified to fix abruptly shut down of apps using Samsung In-App Purchase.)</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+				</ul>
+			</div><!-- //sd2_change_wrap -->
+			<!-- sd2_features_wrap -->
+			<div class="sd2_features_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+				<h4 class="sd2_body_min_title1">Known Issues</h4>
+				<ul class="sd2_con_list sd2_oneline">
+					<li>
+						<p>There are currently no known issues.</p>
+					</li>
+				</ul>
+			</div><!-- //sd2_features_wrap -->
+			<!-- sd2_features_wrap -->
+			<div class="sd2_features_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+				<h4 class="sd2_body_min_title1">Features</h4>
+				<div class="sd2_mb_30">
+					<h5 class="sd2_body_min_title2">Overall</h5>
+					<ul class="sd2_con_list sd2_oneline">
+						<li><p>Samsung Account Log-in functionality</p></li>
+						<li><p>Updates new payment method across countries in the world</p></li>
+						<li><p>Tests payment without charge</p></li>
+						<li><p>Provides purchased item history</p></li>
+						<li><p>Provides 3 item types</p></li>
+					</ul>
+				</div>
+				<div class="sd2_mb_30">
+					<h5 class="sd2_body_min_title2">Purchased item history</h5>
+					<ul class="sd2_con_list sd2_oneline">
+						<li><p>All purchased item list.</p></li>
+						<li><p>Favorite purchased item list within specific period.</p></li>
+					</ul>
+				</div>
+				<div class="">
+					<h5 class="sd2_body_min_title2">Item Types</h5>
+					<ul class="sd2_con_list sd2_oneline">
+						<li><p>Consumable item.</p></li>
+						<li><p>Non-consumable item.</p></li>
+						<li><p>Subscription item.</p></li>
+					</ul>
+				</div>
+			</div><!-- //sd2_features_wrap -->
+		</div><!-- //substance_wrap -->
+	</div><!-- //content_wrap -->
+	<!-- ***** IMPORT: sd2_partial_footer ***** -->
+	<div id="sd2_partial_footer"></div>
+	<!-- //***** IMPORT: sd2_partial_footer ***** -->
+</div><!-- //wrap -->
+</body>
+</html>

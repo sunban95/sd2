@@ -1,0 +1,108 @@
+
+/*howto step*/
+.sd2_howto_wrap {
+	color: #000;
+	padding: 30px 0 0 0;
+	.sd2_howto_container {
+		table-layout: fixed;
+		.sd2_howoto_item {
+			width: 20%;
+			display: table-cell;
+			padding-right: 2px;
+
+
+			.sd2_howto_header {
+				border-bottom: 1px solid #3f3f3f;
+				padding-bottom: 62px;
+				text-align: center;
+				position: relative;
+
+				.sd2_howto_title {
+					font-size: 14px;
+					line-height: 1.6;
+				}
+			}
+			.sd2_howto_dot {
+				position: absolute;
+				left: 50%;
+				bottom: -4px;
+				margin-left: -3px;
+				width: 6px;
+				height: 7px;
+				background:url(../../images/services/content/ico_howto_dot.png) no-repeat center center;
+			}
+			.sd2_howto_cnt {
+				font-size: 12px;
+				line-height: 1.6;
+				padding: 15px 10px 0 10px;
+			}
+		}
+
+		.sd2_howoto_item.sd2_howoto_01 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_01.png) no-repeat center bottom 15px;
+			}
+		}
+
+		.sd2_howoto_item.sd2_howoto_02 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_02.png) no-repeat center bottom 15px;
+			}
+		}
+
+		.sd2_howoto_item.sd2_howoto_03 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_03.png) no-repeat center bottom 15px;
+			}
+		}
+
+		.sd2_howoto_item.sd2_howoto_04 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_04.png) no-repeat center bottom 15px;
+			}
+		}
+
+		.sd2_howoto_item.sd2_howoto_05 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_05.png) no-repeat center bottom 15px;
+			}
+		}
+
+		@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
+			.sd2_howoto_item.sd2_howoto_01 {
+				.sd2_howto_header {
+					background:url(../../images/services/content/ico_howto_01@2x.png) no-repeat center bottom 15px;
+					background-size: 35px 35px;
+				}
+			}
+
+			.sd2_howoto_item.sd2_howoto_02 {
+				.sd2_howto_header {
+					background:url(../../images/services/content/ico_howto_02@2x.png) no-repeat center bottom 15px;
+					background-size: 35px 35px;
+				}
+			}
+
+			.sd2_howoto_item.sd2_howoto_03 {
+				.sd2_howto_header {
+					background:url(../../images/services/content/ico_howto_03@2x.png) no-repeat center bottom 15px;
+					background-size: 35px 35px;
+				}
+			}
+
+			.sd2_howoto_item.sd2_howoto_04 {
+				.sd2_howto_header {
+					background:url(../../images/services/content/ico_howto_04@2x.png) no-repeat center bottom 15px;
+					background-size: 35px 35px;
+				}
+			}
+
+			.sd2_howoto_item.sd2_howoto_05 {
+				.sd2_howto_header {
+					background:url(../../images/services/content/ico_howto_05@2x.png) no-repeat center bottom 15px;
+					background-size: 35px 35px;
+				}
+			}
+		}
+	}
+}

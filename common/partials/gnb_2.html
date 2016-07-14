@@ -14,19 +14,19 @@
 						<li class="sd_gnb_s_105"><a href="/01_device/printer/printer_index.html">Printer</a></li>
 					</ul>
 				</li>
-				<li class="sd2_dropdown sd_gnb_m_200"><a href="/02_services/services_services.html">SERVICES<span class="sd2_arr"></span></a>
+				<li class="sd2_dropdown sd_gnb_m_200"><a href="/02_services/services/services_services.html">SERVICES<span class="sd2_arr"></span></a>
 					<ul class="sd2_depth_2" >
-						<li class="sd_gnb_s_201"><a href="/02_services/services_services.html">Samsung Services</a></li>
-						<li class="sd_gnb_s_202"><a href="/02_services/services_account.html">Samsung Account </a></li>
-						<li class="sd_gnb_s_203"><a href="/02_services/services_digital-health.html">Samsung Digital Health</a></li>
-						<li class="sd_gnb_s_204"><a href="/02_services/services_internet.html">Samsung Internet</a></li>
-						<li class="sd_gnb_s_205"><a href="/02_services/services_in-app.html">Samsung In-App Purchase</a></li>
-						<li class="sd_gnb_s_206"><a href="/02_services/services_penup.html">PEN.UP</a></li>
-						<li class="sd_gnb_s_207"><a href="/02_services/services_artik.html">ARTIK</a></li>
-						<li class="sd_gnb_s_208"><a href="/02_services/services_smart_con.html">Smart Connectivity</a></li>
-						<li class="sd_gnb_s_209"><a href="/02_services/services_smart_home_cloud.html">Smart Home Cloud API</a></li>
-						<li class="sd_gnb_s_210"><a href="/02_services/services_theme_service.html">Theme Service</a></li>
-						<li class="sd_gnb_s_211"><a href="/02_services/services_smart_view.html">Smart View</a></li>
+						<li class="sd_gnb_s_201"><a href="/02_services/services/services_services.html">Samsung Services</a></li>
+						<li class="sd_gnb_s_202"><a href="/02_services/account/services_account.html">Samsung Account </a></li>
+						<li class="sd_gnb_s_203"><a href="/02_services/digital_health/services_digital_health.html">Samsung Digital Health</a></li>
+						<li class="sd_gnb_s_204"><a href="/02_services/internet/services_internet.html">Samsung Internet</a></li>
+						<li class="sd_gnb_s_205"><a href="/02_services/in-app/services_in-app.html">Samsung In-App Purchase</a></li>
+						<li class="sd_gnb_s_206"><a href="/02_services/penup/services_penup.html">PEN.UP</a></li>
+						<li class="sd_gnb_s_207"><a href="/02_services/artik/services_artik.html">ARTIK</a></li>
+						<li class="sd_gnb_s_208"><a href="/02_services/smart_connectivity/services_smart_con.html">Smart Connectivity</a></li>
+						<li class="sd_gnb_s_209"><a href="/02_services/smart_home/services_smart_home_cloud.html">Smart Home Cloud API</a></li>
+						<li class="sd_gnb_s_210"><a href="/02_services/theme_service/services_theme_service.html">Theme Service</a></li>
+						<li class="sd_gnb_s_211"><a href="/02_services/smart_view/services_smart_view.html">Smart View</a></li>
 					</ul>
 				</li>
 				<li class="sd_gnb_m_300"><a href="#">REMOTE TEST LAB</a></li>
@@ -68,12 +68,24 @@ $(document).ready(function(){
 	} else if(path_1 === "02_services") {
 		gnb.find(".sd_gnb_m_200").addClass(active);
 
-		if(path_2 === "services_services.html") {
+		if(path_2 === "services") {
 			gnb.find(".sd_gnb_s_201").addClass(active);
-		} else if(path_2 === "services_account.html") {
+		} else if(path_2 === "account") {
 			gnb.find(".sd_gnb_s_202").addClass(active);
-		} else if(path_2 === "services_in-app.html") {
+		} else if(path_2 === "digital_health") {
+			gnb.find(".sd_gnb_s_203").addClass(active);
+		} else if(path_2 === "internet") {
+			gnb.find(".sd_gnb_s_204").addClass(active);
+		} else if(path_2 === "in-app") {
 			gnb.find(".sd_gnb_s_205").addClass(active);
+		} else if(path_2 === "penup") {
+			gnb.find(".sd_gnb_s_206").addClass(active);
+		} else if(path_2 === "artik") {
+			gnb.find(".sd_gnb_s_207").addClass(active);
+		} else if(path_2 === "smart_connectivity") {
+			gnb.find(".sd_gnb_s_208").addClass(active);
+		} else if(path_2 === "smart_home") {
+			gnb.find(".sd_gnb_s_209").addClass(active);
 		}
 	}
 });

@@ -34,7 +34,7 @@ var lnb=function(){
 	var lnbHeight=function(){
 		var win_h=$(window).height(); 
 		//lnb_h=win_h - $(".header_1_wrap").height() - $(".header_2_wrap").height() - (marginT * 2); 
-		lnb_h=win_h - $(".header_1_wrap").height() - $(".header_2_wrap").height() - marginT; 
+		lnb_h=win_h - $(".sd2_header_1_wrap").height() - $(".sd2_header_2_wrap").height() - marginT;
 		
 		if(!cromeBool){
 			checkH();
@@ -45,7 +45,7 @@ var lnb=function(){
 
 	var checkH=function(){
 		if(!cromeBool){
-			if($(".lnb_dep1").height() <= lnb_h){
+			if($(".sd2_lnb_dep1").height() <= lnb_h){
 				lnb.css({"border-right":"3px solid #f4f4f4", "overflow":"hidden"});
 			}else{
 				lnb.css({"border":"none", "overflow":"auto"});
@@ -56,7 +56,7 @@ var lnb=function(){
 	var scrollFn=function(){
 		var scrollT=$(window).scrollTop();
 		var winH=$(window).height();
-		var elH=$("#wrap").height() - $(".footer_wrap").height() + marginT;
+		var elH=$("#sd2_wrap").height() - $(".sd2_footer_wrap").height() + marginT;
 
 		if(top_margin <= scrollT){
 			lnb_wrap.css({"position":"fixed", "top":lnbT+"px"});
@@ -90,7 +90,7 @@ var lnb=function(){
 
 		var id_name=$this.attr("href");
 		if(id_name != "#"){
-			var posY=$(".substance_wrap").find(id_name).offset().top - 50;
+			var posY=$(".sd2_substance_wrap").find(id_name).offset().top - 50;
 			$( 'html, body' ).stop().animate( { scrollTop : posY+"px" } ) ;
 		}
 		
