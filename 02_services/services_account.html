@@ -19,10 +19,10 @@
 	//<![CDATA[
 	$(document).ready(function(){
 		jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
-		$("#partial_gnb_1").load("../common/partials/gnb_1.html?v="+(new Date()).getTime());
-		$("#partial_gnb_2").load("../common/partials/gnb_2.html?v="+(new Date()).getTime());
-		$("#partial_lnb").load("../common/partials/lnb_service.html?v="+(new Date()).getTime());
-		$("#partial_footer").load("../common/partials/footer.html?v="+(new Date()).getTime());
+		$("#sd2_partial_gnb_1").load("../common/partials/gnb_1.html?v="+(new Date()).getTime());
+		$("#sd2_partial_gnb_2").load("../common/partials/gnb_2.html?v="+(new Date()).getTime());
+		$("#sd2_partial_lnb").load("../common/partials/lnb_service.html?v="+(new Date()).getTime());
+		$("#sd2_partial_footer").load("../common/partials/footer.html?v="+(new Date()).getTime());
 		jQuery.ajaxSetup({async:true});
 	});
 	// ]]>
@@ -37,25 +37,20 @@
 <body>
 	<!-- wrap -->
 	<div id="sd2_wrap">
-
-
-		<!-- partial_gnb_1 -->
-		<div id="partial_gnb_1"></div>
-		<!-- //partial_header_gnb_1 -->
-		<!-- partial_gnb_2 -->
-		<div id="partial_gnb_2"></div>
-		<!-- //partial_gnb_2 -->
-
-
+		<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+		<div id="sd2_partial_gnb_1"></div>
+		<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+		<!-- header_2_wrap -->
+		<div class="sd2_header_2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+			<div id="sd2_partial_gnb_2"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+		</div><!-- //header_2_wrap -->
 		<!-- content_wrap -->
 		<div class="sd2_content_wrap">
-			
-			
-			<!-- partial_lnb -->
-			<div id="partial_lnb"></div>
-			<!-- //partial_lnb -->
-
-
+			<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+			<div id="sd2_partial_lnb"></div>
+			<!-- //***** IMPORT: sd2_partial_lnb ***** -->
 			<!-- substance_wrap -->
 			<div class="sd2_substance_wrap">
 				<!-- location -->
@@ -65,10 +60,6 @@
 						<li class="sd2_now"><a href="#">Samsung Account</a></li>
 					</ol>
 				</div><!-- //location -->
-
-
-
-
 				<!-- service_banner_wrap -->
 				<div class="sd2_svc_banner_wrap sd2_ec_wrap sd2_con_margin">
 					<!-- service_banner_container -->
@@ -141,13 +132,9 @@ sever will be shared.</p>
 				</div><!-- //con_banner_wrap -->
 			</div><!-- //substance_wrap -->
 		</div><!-- //content_wrap -->
-		
-
-		<!-- partial_footer -->
-		<div id="partial_footer"></div>
-		<!-- //partial_footer -->
-
-
+		<!-- ***** IMPORT: sd2_partial_footer ***** -->
+		<div id="sd2_partial_footer"></div>
+		<!-- //***** IMPORT: sd2_partial_footer ***** -->
 	</div><!-- //wrap -->
 </body>
 </html>
