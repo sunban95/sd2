@@ -28,9 +28,9 @@
 						<li class="sd_gnb_s_210"><a href="/02_services/theme_service/services_theme_service.html">Samsung Themes</a></li>
 					</ul>
 				</li>
-				<li class="sd_gnb_m_300"><a href="#">REMOTE TEST LAB</a></li>
-				<li class="sd_gnb_m_400"><a href="#">COMMUNITY</a></li>
-				<li class="sd_gnb_m_500"><a href="#">PROGRAM</a></li>
+				<li class="sd_gnb_m_300"><a href="/03_remotetestlab/rtl_index.html">REMOTE TEST LAB</a></li>
+				<li class="sd_gnb_m_400"><a href="/04_community/community_index.html">COMMUNITY</a></li>
+				<li class="sd_gnb_m_500"><a href="/05_program">PROGRAM</a></li>
 			</ul>
 			<span class="sd2_bg"></span>
 		</div><!-- //nav -->
@@ -88,6 +88,16 @@ $(document).ready(function(){
 		} else if(path_2 === "theme_service") {
 			gnb.find(".sd_gnb_s_210").addClass(active);
 		}
+
+	} else if(path_1 === "03_remotetestlab") {
+		gnb.find(".sd_gnb_m_300").addClass(active);
+
+	} else if(path_1 === "04_community") {
+		gnb.find(".sd_gnb_m_400").addClass(active);
+
+	} else if(path_1 === "05_program") {
+		gnb.find(".sd_gnb_m_500").addClass(active);
+
 	}
 });
 // ]]>

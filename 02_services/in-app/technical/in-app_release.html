@@ -7,8 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/prism.css" />
 	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
 	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/common/js/lib/prism.js"></script>
 	<!-- Import common templates -->
 	<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
 	<script type="text/javascript">
@@ -46,7 +48,7 @@
 		<div id="sd2_partial_lnb"></div>
 		<!-- //***** IMPORT: sd2_partial_lnb ***** -->
 		<!-- substance_wrap -->
-		<div class="sd2_substance_wrap">
+		<div class="sd2_substance_wrap sd2_mb_40">
 			<!-- location -->
 			<div class="sd2_location sd2_con_margin">
 				<ol>
@@ -99,24 +101,38 @@
 			<div class="sd2_change_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
 				<h4 class="sd2_body_min_title1">Change History</h4>
 				<ul class="other sd2_toggle_list sd2_border_b">
-					<li>
+					<li class="sd2_active">
 						<!-- question_wrap -->
 						<div class="sd2_question_wrap">
 							<a href="#" class="sd2_list">2016.01.15 Samsung In-App Purchase 3.0.1.zip</a><span class="sd2_arr"></span>
 						</div><!-- //question_wrap -->
 						<!-- answer_wrap -->
-						<div class="sd2_answer_wrap">
+						<div class="sd2_answer_wrap" style="display: block">
 							<!-- answer_container -->
 							<div class="sd2_answer_container">
+								<h5 class="sd2_body_min_title2 sd2_mt_10">Issue details</h5>
 								<ul class="sd2_con_list sd2_oneline">
-									<li><p>Added an Edge simulator.</p></li>
+									<li><p>When your application's targetSdkVersion(in Android Manifest.xml) is set to 23, the application always crashes</p></li>
+									<li><p>Refer to <a href="https://code.google.com/p/android-developer-preview/issues/detail?id=2353" target="_blank" class="sd2_link_go">https://code.google.com/p/android-developer-preview/issues/detail?id=2353</a></p></li>
 								</ul>
-								<p>In-App Purchase 2.0 supports three item types (consumable, non-consumable, and subscription) to provide greater convenience for app development.
-									Previous IMEI-based item purchase history management is replaced by account-based management. Non-consumable items purchased while signed in using a user account can be recovered after app reinstallation if the account’s purchase history can be confirmed.
-									Supports Single Sign-On, which allows users to access all content services supported by Samsung after signing in with their Samsung account within In-App Purchase.
-									In-App Purchase v2.0 now supports sales of items in the United States, which is the world’s largest market. US users can purchases items using a credit card within apps that utilize In-App Purchase 2.0.
-									In-App Purchase 2.0 features the UX of the latest version of Samsung Apps, offering a better UX (User eXperience).
-									The previous library is switched to a stand-alone-type APK, providing easier synchronizing between apps and In-App Purchase.</p>
+								<h5 class="sd2_body_min_title2 sd2_mt_20">Solutions for this issue (※Choose between ① and ② below)</h5>
+								<p class="sd2_paragraph01">① Modify the source code of iap3Helper that already exists<br/>Comment out or delete lines for windowNoDisplay in styles.xml(path: \Samples\iap3Helper\src\main\res\values\styles.xml)</p>
+								<!-- sd2_code_wrap -->
+								<div class="sd2_code_wrap sd2_mb_20">
+									<input type="checkbox" name="show_line_1" id="show_line_2" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_2">Show Lines</label>
+									<pre class="line-numbers"><code class="language-java">&lt;style name="Theme.Empty" parent="AppTheme"&gt;
+&lt;item name="android:windowBackground"&gt;@android:color/transparent&lt;/item&gt;
+&lt;item name="android:colorBackgroundCacheHint"&gt;@null&lt;/item&gt;
+&lt;item name="android:windowIsTranslucent"&gt;true&lt;/item&gt;
+&lt;item name="android:windowAnimationStyle"&gt;@null&lt;/item&gt;
+&lt;item name="android:windowNoTitle"&gt;true&lt;/item&gt;
+&lt;item name="android:windowContentOverlay"&gt;@null&lt;/item&gt;
+&lt;item name="android:backgroundDimEnabled"&gt;true&lt;/item&gt;
+&lt;item name="android:windowDisablePreview"&gt;true&lt;/item&gt;
+&lt;!--&lt;item name="android:windowNoDisplay"&gt;true&lt;/item&gt;--&gt;
+&lt;/style&gt; </code></pre>
+								</div><!-- //sd2_code_wrap -->
+								<p class="sd2_paragraph01">② Use new iap3Helper in Samsung In-App Purchase 3.0.1.zip file</p>
 							</div><!-- //answer_container -->
 						</div><!-- //answer_wrap -->
 					</li>
@@ -149,6 +165,92 @@
 							<div class="sd2_answer_container">
 								<ul class="sd2_con_list sd2_oneline">
 									<li><p>Fixed a bug rising from Android 5.0 Policy Changes. (Samsung In-App Purchase library has been modified to fix abruptly shut down of apps using Samsung In-App Purchase.)</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">2014.01.07 Enhancements to Developer Guide</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>The IAP 2.0 library and IAP 2.0 programming guide, the libraries and programming guides for Adobe AIR developers, as well as the sample source have been updated.</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">2013.06.20 Samsung In-App Purchase 2.0.zip</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>In-App Purchase 2.0 supports three item types (consumable, non-consumable, and subscription) to provide greater convenience for app development.</p></li>
+									<li><p>Previous IMEI-based item purchase history management is replaced by account-based management. Non-consumable items purchased while signed in using a user account can be recovered after app reinstallation if the account’s purchase history can be confirmed.</p></li>
+									<li><p>Supports Single Sign-On, which allows users to access all content services supported by Samsung after signing in with their Samsung account within In-App Purchase.</p></li>
+									<li><p>In-App Purchase v2.0 now supports sales of items in the United States, which is the world’s largest market. US users can purchases items using a credit card within apps that utilize In-App Purchase 2.0.</p></li>
+									<li><p>In-App Purchase 2.0 features the UX of the latest version of Samsung Apps, offering a better UX (User eXperience).</p></li>
+									<li><p>The previous library is switched to a stand-alone-type APK, providing easier synchronizing between apps and In-App Purchase.</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">2013.02.15 Samsung In-App Purchase 1.95.0.zip</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>In Korea, you are required to enter your Resident Registration Number when making a small purchase through your phone. According to Act on Promotion of Utilization of Information and Communications Network, the collector of Resident Registration Numbers has changed from Samsung to PG.</p></li>
+									<li><p>After February 18th, it is impossible to make in-app purchases in Korea using SDK v1.90.0 or lower. If you develop applications with this updated SDK, however, you can sell in-app items in Korea as before.</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">2012.12.18 Samsung In-App Purchase 1.90.0.zip</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>You can apply In-App Purchase to Applications developed in Unity 3D(Game Engine). User Interface has been dramatically improved.</p></li>
+									<li><p>User Interface has been dramatically improved.</p></li>
+									<li><p>You can see subdivided error codes and user-friendly error messages.</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">~2012.06.29 Samsung In-App Purchase 1.80.0.zip</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>2012.06.29 Samsung In-App Purchase 1.80.0.zip</p></li>
+									<li><p>2012.05.07 Samsung In-App Purchase 1.77.0.zip</p></li>
+									<li><p>2012.01.20 Samsung In-App Purchase 1.60.0.zip</p></li>
+									<li><p>2011.10.27 Samsung In-App Purchase 1.50.0.zip</p></li>
 								</ul>
 							</div><!-- //answer_container -->
 						</div><!-- //answer_wrap -->

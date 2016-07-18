@@ -41,6 +41,8 @@
 code, pre.code {font-size: 14px; line-height: 1.5; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;}
 i, .sd2_italic {font-style: italic;}
 
+.sd2_figure{display:block; text-align:center; font:12px 'sm-400'; color:#666; margin-top:5px}
+
 .sd2_strong {color: #0077C8;}
 
 .sd2_order_list {font-size: 14px; font-weight: 400; padding-left: 28px; list-style: decimal;}

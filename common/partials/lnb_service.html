@@ -11,7 +11,7 @@
 					<ul class="sd2_lnb_dep2">
 						<li class="sd2_none"><a href="#sd2_essential">Essential Contents</a></li>
 						<li class="sd2_none"><a href="#sd2_overview">Overview</a></li>
-						<li class="sd_lnb_m_303"><a href="#sd2_technical">Technical Document</a>
+						<li class="sd_lnb_m_302"><a href="#sd2_technical">Technical Document</a>
 							<ul class="sd2_lnb_dep3">
 								<li class="sd_lnb_m_321"><a href="#">Health Data</a>
 									<ul class="sd2_lnb_dep4">
@@ -33,6 +33,7 @@
 						</li>
 						<li class="sd2_none"><a href="#sd2_samples">Samples</a></li>
 						<li class="sd2_none"><a href="#sd2_faq">FAQ</a></li>
+						<li class="sd2_none"><a href="#sd2_video">Video</a></li>
 						<li class="sd2_none"><a href="#sd2_event">Event Materials</a></li>
 					</ul>
 				</li>
@@ -151,8 +152,7 @@
 						<li class="sd2_none sd_lnb_m_905"><a href="#sd2_event">Event Materials</a></li>
 					</ul>
 				</li>
-				<li class="sd2_none"><a href="#">Theme Service</a></li>
-				<li class="sd2_none"><a href="#">Smart View</a></li>
+				<li class="sd_lnb_m_1000 sd2_none"><a href="#">Samsung Themes</a></li>
 			</ul>
 		</div><!-- //lnb_real_wrap -->
 	</div><!-- //lnb_container -->
@@ -202,25 +202,25 @@
 
 			if(path_3 === "technical") {
 				lnb.find(".sd_lnb_m_302").addClass(active).find(".sd2_lnb_dep3").show();
-			}
 
-			if(path_4 === "data") {
-				lnb.find(".sd_lnb_m_321").addClass(active).find(".sd2_lnb_dep4").show();
+				if(path_4 === "data") {
+					lnb.find(".sd_lnb_m_321").addClass(active).find(".sd2_lnb_dep4").show();
 
-				if(path_5 === "digital_health_data_release.html") {
-					lnb.find(".sd_lnb_s_311").addClass(active);
-				} else if(path_5 === "digital_health_data_release.html") {
-					lnb.find(".sd_lnb_s_312").addClass(active);
-				}
-			} else if(path_4 === "service") {
-				lnb.find(".sd_lnb_m_322").addClass(active).find(".sd2_lnb_dep4").show();
+					if(path_5 === "digital_health_data_release.html") {
+						lnb.find(".sd_lnb_s_311").addClass(active);
+					} else if(path_5 === "digital_health_data_release.html") {
+						lnb.find(".sd_lnb_s_312").addClass(active);
+					}
+				} else if(path_4 === "service") {
+					lnb.find(".sd_lnb_m_322").addClass(active).find(".sd2_lnb_dep4").show();
 
-				if(path_5 === "digital_health_service_release.html") {
-					lnb.find(".sd_lnb_s_321").addClass(active);
-				} else if(path_5 === "digital_health_service_guide.html") {
-					lnb.find(".sd_lnb_s_322").addClass(active);
-				} else if(path_5 === "digital_health_service_tracker.html") {
-					lnb.find(".sd_lnb_s_323").addClass(active);
+					if(path_5 === "digital_health_service_release.html") {
+						lnb.find(".sd_lnb_s_321").addClass(active);
+					} else if(path_5 === "digital_health_service_guide.html") {
+						lnb.find(".sd_lnb_s_322").addClass(active);
+					} else if(path_5 === "digital_health_service_tracker.html") {
+						lnb.find(".sd_lnb_s_323").addClass(active);
+					}
 				}
 			}
 
@@ -264,6 +264,8 @@
 			} else if(path_4 === "penup_programming_guide.html") {
 				lnb.find(".sd_lnb_s_622").addClass(active);
 			}
+		} else if(path_2 === "artik") {
+			lnb.find(".sd_lnb_m_700").addClass(active).find(".sd2_lnb_dep2").show();
 		} else if(path_2 === "smart_connectivity") {
 			lnb.find(".sd_lnb_m_800").addClass(active).find(".sd2_lnb_dep2").show();
 
@@ -295,6 +297,8 @@
 			} else if(path_4 === "smart_home_3rdparty.html") {
 				lnb.find(".sd_lnb_s_927").addClass(active);
 			}
+		} else if(path_2 === "theme_service") {
+			lnb.find(".sd_lnb_m_1000").addClass(active).find(".sd2_lnb_dep2").show();
 		}
 	});
 	// ]]>
