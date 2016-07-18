@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/prism.css" />
+	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/common/js/lib/prism.js"></script>
+	<!-- Import common templates -->
+	<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function(){
+			jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+			$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+			$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+			$("#sd2_partial_lnb").load("/common/partials/lnb_service.html?v="+(new Date()).getTime());
+			$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+			jQuery.ajaxSetup({async:true});
+		});
+		// ]]>
+	</script>
+	<!-- //Import common templates -->
+	<script type="text/javascript" src="/common/js/gnb.js"></script>
+	<script type="text/javascript" src="/common/js/lnb.js"></script>
+	<script type="text/javascript" src="/common/js/content.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div id="sd2_wrap">
+	<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<div id="sd2_partial_gnb_1"></div>
+	<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<!-- header_2_wrap -->
+	<div class="sd2_header_2_wrap">
+		<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+		<div id="sd2_partial_gnb_2"></div>
+		<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+	</div><!-- //header_2_wrap -->
+	<!-- content_wrap -->
+	<div class="sd2_content_wrap">
+		<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+		<div id="sd2_partial_lnb"></div>
+		<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+		<!-- substance_wrap -->
+		<div class="sd2_substance_wrap">
+			<!-- location -->
+			<div class="sd2_location sd2_con_margin">
+				<ol>
+					<li><a href="/02_services/services/services_services.html">SERVICES</a></li>
+					<li><a href="/02_services/internet/services_internet.html">Samsung Internet</a></li>
+					<li class="sd2_now"><a href="#">User-Agent String Format</a></li>
+				</ol>
+			</div><!-- //location -->
+			<!-- page_title -->
+			<div class="sd2_page_title sd2_con_margin">
+				<h3>User-Agent String Format<span class="sd2_page_title_side">Mar 21, 2016</span></h3>
+			</div><!-- //page_title -->
+			<!-- sd2_guide_wrap -->
+			<div class="sd2_guide_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+				<h5 class="sd2_body_min_title2">Samsung Internet User-Agent String Format</h5>
+				<!-- sd2_code_wrap -->
+				<div class="sd2_code_wrap sd2_mb_20">
+					<pre class=""><code class="language-none">Mozilla/$(MOZILA_VER) ($(DEVICE_TYPE); $(OS); $(PLATFORM) $(PLATFORM_VER);
+SAMSUNG $(MODEL_NAME) Build/$(BUILD_TAG)) AppleWebKit/$(APPLEWEBKIT_VER)
+(KHTML, like Gecko) $(APP_NAME)/$(APP_VER) (Chrome/$(CHROME_VER))
+$(UX RECOMMEND) Safari/$(SAFARI_VER)</code></pre>
+				</div><!-- //sd2_code_wrap -->
+				<table class="sd2_table sd2_mb_40">
+					<colgroup>
+						<col width="215px"/><col/><col width="100px"/>
+					</colgroup>
+					<tr>
+						<th>Field</th>
+						<th>Description</th>
+						<th>Required</th>
+					</tr>
+					<tr>
+						<th>$(DEVICE_TYPE)</th>
+						<td>“SMART-TV” is used for Samsung Smart TV. Mobile devices do not use this field.</td>
+						<td>Optional</td>
+					</tr>
+					<tr>
+						<th>$(PLATFORM) $(PLATFORM_VER)</th>
+						<td>“Tizen” is used for Samsung Smart TV 2015 new models (and later), and for Tizen Mobile.</td>
+						<td>Mandatory</td>
+					</tr>
+					<tr>
+						<th>SAMSUNG</th>
+						<td>Company name</td>
+						<td>Optional</td>
+					</tr>
+					<tr>
+						<th>$(MODEL_NAME)</th>
+						<td>Mobile devices use MODEL_NAME field for each device. Smart TV currently does not use this field. This Field will be possibly used in the future.</td>
+						<td>Optional</td>
+					</tr>
+					<tr>
+						<th>Build/$(BUILD_TAG))</th>
+						<td>Platform Build Tag is used on Android devices. Currently, Tizen devices do not use this field. It may be possibly used in the future.</td>
+						<td>Optional</td>
+					</tr>
+					<tr>
+						<th>$(APP_NAME)/$(APP_VER</b>)</th>
+						<td>Web Browsers on Samsung devices (Mobile and Smart TV) use “SamsungBrowser/version”.</td>
+						<td>Mandatory</td>
+					</tr>
+					<tr>
+						<th>(Chrome/$(CHROME_VER))</th>
+						<td>This field is presented in a Chrome-based web browser only. Android Browser is currently presented this way whereas, Tizen Samsung Browser is not as it is based on webkit. This will also reflect on the Tizen Samsung Browser if it will be based on Chrome in the future.</td>
+						<td>Optional</td>
+					</tr>
+					<tr>
+						<th>$(UX_RECOMMEND)</th>
+						<td>Mobile devices with small screens (e.g. less than 7") use “Mobile”. Smart TVs use “TV”. For devices supporting Virtual Reality contents, use “VR”. If PC UX is appropriate for the device, this field is empty.</td>
+						<td>Optional</td>
+					</tr>
+				</table>
+				<h5 class="sd2_body_min_title2">Samsung Web Application User-Agent String Format</h5>
+				<!-- sd2_code_wrap -->
+				<div class="sd2_code_wrap sd2_mb_20">
+					<pre class=""><code class="language-none">Mozilla/$(MOZILA_VER) ($(DEVICE_TYPE); $(OS); $(PLATFORM) $(PLATFORM_VER);
+SAMSUNG $(MODEL_NAME) Build/$(BUILD_TAG)) AppleWebKit/$(APPLEWEBKIT_VER)
+(KHTML, like Gecko) Version/$(PLATFORM_VER) (Chrome/$(CHROME_VER))
+$(UX RECOMMEND) Safari/$(SAFARI_VER)</code></pre>
+				</div><!-- //sd2_code_wrap -->
+				<table class="sd2_table sd2_mb_30">
+					<colgroup>
+						<col width="215px"/><col/><col width="100px"/>
+					</colgroup>
+					<tr>
+						<th>Field</th>
+						<th>Description</th>
+						<th>Required</th>
+					</tr>
+					<tr>
+						<th>Version/$(PLATFORM_VER)</th>
+						<td>Web Application using the platform’s webView, have Version/OS’s Version instead of $(APP_NAME)/$((APP_VER)</td>
+						<td>Mandatory</td>
+					</tr>
+				</table>
+				<p class="sd2_paragraph01">※ if the $(PLATFORM_VER) is less than 4.0, than it is not a Web Application.</p>
+				<p class="sd2_paragraph01 sd2_mb_40">Other fields are same with Web browser.</p>
+				<h5 class="sd2_body_min_title2">Samsung Internet for Smart-TV User-Agent String Format</h5>
+				<p class="sd2_paragraph01">Please check below for existing Samsung Internet for SmartTV UA.</p>
+				<p class="sd2_paragraph01">Identify the Samsung Internet for SmartTV by using the “SMART-TV” keyword.</p>
+				<table class="sd2_table sd2_mb_40">
+					<colgroup>
+						<col width="90px"/><col/>
+					</colgroup>
+					<tr>
+						<th>Year</th>
+						<th>UA String</th>
+					</tr>
+					<tr>
+						<th>2015</th>
+						<td>Mozilla/5.0 (SMART-TV; Linux; Tizen 2.3) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.0 TV Safari/538.1</td>
+					</tr>
+					<tr>
+						<th>2014</th>
+						<td>Mozilla/5.0 (SMART-TV; X11; Linux armv7l) AppleWebkit/537.42 (KHTML, like Gecko) Safari/537.42</td>
+					</tr>
+					<tr>
+						<th>2013</th>
+						<td>Mozilla/5.0 (SMART-TV;X11; Linux i686) AppleWebkit/535.20+ (KHTML, like Gecko) Version/5.0 Safari/535.20+</td>
+					</tr>
+					<tr>
+						<th>2012</th>
+						<td>Mozilla/5.0 (SMART-TV; X11; Linux i686) AppleWebKit/534.7 (KHTML, like Gecko) Version/5.0 Safari/534.7</td>
+					</tr>
+					<tr>
+						<th>2015</th>
+						<td>Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV) AppleWebKit/531.2 (KHTML, like Gecko) Web Browser/1.0 SmartTV Safari/531.2+</td>
+					</tr>
+				</table>
+				<h5 class="sd2_body_min_title2">User-Agent(UA) String Examples</h5>
+				<p class="sd2_paragraph01">Previous: UA String used in devices before 2015</p>
+				<p class="sd2_paragraph01">Current: New UA String used in</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+					<li><p>Mobile : 2015 and later released devices, and Android 5.0 Lollipop updated devices (with the small number of exceptions)</p></li>
+					<li><p>TV : Tizen SmartTV Web Browser 2015 and later</p></li>
+				</ul>
+				<p class="sd2_paragraph01">Samsung Internet for Android</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+					<li><p>Previous (Samsung Galaxy Note Edge): Mozilla/5.0 (Linux; Android 4.4.4; en-au; SAMSUNG SM-N915G Build/KTU84P) AppleWebKit/537.36 (KTHML, like Gecko) Version/2.0 Chrome/34.0.1847.76 Mobile Safari/537.36</p></li>
+					<li><p>Current (Samsung Internet for Android 4.0): Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G925F Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36</p></li>
+				</ul>
+				<p class="sd2_paragraph01">Samsung Internet for Tizen Mobile</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+					<li><p>Current: Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) SamsungBrowser/1.0 Mobile Safari/537.3</p></li>
+				</ul>
+				<p class="sd2_paragraph01">Tizen Mobile Web Application</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+					<li><p>Current: Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.3 Mobile Safari/537.3</p></li>
+				</ul>
+				<p class="sd2_paragraph01">Samsung Internet for Smart-TV</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+					<li><p>Current: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.3) AppleWebkit/538.1 (KHTML, like Gecko) SamsungBrowser/1.0 TV Safari/538.1</p></li>
+				</ul>
+				<p class="sd2_paragraph01">Tizen TV Web Application</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+					<li><p>Current: Mozilla/5.0 (SMART-TV; Linux; Tizen 2.2; SAMSUNG SM-Z910F) AppleWebKit/537.3 (KHTML, like Gecko) Version/2.2 TV Safari/538.1</p></li>
+				</ul>
+				<p class="sd2_paragraph01">Samsung Internet for Gear VR</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+					<li><p>Current: Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G925K Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile VR Safari/537.36</p></li>
+				</ul>
+				<h5 class="sd2_body_min_title2">Content Guide</h5>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_20">
+					<li><p class="sd2_mb_10">Request for Mobile Content</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>If $(UX_RECOMMEND) is “Mobile”, Mobile page and UX are appropriate</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">Request for TV Content</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>If $(DEVICE_TYPE) is “SMART-TV” or $(UX_RECOMMEND) is “TV”, it is proper for TV content. If the web page is not suitable for the TV Web Browser, provide the web page for Tablet or PC version (Tablet web page is preferred over the PC version).<br/>※ Consider the Resize Event ※<br/>On the Resize Event, focus should be maintained on the Input field so that the user of the TV web browser can input characters and symbols using Samsung IME.</p></li>
+							<li><p>Samsung Smart TV uses both fields: “SMART-TV” for $(DEVICE_TYPE) and “TV” for $(UX_RECOMMEND).</p></li>
+							<li><p><u>Do not use Flash content</u>. Use HTML5 &lt;VIDEO&gt; for video, and JavaScript and CSS3 for animation and effects.</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">Request for PC Content</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>If $(UX_RECOMMEND) is empty, PC content is shown</p></li>
+							<li><p>If there is no TV oriented content, PC content option is OK.</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">“Samsung” is not used for Mobile Only. “Samsung” is not a good identifier for Mobile.</p></li>
+					<li><p class="sd2_mb_10">“Tizen” is not used for Mobile Only. “Tizen” is also not a good identifier for Mobile.</p></li>
+					<li><p class="sd2_mb_10">$(PLATFORM): Android can be used for Mobile and Tablet (PC); Tizen can be used for Mobile and TV.</p></li>
+				</ul>
+				<p class="sd2_paragraph01">The following table shows how the identifiers and proper contents are related.</p>
+				<table class="sd2_table sd2_mb_40">
+					<colgroup>
+						<col width="25%"/><col width="25%"/><col width="25%"/><col/>
+					</colgroup>
+					<tr>
+						<th>Proper Contents</th><th>$(DEVICE_TYPE)</th><th>$(PLATFORM)</th><th></th>
+					</tr>
+					<tr>
+						<td>Mobile</td><td>-</td><td>Android or Tizen</td><td>Mobile</td>
+					</tr>
+					<tr>
+						<td>TV</td><td>SMART-TV</td><td>Tizen</td><td>TV</td>
+					</tr>
+					<tr>
+						<td>PC</td><td>-</td><td>Android or Tizen</td><td>-</td>
+					</tr>
+				</table>
+				<h5 class="sd2_body_min_title2">Test Guide</h5>
+				<ul class="sd2_con_list sd2_oneline">
+					<li><p>Samsung recommends the use of Chrome development tool or Chrome's user agent switcher extension to verify the contents on the Samsung web browser. Refer to Chrome developer site. Change to the example UA strings.<br/><a href="http://developer.chrome.com/devtools/docs/device-mode#screen-emulator" target="_blank" class="sd2_link_go">http://developer.chrome.com/devtools/docs/device-mode#screen-emulator</a></p></li>
+					<li><p class="sd2_mb_10">Step 1. Open the test web page on the desktop Chrome Browser.</p>
+						<div class="sd2_img_c">
+							<img src="/images/services/content/post_s_browser_ua_rule_step1.jpg" width="690" height="748" alt="Step 1. Open the test web page on the desktop Chrome Browser." />
+						</div><!-- //img_c -->
+					</li>
+					<li><p>Step 2. Activate developer mode (Pressing F12) and activate device mode (Pressing Ctrl + Shift + M)</p></li>
+					<li><p class="sd2_mb_10">Step 3. Enter the Samsung UA string and screen resolution that you want to test.<br/>For Samsung Tizen smartphone SM-Z130H Kiran, screen resolution is 480X800 and UA string is<br/>“Mozilla/5.0 (Linux; Tizen 2.3; SAMSUNG SM-Z130H) AppleWebKit/537.3 (KHTML, like Gecko) SamsungBrowser/1.0 Mobile Safari/537.3"</p>
+						<div class="sd2_img_c">
+							<img src="/images/services/content/post_s_browser_ua_rule_step2.jpg" width="690" height="745" alt="Step 3. Enter the Samsung UA string and screen resolution that you want to test." />
+						</div><!-- //img_c -->
+					</li>
+					<li><p class="sd2_mb_10">For TV, Turn off the Flash option. Refer to screen below. The test guide is provided below:<br/>- Chrome Browser: Settings -> Content settings</p>
+						<div class="sd2_img_c sd2_mb_30">
+							<img src="/images/services/content/post_s_browser_ua_rule_step3.jpg" width="690" height="490" alt="Step 3. Enter the Samsung UA string and screen resolution that you want to test." />
+						</div><!-- //img_c -->
+						<div class="sd2_img_c">
+							<img src="/images/services/content/post_s_browser_ua_rule_step4.jpg" width="690" height="435" alt="Step 3. Enter the Samsung UA string and screen resolution that you want to test." />
+						</div><!-- //img_c -->
+					</li>
+					<li><p>If unable to test with Chrome Browser, a FireFox Browser with the add-on from the following link is another option.<br/>
+						<a href="https://addons.mozilla.org/ko/firefox/addon/user-agent-switcher/?src=search" target="_blank" class="sd2_link_go">https://addons.mozilla.org/ko/firefox/addon/user-agent-switcher/?src=search</a><br/>
+						Refer to developer site for the FireFox add-on: <a href="http://chrispederick.com/work/user-agent-switcher/" target="_blank" class="sd2_link_go">http://chrispederick.com/work/user-agent-switcher/</a><br/>
+						Change to the example UA strings.
+					</p></li>
+				</ul>
+			</div><!-- //sd2_guide_wrap -->
+		</div><!-- //substance_wrap -->
+	</div><!-- //content_wrap -->
+	<!-- ***** IMPORT: sd2_partial_footer ***** -->
+	<div id="sd2_partial_footer"></div>
+	<!-- //***** IMPORT: sd2_partial_footer ***** -->
+</div><!-- //wrap -->
+</body>
+</html>

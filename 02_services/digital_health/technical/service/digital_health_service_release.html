@@ -52,13 +52,13 @@
 				<ol>
 					<li><a href="/02_services/services/services_services.html">SERVICES</a></li>
 					<li><a href="/02_services/digital_health/services_digital_health.html">Samsung Digital Health</a></li>
-					<li><a href="#">Health Service</a></li>
+					<li><a href="#">S Health Service</a></li>
 					<li class="sd2_now"><a href="#">Release Note</a></li>
 				</ol>
 			</div><!-- //location -->
 			<!-- page_title -->
 			<div class="sd2_page_title sd2_con_margin">
-				<h3>Release Note<span class="sd2_page_title_side">Feb 25, 2016</span></h3>
+				<h3>Release Note<span class="sd2_page_title_side">Jun 23, 2016</span></h3>
 			</div><!-- //page_title -->
 			<!-- sd2_intro_wrap -->
 			<div class="sd2_intro_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
@@ -71,7 +71,7 @@
 					</li>
 					<li>
 						<h5>Release Date</h5>
-						<p>Feb 25, 2016</p>
+						<p>Jun 23, 2016</p>
 					</li>
 					<li><h5>Release Contents</h5>
 						<!-- sd2_table -->
@@ -81,19 +81,19 @@
 								<col width="126px"/><col width="123px"/><col/>
 							</colgroup>
 							<tr>
-								<th rowspan="3">SDK</th><th>Libraries</th><td>Provides libraries related to Health Data of Samsung Digital Health.</td>
+								<th rowspan="2">SDK</th><th>Libraries</th><td>Provides libraries related to S Health Service of Samsung Digital Health.</td>
 							</tr>
 							<tr>
 								<th>Sample</th><td>Provides sample applications.</td>
 							</tr>
 							<tr>
-								<th>Tool</th><td>Provides DataViewer to test your application.</td>
-							</tr>
-							<tr>
-								<th rowspan="2">Documents</th><th>API References</th><td>Contains detailed descriptions for Health Data APIs of Samsung Digital Health. See <a href="http://img-developer.samsung.com/onlinedocs/health/index.html" target="_blank" class="sd2_link_go">API Reference</a> for more information.</td>
+								<th rowspan="3">Documents</th><th>API References</th><td>Contains detailed descriptions for Health Data APIs of Samsung Digital Health. See <a href="http://img-developer.samsung.com/onlinedocs/health/index.html" target="_blank" class="sd2_link_go">API Reference</a> for more information.</td>
 							</tr>
 							<tr>
 								<th>Programming Guides</th><td>Includes the overview, development environment, fundamentals, feature descriptions, use cases and sample descriptions.</td>
+							</tr>
+							<tr>
+								<th>Tracker Design Guidelines</th><td>Guides how to design your tracker and its tile.</td>
 							</tr>
 						</table><!-- //sd2_table -->
 					</li>
@@ -106,22 +106,22 @@
 					<li>
 						<!-- question_wrap -->
 						<div class="sd2_question_wrap">
-							<a href="#" class="sd2_list">Health Data 1.2.1</a><span class="sd2_arr"></span>
+							<a href="#" class="sd2_list">S Health Service 1.2.0</a><span class="sd2_arr"></span>
 						</div><!-- //question_wrap -->
 						<!-- answer_wrap -->
 						<div class="sd2_answer_wrap">
 							<!-- answer_container -->
 							<div class="sd2_answer_container">
 								<ul class="sd2_con_list sd2_oneline">
-									<li><p>A new meal type, MEAL_TYPE_BEFORE_SLEEP is added to HealthConstants.BloodGlucose.</p></li>
-									<li><p>MEAN_RPM is added to HealthConstants.Exercise.</p></li>
-									<li><p>In 1.2.0, HealthConnectionErrorResult.UNKNOWN had been retrieved when S Health prior to 4.6 is installed on the device. In this release, a bug for the wrong error value is fixed to give HealthConnectionErrorResult.OLD_VERSION_PLATFORM. You can solve the error situation by calling HealthConnectionErrorResult.resolve().</p></li>
-									<li><p>The following APIs are deprecated:</p>
+									<li><p>APIs for the feature availability check are added in the Shealth class.</p>
 										<ul class="sd2_con_list sd2_oneline">
-											<li><p>HealthResultHolder.cancel()</p></li>
-											<li><p>HealthResultHolder.BaseResult.STATUS_CANCELED</p></li>
+											<li><p>FEATURE_TRACKER_LAUNCH</p></li>
+											<li><p>FEATURE_TRACKER_TILE</p></li>
+											<li><p>isFeatureEnabled(int...)</p></li>
 										</ul>
 									</li>
+									<li><p>Shealth.isFeatureEnabled(int) was the default implementation and didn’t work. It is updated to check the feature availability.</p></li>
+									<li><p>To launch the S Health’s specific tracker with TrackerInfo and TrackerManager, S Health 4.8 or above is needed.</p></li>
 								</ul>
 							</div><!-- //answer_container -->
 						</div><!-- //answer_wrap -->
@@ -129,22 +129,17 @@
 					<li>
 						<!-- question_wrap -->
 						<div class="sd2_question_wrap">
-							<a href="#" class="sd2_list">Health Data 1.2.0</a><span class="sd2_arr"></span>
+							<a href="#" class="sd2_list">S Health Service 1.1.0</a><span class="sd2_arr"></span>
 						</div><!-- //question_wrap -->
 						<!-- answer_wrap -->
 						<div class="sd2_answer_wrap">
 							<!-- answer_container -->
 							<div class="sd2_answer_container">
 								<ul class="sd2_con_list sd2_oneline">
-									<li><p>A new meal type, MEAL_TYPE_BEFORE_SLEEP is added to HealthConstants.BloodGlucose.</p></li>
-									<li><p>MEAN_RPM is added to HealthConstants.Exercise.</p></li>
-									<li><p>In 1.2.0, HealthConnectionErrorResult.UNKNOWN had been retrieved when S Health prior to 4.6 is installed on the device. In this release, a bug for the wrong error value is fixed to give HealthConnectionErrorResult.OLD_VERSION_PLATFORM. You can solve the error situation by calling HealthConnectionErrorResult.resolve().</p></li>
-									<li><p>The following APIs are deprecated:</p>
-										<ul class="sd2_con_list sd2_oneline">
-											<li><p>HealthResultHolder.cancel()</p></li>
-											<li><p>HealthResultHolder.BaseResult.STATUS_CANCELED</p></li>
-										</ul>
-									</li>
+									<li><p>S Health Simulator is removed from the SDK tool because S Health’s available devices had been expanded.</p></li>
+									<li><p>Shealth.initialize() doesn’t throw SsdkUnsupportedException and SecurityException.</p></li>
+									<li><p>com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY permission is not required.</p></li>
+									<li><p>The title of tile design guidelines is changed to Tracker Design Guidelines.</p></li>
 								</ul>
 							</div><!-- //answer_container -->
 						</div><!-- //answer_wrap -->
@@ -152,22 +147,16 @@
 					<li>
 						<!-- question_wrap -->
 						<div class="sd2_question_wrap">
-							<a href="#" class="sd2_list">Health Data 1.1.0</a><span class="sd2_arr"></span>
+							<a href="#" class="sd2_list">S Health Service 1.0.0</a><span class="sd2_arr"></span>
 						</div><!-- //question_wrap -->
 						<!-- answer_wrap -->
 						<div class="sd2_answer_wrap">
 							<!-- answer_container -->
 							<div class="sd2_answer_container">
 								<ul class="sd2_con_list sd2_oneline">
-									<li><p>A new meal type, MEAL_TYPE_BEFORE_SLEEP is added to HealthConstants.BloodGlucose.</p></li>
-									<li><p>MEAN_RPM is added to HealthConstants.Exercise.</p></li>
-									<li><p>In 1.2.0, HealthConnectionErrorResult.UNKNOWN had been retrieved when S Health prior to 4.6 is installed on the device. In this release, a bug for the wrong error value is fixed to give HealthConnectionErrorResult.OLD_VERSION_PLATFORM. You can solve the error situation by calling HealthConnectionErrorResult.resolve().</p></li>
-									<li><p>The following APIs are deprecated:</p>
-										<ul class="sd2_con_list sd2_oneline">
-											<li><p>HealthResultHolder.cancel()</p></li>
-											<li><p>HealthResultHolder.BaseResult.STATUS_CANCELED</p></li>
-										</ul>
-									</li>
+									<li><p>Guide for TrackerEventListener is supplemented. Check your application after referring to the API Reference and Programming Guide.</p></li>
+									<li><p>Description of Tile Design Guideline for Tracker is supplemented.</p></li>
+									<li><p>The icon size of TRACKER_TILE_TYPE_1 is changed to 60.</p></li>
 								</ul>
 							</div><!-- //answer_container -->
 						</div><!-- //answer_wrap -->
@@ -187,20 +176,23 @@
 			<div class="sd2_features_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
 				<h4 class="sd2_body_min_title1">Features</h4>
 				<div class="sd2_mb_30">
-					<h5 class="sd2_body_min_title2">Health data store</h5>
+					<h5 class="sd2_body_min_title2">Tracker Tile Manager</h5>
 					<ul class="sd2_con_list sd2_oneline">
-						<li><p>Handles the service connection.</p></li>
-						<li><p>Inserts, reads, updates and deletes health data.</p></li>
+						<li><p>Posts a defined tracker tile on the S Health’s main screen.</p></li>
+						<li><p>Removes a posted tracker tile from the S Health’s main screen.</p></li>
 					</ul>
 				</div>
 				<div class="sd2_mb_30">
-					<h5 class="sd2_body_min_title2">Health data type</h5>
+					<h5 class="sd2_body_min_title2">Tracker Tile</h5>
 					<ul class="sd2_con_list sd2_oneline">
-						<li><p>Predefined data types such as counting steps or food intake.</p></li>
+						<li><p>Defines a tracker tile for your own tracker.</p></li>
 					</ul>
 				</div>
 				<div class="">
-					<h5 class="sd2_body_min_title2">Checks and Requests permissions to handle health data.</h5>
+					<h5 class="sd2_body_min_title2">Tile Event Handling</h5>
+					<ul class="sd2_con_list sd2_oneline">
+						<li><p>Receives tracker tile events from the S Health’s main screen.</p></li>
+					</ul>
 				</div>
 			</div><!-- //sd2_features_wrap -->
 		</div><!-- //substance_wrap -->

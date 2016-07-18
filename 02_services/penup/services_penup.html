@@ -77,6 +77,32 @@
 					<li class="sd2_gray"><a href="#" class="">&nbsp;</a></li>
 				</ul>
 			</div><!-- //ec_wrap -->
+			<!-- overview_wrap -->
+			<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overview">
+				<!-- sd2_overview_container -->
+				<div class="sd2_overview_container" style="height:437px">
+					<!-- sd2_overview_content -->
+					<div class="sd2_overview_content">
+						<h4 class="sd2_body_min_title1">Overview</h4>
+						<p class="sd2_paragraph01">PEN.UP is a creative social network service for digital arts. Users can share their own artworks as the artist, follow other artists, collect artworks they like, and communicate with other users using comments and the fanbook. If you want to find out more about the PEN.UP service, please visit <a href="https://www.penup.com" target="_blank" class="sd2_link_go">PEN.UP’s Website</a>.</p>
+						<p class="sd2_paragraph01">The PEN.UP SDK helps to integrate PEN.UP features into your application. The deep linking feature, provided when an artwork is posted using the PEN.UP SDK, can be a great opportunity to promote your drawing application. This will help many PEN.UP users, who are not familiar with your drawing application, to easily discover and install it.</p>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_m_b_25">
+							<img src="/images/services/content/ss_penup_img01.jpg" width="235" height="184" alt="Samsung PEN.UP Overview" />
+						</div><!-- //img_c -->
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+					</div><!-- //sd2_overview_content -->
+				</div><!-- //sd2_overview_container -->
+				<div class="sd2_more_less_btn sd2_close">
+					<a href="#" class="sd2_more">more</a>
+				</div>
+			</div><!-- //overview_wrap -->
 			<!-- td_wrap -->
 			<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
 				<h4 class="sd2_body_min_title1">Technical Document</h4>
@@ -187,6 +213,42 @@
 					</li>
 				</ul>
 			</div><!--// event_wrap -->
+			<!-- con_ban_small_wrap -->
+			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
+				<!-- con_ban_small_container -->
+				<div class="sd2_con_ban_small_container">
+					<!-- con_ban_txt -->
+					<div class="sd2_con_ban_txt">
+						<p class="sd2_ban_title">Devices</p>
+						<p class="sd2_ban_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br />do eiusmod tempor incididunt ut labore ...)</p>
+						<div class="sd2_con_btn">
+							<a href="#" >Learn more</a>
+						</div>
+					</div><!-- //con_ban_txt -->
+					<!-- con_ban_img -->
+					<div class="sd2_con_ban_img">
+						<img src="../../images/common/icon/banner_img.png"  alt="Devices" />
+					</div><!-- //con_ban_img -->
+				</div><!-- //con_ban_small_container -->
+			</div><!-- //con_banner_wrap -->
+			<!-- con_ban_small_wrap -->
+			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
+				<!-- con_ban_small_container -->
+				<div class="sd2_con_ban_small_container">
+					<!-- con_ban_txt -->
+					<div class="sd2_con_ban_txt">
+						<p class="sd2_ban_title">Looking for Community?</p>
+						<p class="sd2_ban_txt">Meet other developers in the forums. Share information through <br />the Samsung Developer Site, and participate actively in the forums.</p>
+						<div class="sd2_con_btn">
+							<a href="#">Services Forum</a>
+						</div>
+					</div><!-- //con_ban_txt -->
+					<!-- con_ban_img -->
+					<div class="sd2_con_ban_img">
+						<img src="../../images/common/icon/club_icon_con.png"  alt="Community?" />
+					</div><!-- //con_ban_img -->
+				</div><!-- //con_ban_small_container -->
+			</div><!-- //con_banner_wrap -->
 		</div><!-- //substance_wrap -->
 	</div><!-- //content_wrap -->
 	<!-- ***** IMPORT: sd2_partial_footer ***** -->
@@ -194,4 +256,42 @@
 	<!-- //***** IMPORT: sd2_partial_footer ***** -->
 </div><!-- //wrap -->
 </body>
+<script type="text/javascript">
+	var more_container=null;
+	var btn=null;
+	var now_h=0;
+	var all_h;
+	var more_list=null;
+	var classN="sd2_";
+
+	var init=function(container){
+		more_container=$(container);
+		btn=more_container.next("."+classN+"more_less_btn").find("a");
+		all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
+		console.log(all_h)
+		now_h=more_container.height();
+
+		eventDefine();
+	}
+
+	var eventDefine=function(){
+		btn.on("click", btn_click);
+	}
+
+	var btn_click=function(e){
+		var $this=$(this);
+		if($this.hasClass(classN+"more")){
+			$this.removeClass(classN+"more").addClass(classN+"less");
+			$this.text("less");
+			more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
+		}else{
+			$this.removeClass(classN+"less").addClass(classN+"more");
+			$this.text("more");
+			more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
+		}
+		return false;
+	}
+
+	init(".sd2_overview_container");
+</script>
 </html>

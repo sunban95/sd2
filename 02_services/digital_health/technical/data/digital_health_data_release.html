@@ -136,15 +136,18 @@
 							<!-- answer_container -->
 							<div class="sd2_answer_container">
 								<ul class="sd2_con_list sd2_oneline">
-									<li><p>A new meal type, MEAL_TYPE_BEFORE_SLEEP is added to HealthConstants.BloodGlucose.</p></li>
-									<li><p>MEAN_RPM is added to HealthConstants.Exercise.</p></li>
-									<li><p>In 1.2.0, HealthConnectionErrorResult.UNKNOWN had been retrieved when S Health prior to 4.6 is installed on the device. In this release, a bug for the wrong error value is fixed to give HealthConnectionErrorResult.OLD_VERSION_PLATFORM. You can solve the error situation by calling HealthConnectionErrorResult.resolve().</p></li>
-									<li><p>The following APIs are deprecated:</p>
+									<li><p>HealthDevApp is removed. Use DataViewer to test your application.</p>
 										<ul class="sd2_con_list sd2_oneline">
-											<li><p>HealthResultHolder.cancel()</p></li>
-											<li><p>HealthResultHolder.BaseResult.STATUS_CANCELED</p></li>
+											<li><p>"com.samsung.android.health.platform_type" in manifest to use HealthDevApp is not required.</p></li>
 										</ul>
 									</li>
+									<li><p>To make a clear operation after the Permission UI is popped up, the existing PermissionManager.requestPermissions() is deprecated. Use new API with the activity parameter instead of it.</p></li>
+									<li><p>connectService()with the timeout parameter is added to HealthDataStore.</p></li>
+									<li><p>HealthConstants.SleepStage to present detailed sleep data is added.</p></li>
+									<li><p>Body fat, skeletal muscle, muscle mass, and basal metabolic rate properties are added to HealthConstants.Weight.</p></li>
+									<li><p>The minimum heart rate property is added to HealthConstants.Exercise.</p></li>
+									<li><p>The user name and user’s picture image can be retrieved through HealthUserProfile.</p></li>
+									<li><p>For more detailed information, refer to <a href="http://img-developer.samsung.com/contents/sd2/file/Changes_for_Health_Data_1.2.0.pdf" target="_blank" class="sd2_link_go">here</a>.</p></li>
 								</ul>
 							</div><!-- //answer_container -->
 						</div><!-- //answer_wrap -->
@@ -159,15 +162,41 @@
 							<!-- answer_container -->
 							<div class="sd2_answer_container">
 								<ul class="sd2_con_list sd2_oneline">
-									<li><p>A new meal type, MEAL_TYPE_BEFORE_SLEEP is added to HealthConstants.BloodGlucose.</p></li>
-									<li><p>MEAN_RPM is added to HealthConstants.Exercise.</p></li>
-									<li><p>In 1.2.0, HealthConnectionErrorResult.UNKNOWN had been retrieved when S Health prior to 4.6 is installed on the device. In this release, a bug for the wrong error value is fixed to give HealthConnectionErrorResult.OLD_VERSION_PLATFORM. You can solve the error situation by calling HealthConnectionErrorResult.resolve().</p></li>
-									<li><p>The following APIs are deprecated:</p>
+									<li><p>Sample application projects are updated to import them on Android Studio.</p></li>
+									<li><p>HealthConnectionErrorResult</p>
 										<ul class="sd2_con_list sd2_oneline">
-											<li><p>HealthResultHolder.cancel()</p></li>
-											<li><p>HealthResultHolder.BaseResult.STATUS_CANCELED</p></li>
+											<li><p>The device that supports S Health 4.x can be checked with hasResolution().</p></li>
+											<li><p>hasResolution() and resolve() require the android.permission.INTERNET permission.</p></li>
 										</ul>
 									</li>
+									<li><p>HealthConstants.BloodGlucose</p>
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>MEAL_TYPE BEFORE_MEAL and MEAL_TYPE GENERAL are added.</p></li>
+											<li><p>MEAL_TYPE_AFTER_BEDTIME is deprecated.</p></li>
+										</ul>
+									</li>
+									<li><p>"Treadmill" and "Elliptical trainer" are added to the predefined type of HealthConstants.Exercise</p></li>
+									<li><p>putNull() to set a value of data property as null is added to HealthData</p></li>
+									<li><p>Available ranges or operations of some APIs are changed. For more detailed information, refer to <a href="http://img-developer.samsung.com/contents/sd2/file/Changes_for_Health_Data_1.1.0.pdf" target="_blank" class="sd2_link_go">here</a>.</p></li>
+								</ul>
+							</div><!-- //answer_container -->
+						</div><!-- //answer_wrap -->
+					</li>
+					<li>
+						<!-- question_wrap -->
+						<div class="sd2_question_wrap">
+							<a href="#" class="sd2_list">Health Data 1.0.0</a><span class="sd2_arr"></span>
+						</div><!-- //question_wrap -->
+						<!-- answer_wrap -->
+						<div class="sd2_answer_wrap">
+							<!-- answer_container -->
+							<div class="sd2_answer_container">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>HealthConnectionErrorResult.resolve()'s operation is changed without a dialog.</p></li>
+									<li><p>Some constants for unit are added and descriptions of HealthConstants interfaces are changed.</p></li>
+									<li><p>If the handler parameter of the HealthDataObserver’s constructor is null, the looper of the current thread will be used for the callback.</p></li>
+									<li><p>A permissible range of medical data for countries is expanded.</p></li>
+									<li><p>For more detailed information, refer to <a href="http://img-developer.samsung.com/contents/sd2/file/Changes_for_Health_Data_1.0.0.pdf" target="_blank" class="sd2_link_go">here</a>.</p></li>
 								</ul>
 							</div><!-- //answer_container -->
 						</div><!-- //answer_wrap -->

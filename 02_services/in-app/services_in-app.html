@@ -84,9 +84,36 @@
 							<li class="sd2_gray"><a href="technical/in-app_howto_start.html"  class="sd2_page">How to Start Samsung IAP</a></li>
 							<li class=""><a href="technical/in-app_programming_guide.html"  class="sd2_page">Programming Guide</a></li>
 							<li class=""><a href="technical/in-app_air_guide.html" class="sd2_page">Adobe AIR Programming Guide</a></li>
-							<li class="sd2_gray"><a href="technical/in-app_migrating.html" class="sd2_page">Migrating from Google Play In-App Billing</a></li>
+							<li class="sd2_gray sd2_w100"><a href="technical/in-app_migrating.html" class="sd2_page">Migrating from Google Play In-App Billing</a></li>
 						</ul>
 					</div><!-- //ec_wrap -->
+					<!-- overview_wrap -->
+					<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overview">
+						<!-- sd2_overview_container -->
+						<div class="sd2_overview_container" style="height:658px">
+							<!-- sd2_overview_content -->
+							<div class="sd2_overview_content">
+								<h4 class="sd2_body_min_title1">Overview</h4>
+								<p class="sd2_paragraph01">The Samsung In-App Purchase payment service makes it possible to sell virtual items, services, and subscriptions within the Android apps sold in Samsung Galaxy Apps.</p>
+								<p class="sd2_paragraph01">You can start using new features by using In-App Purchase (IAP) 3.0, which supports Auto-Recurring Subscriptions and offers a wider range of item options for developers. The Item Group ID has been replaced with the more intuitive PackageName, and the Item ID can consist of letters, which makes item management more convenient for developers.</p>
+								<p class="sd2_paragraph01">Payment methods including credit card, pre-paid card, and phone bill are available for Samsung In-App Purchase in over 90 countries around the world. Other payment options will be added over time.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/services/content/iap_overview_150724.png" width="430" height="372" alt="Samsung In-App Overview" />
+								</div><!-- //img_c -->
+								<p class="sd2_paragraph01">추가 내용</p>
+								<p class="sd2_paragraph01">추가 내용</p>
+								<p class="sd2_paragraph01">추가 내용</p>
+								<p class="sd2_paragraph01">추가 내용</p>
+								<p class="sd2_paragraph01">추가 내용</p>
+								<p class="sd2_paragraph01">추가 내용</p>
+								<p class="sd2_paragraph01">추가 내용</p>
+							</div><!-- //sd2_overview_content -->
+						</div><!-- //sd2_overview_container -->
+						<div class="sd2_more_less_btn sd2_close">
+							<a href="#" class="sd2_more">more</a>
+						</div>
+					</div><!-- //overview_wrap -->
 					<!-- td_wrap -->
 					<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
 						<h4 class="sd2_body_min_title1">Technical Document</h4>
@@ -249,4 +276,42 @@
 			<!-- //***** IMPORT: sd2_partial_footer ***** -->
 		</div><!-- //wrap -->
 	</body>
+	<script type="text/javascript">
+		var more_container=null;
+		var btn=null;
+		var now_h=0;
+		var all_h;
+		var more_list=null;
+		var classN="sd2_";
+
+		var init=function(container){
+			more_container=$(container);
+			btn=more_container.next("."+classN+"more_less_btn").find("a");
+			all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
+			console.log(all_h)
+			now_h=more_container.height();
+
+			eventDefine();
+		}
+
+		var eventDefine=function(){
+			btn.on("click", btn_click);
+		}
+
+		var btn_click=function(e){
+			var $this=$(this);
+			if($this.hasClass(classN+"more")){
+				$this.removeClass(classN+"more").addClass(classN+"less");
+				$this.text("less");
+				more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
+			}else{
+				$this.removeClass(classN+"less").addClass(classN+"more");
+				$this.text("more");
+				more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
+			}
+			return false;
+		}
+
+		init(".sd2_overview_container");
+	</script>
 </html>

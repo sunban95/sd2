@@ -71,6 +71,32 @@
 					<li class="sd2_w100"><a href="technical/smart_home_3rdparty.html" class="sd2_page">Samsung Account 3rd Party Integration Development</a></li>
 				</ul>
 			</div><!-- //ec_wrap -->
+			<!-- overview_wrap -->
+			<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overview">
+				<!-- sd2_overview_container -->
+				<div class="sd2_overview_container" style="height:429px">
+					<!-- sd2_overview_content -->
+					<div class="sd2_overview_content">
+						<h4 class="sd2_body_min_title1">Overview</h4>
+						<p class="sd2_paragraph01">The Smart Home Cloud API provides methods to control and monitor Samsung Smart Home devices. Through this Smart Home Control Service, a partner’s application can connect with various devices and provide enhanced services to their customer.</p>
+						<p class="sd2_paragraph01">Smart Home Control Service operates through Cloud-to-Cloud integration between the Partner Cloud and Smart Home Cloud.</p>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_m_b_25">
+							<img src="/images/services/content/smarthome_visual_bana.jpg" width="490" height="200" alt="Smart Home Cloud API Overview" />
+						</div><!-- //img_c -->
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+						<p class="sd2_paragraph01">추가 내용</p>
+					</div><!-- //sd2_overview_content -->
+				</div><!-- //sd2_overview_container -->
+				<div class="sd2_more_less_btn sd2_close">
+					<a href="#" class="sd2_more">more</a>
+				</div>
+			</div><!-- //overview_wrap -->
 			<!-- td_wrap -->
 			<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
 				<h4 class="sd2_body_min_title1">Technical Document</h4>
@@ -87,15 +113,64 @@
 			<!-- nt_wrap -->
 			<div class="sd2_nt_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_notification">
 				<h4 class="sd2_body_min_title1">Notification URL</h4>
+				<p class="sd2_paragraph01">Enter URL to get a event notification of appliances from Samsung Smart Home Cloud (443 and 80 port only supported)<br/>Example: http://201.1.1.1:80/callback</p>
+				<div class="sd2_svc_btn_wrap">
+					<input type="text" style="width: 642px;" class="sd2_input-text"/>
+					<a href="#" class="sd2_btn_submit" style="top: 3px;">Confirm</a>
+				</div>
 			</div><!-- //nt_wrap -->
 			<!-- sm_wrap -->
 			<div class="sd2_sm_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_simulator">
 				<h4 class="sd2_body_min_title1">Go to Simulator</h4>
+				<div class="sd2_svc_btn_wrap">
+					<p class="sd2_paragraph01">Simulator is available to test Smart Home Cloud API with virtual smart appliances.</p>
+					<a href="#" class="sd2_btn_submit">Go to Simulator</a>
+				</div>
 			</div><!-- //sm_wrap -->
 			<!-- sa_wrap -->
 			<div class="sd2_sa_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_submit">
 				<h4 class="sd2_body_min_title1">Submit Your App</h4>
+				<div class="sd2_svc_btn_wrap">
+					<p class="sd2_paragraph01">Once your application is completed by using the Smart Home Cloud API, verification is needed for<br/Service provision. To verify, click Submit.</p>
+					<a href="#" class="sd2_btn_submit">Submit</a>
+				</div>
 			</div><!-- //sa_wrap -->
+			<!-- con_ban_small_wrap -->
+			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
+				<!-- con_ban_small_container -->
+				<div class="sd2_con_ban_small_container">
+					<!-- con_ban_txt -->
+					<div class="sd2_con_ban_txt">
+						<p class="sd2_ban_title">Devices</p>
+						<p class="sd2_ban_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br />do eiusmod tempor incididunt ut labore ...)</p>
+						<div class="sd2_con_btn">
+							<a href="#" >Learn more</a>
+						</div>
+					</div><!-- //con_ban_txt -->
+					<!-- con_ban_img -->
+					<div class="sd2_con_ban_img">
+						<img src="../../images/common/icon/banner_img.png"  alt="Devices" />
+					</div><!-- //con_ban_img -->
+				</div><!-- //con_ban_small_container -->
+			</div><!-- //con_banner_wrap -->
+			<!-- con_ban_small_wrap -->
+			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
+				<!-- con_ban_small_container -->
+				<div class="sd2_con_ban_small_container">
+					<!-- con_ban_txt -->
+					<div class="sd2_con_ban_txt">
+						<p class="sd2_ban_title">Looking for Community?</p>
+						<p class="sd2_ban_txt">Meet other developers in the forums. Share information through <br />the Samsung Developer Site, and participate actively in the forums.</p>
+						<div class="sd2_con_btn">
+							<a href="#">Services Forum</a>
+						</div>
+					</div><!-- //con_ban_txt -->
+					<!-- con_ban_img -->
+					<div class="sd2_con_ban_img">
+						<img src="../../images/common/icon/club_icon_con.png"  alt="Community?" />
+					</div><!-- //con_ban_img -->
+				</div><!-- //con_ban_small_container -->
+			</div><!-- //con_banner_wrap -->
 		</div><!-- //substance_wrap -->
 	</div><!-- //content_wrap -->
 	<!-- ***** IMPORT: sd2_partial_footer ***** -->
@@ -103,4 +178,42 @@
 	<!-- //***** IMPORT: sd2_partial_footer ***** -->
 </div><!-- //wrap -->
 </body>
+<script type="text/javascript">
+	var more_container=null;
+	var btn=null;
+	var now_h=0;
+	var all_h;
+	var more_list=null;
+	var classN="sd2_";
+
+	var init=function(container){
+		more_container=$(container);
+		btn=more_container.next("."+classN+"more_less_btn").find("a");
+		all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
+		console.log(all_h)
+		now_h=more_container.height();
+
+		eventDefine();
+	}
+
+	var eventDefine=function(){
+		btn.on("click", btn_click);
+	}
+
+	var btn_click=function(e){
+		var $this=$(this);
+		if($this.hasClass(classN+"more")){
+			$this.removeClass(classN+"more").addClass(classN+"less");
+			$this.text("less");
+			more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
+		}else{
+			$this.removeClass(classN+"less").addClass(classN+"more");
+			$this.text("more");
+			more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
+		}
+		return false;
+	}
+
+	init(".sd2_overview_container");
+</script>
 </html>

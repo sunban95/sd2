@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/prism.css" />
+	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/common/js/lib/prism.js"></script>
+	<!-- Import common templates -->
+	<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function(){
+			jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+			$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+			$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+			$("#sd2_partial_lnb").load("/common/partials/lnb_service.html?v="+(new Date()).getTime());
+			$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+			jQuery.ajaxSetup({async:true});
+		});
+		// ]]>
+	</script>
+	<!-- //Import common templates -->
+	<script type="text/javascript" src="/common/js/gnb.js"></script>
+	<script type="text/javascript" src="/common/js/lnb.js"></script>
+	<script type="text/javascript" src="/common/js/content.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div id="sd2_wrap">
+	<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<div id="sd2_partial_gnb_1"></div>
+	<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<!-- header_2_wrap -->
+	<div class="sd2_header_2_wrap">
+		<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+		<div id="sd2_partial_gnb_2"></div>
+		<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+	</div><!-- //header_2_wrap -->
+	<!-- content_wrap -->
+	<div class="sd2_content_wrap">
+		<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+		<div id="sd2_partial_lnb"></div>
+		<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+		<!-- substance_wrap -->
+		<div class="sd2_substance_wrap">
+			<!-- location -->
+			<div class="sd2_location sd2_con_margin">
+				<ol>
+					<li><a href="/02_services/services/services_services.html">SERVICES</a></li>
+					<li><a href="/02_services/internet/services_internet.html">Samsung Internet</a></li>
+					<li><a href="#">Android</a></li>
+					<li class="sd2_now"><a href="#">Web Development Guide</a></li>
+				</ol>
+			</div><!-- //location -->
+			<!-- page_title -->
+			<div class="sd2_page_title sd2_con_margin">
+				<h3>Web Development Guide<span class="sd2_page_title_side">Mar 21, 2016</span></h3>
+			</div><!-- //page_title -->
+			<!-- sd2_guide_wrap -->
+			<div class="sd2_guide_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+				<p class="sd2_paragraph01 sd2_mb_40">Samsung Internet for Android provides many features to make browsing smooth and convenient on Samsung Galaxy devices. Here are some tips to make your web sites fully utilize our features.</p>
+				<h4 class="sd2_body_min_title1">Samsung Internet for Android 4.0</h4>
+				<p class="sd2_paragraph01 sd2_mb_40">The following features have been added in Samsung Internet for Android 4.0.</p>
+				<h4 class="sd2_body_min_title1">Custom Tabs</h4>
+				<p class="sd2_paragraph01 sd2_mb_30">Apps often need to provide users with a way to view web pages. Until now, it was either embed a WebView inside your app, or launch a browser, and make the user come back to your app later. App developers can have more control over the overall web experience without using Android WebView by launching a light-weight Custom Tab provided by Samsung Internet for Android.</p>
+				<!-- img_c -->
+				<div class="sd2_img_c sd2_mb_30">
+					<img src="/images/services/content/s_internet_webdeveloper01_160119.jpg" width="384" height="423" alt="Custom Tabs" />
+				</div><!-- //img_c -->
+				<p class="sd2_paragraph01">The followings are customizable for Custom Tabs:</p>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+					<li><p>Menu items</p></li>
+					<li><p>Toolbar color</p></li>
+				</ul>
+				<h5 class="sd2_body_min_title2">Samsung Internet Custom Tabs Service Connection</h5>
+				<p class="sd2_paragraph01">Client apps can use the sample code below for connecting to Custom Tabs service provided. If bindService() throws an exception, Custom Tabs is not supported in the installed version. The package name must be set to Samsung Internet’s package name i.e. "com.sec.android.app.sbrowser"</p>
+				<!-- sd2_code_wrap -->
+				<div class="sd2_code_wrap sd2_mb_40">
+					<input type="checkbox" name="show_line_1" id="show_line_1" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_1">Show Lines</label>
+					<pre class="line-numbers"><code class="language-java">// Package name of Samsung Internet
+public static final String SAMSUNG_INTERNET_PACKAGE_NAME = "com.sec.android.app.sbrowser";
+// Action for the service intent.
+public static final String CUSTOM_TABS_CONNECTION =
+"android.support.customtabs.action.CustomTabsService";
+Intent serviceIntent = new Intent(CUSTOM_TABS_CONNECTION);
+serviceIntent.setPackage(SAMSUNG_INTERNET_PACKAGE_NAME);
+context.bindService(serviceIntent, mServiceConnection, Context.BIND_AUTO_CREATE |
+Context.BIND_WAIVE_PRIORITY);</code></pre>
+				</div><!-- //sd2_code_wrap -->
+				<h5 class="sd2_body_min_title2">Launching a Custom Tab</h5>
+				<p class="sd2_paragraph01">Once binding the Custom Tabs service, you can use an ACTION_VIEW Intent to launch a Custom Tab from your app.</p>
+				<!-- sd2_code_wrap -->
+				<div class="sd2_code_wrap sd2_mb_40">
+					<input type="checkbox" name="show_line_1" id="show_line_2" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_2">Show Lines</label>
+					<pre class="line-numbers"><code class="language-java">// Package name of Samsung Internet
+public static final String SAMSUNG_INTERNET_PACKAGE_NAME = "com.sec.android.app.sbrowser";
+// Action for the service intent.
+public static final String CUSTOM_TABS_CONNECTION =
+"android.support.customtabs.action.CustomTabsService";
+Intent serviceIntent = new Intent(CUSTOM_TABS_CONNECTION);
+serviceIntent.setPackage(SAMSUNG_INTERNET_PACKAGE_NAME);
+context.bindService(serviceIntent, mServiceConnection, Context.BIND_AUTO_CREATE |
+Context.BIND_WAIVE_PRIORITY);</code></pre>
+				</div><!-- //sd2_code_wrap -->
+				<h5 class="sd2_body_min_title2">Customizing Menu Items</h5>
+				<p class="sd2_paragraph01">Client apps can add customized menu items to the Custom Tab. The menu items are added using an array of bundles that consist of menu texts and pending Intents.</p>
+				<!-- sd2_code_wrap -->
+				<div class="sd2_code_wrap sd2_mb_40">
+					<input type="checkbox" name="show_line_1" id="show_line_3" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_3">Show Lines</label>
+					<pre class="line-numbers"><code class="language-java">// Key for title string for custom menu item
+public static final String CUSTOM_TABS_MENU_TITLE =
+"android.support.customtabs.customaction.MENU_ITEM_TITLE";
+// Key for pending Intent
+public static final String CUSTOM_TABS_PENDING_INTENT =
+"android.support.customtabs.customaction.PENDING_INTENT";
+// Array List is used for specifying menu related params.
+public static final String CUSTOM_TABS_EXTRA_MENU_ITEMS =
+"android.support.customtabs.extra.MENU_ITEMS";
+ArrayList menuItemBundleList = new ArrayList&lt;Bundle&gt;();
+// Separate Bundle for each menu item.
+Bundle menuItem = new Bundle();
+menuItem.putString(CUSTOM_TABS_MENU_TITLE, menuItemTitle);
+menuItem.putParcelable(CUSTOM_TABS_PENDING_INTENT, pendingIntent);
+menuItemBundleList.add(menuItem);
+intent.putParcelableArrayList(CUSTOM_TABS_EXTRA_MENU_ITEMS, menuItemBundleList);</code></pre>
+				</div><!-- //sd2_code_wrap -->
+				<h5 class="sd2_body_min_title2">Customizing Toolbar Color</h5>
+				<p class="sd2_paragraph01">The color of the Custom Tab’s tool bar can be changed to be in sync in caller apps’ theme using Intent extra.</p>
+				<!-- sd2_code_wrap -->
+				<div class="sd2_code_wrap sd2_mb_40">
+					<input type="checkbox" name="show_line_1" id="show_line_4" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_4">Show Lines</label>
+					<pre class="line-numbers"><code class="language-java">// Intent extra for changing the color for tool bar. Color of type int indicates a Color.
+private static final String CUSTOM_TABS_TOOLBAR_COLOR = "android.support.customtabs.extra.TOOLBAR_COLOR";
+intent.putExtra(CUSTOM_TABS_TOOLBAR_COLOR, color);</code></pre>
+				</div><!-- //sd2_code_wrap -->
+				<h4 class="sd2_body_min_title1">Service Worker</h4>
+				<p class="sd2_paragraph01 sd2_mb_30">Service Worker implementation in Samsung Internet for Android 4.0 is based on Chromium 44.2403 with some additions and changes.</p>
+				<h5 class="sd2_body_min_title2">Additions</h5>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+					<li><p class="sd2_mb_10">Client manipulation</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>Client.id</p></li>
+							<li><p>WindowClient.navigate(url)</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">navigator.serviceWorker</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>ServiceWorkerContainer.getRegistrations()</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">Registration</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>ServiceWorkerRegistration.update() that returns a promise</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">Cache</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>Cache.addAll(requests)</p></li>
+							<li><p>Cache.matchAll(request, options)</p></li>
+						</ul>
+					</li>
+				</ul>
+				<h5 class="sd2_body_min_title2">Changes</h5>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+					<li><p class="sd2_mb_10">Client manipulation</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>Client.postMessage(message, transfer) will result in a ServiceWorkerMessageEvent being fired on navigator.serviceWorker instead of a MessageEvent being fired on the client’s global window object.</p></li>
+							<li><p>Clients.matchAll() returns clients in MRU order</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">Registration</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>ServiceWorkerRegistration.update() will only bypass the browser cache if the previous update check occurred over 24 hours ago.</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">Cache API</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>Cache API is restricted to secure origins (can be only used with HTTPS)</p></li>
+						</ul>
+					</li>
+					<li><p class="sd2_mb_10">Fetch related</p>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>Fetch API request flags for navigation requests have been changed from &lt;mode:"no-cors", credentials:"same-origin"&gt; to &lt;mode:"same-origin", credentials:"include", redirect: "manual"&gt;</p></li>
+							<li><p>FetchEvent.respondWith() accepts CORS responses for page loading or worker script loading requests</p></li>
+						</ul>
+					</li>
+				</ul>
+				<h4 class="sd2_body_min_title1">Samsung Internet for Android 3.0</h4>
+				<p class="sd2_paragraph01 sd2_mb_40">The following features have been added in Samsung Internet for Android 3.0.</p>
+				<h4 class="sd2_body_min_title1 sd2_mb_30">Quick Access</h4>
+				<!-- img_c -->
+				<div class="sd2_img_c sd2_mb_30">
+					<img src="/images/services/content/s_internet_webdeveloper03_160202.jpg" width="190" height="338" alt="Quick Access" />
+				</div><!-- //img_c -->
+				<p class="sd2_paragraph01">As one of the default homepages for Samsung Internet for Android, the Quick Access page enables users to visit their favorite sites with a single click. It is also loaded whenever users click the URL bar giving your sites more exposure and leading more users to you.</p>
+				<p class="sd2_paragraph01">Quick Access page contains a default list of sites that is adjustable by the user. The default list varies according to countries, regions, carriers, etc. It is updated independently from the Samsung Internet for Android through the Samsung Quick Access server.</p>
+				<p class="sd2_paragraph01">For more effective exposure, we recommend adding a catchy icon that shows off the characteristics of your page.</p>
+				<p class="sd2_paragraph01">The icon displayed for your site will be determined following this priority:</p>
+				<ol class="sd2_order_list sd2_mb_40">
+					<li><p>The apple-touch-icon declared in the content</p><pre class="code sd2_strong">(ex) &lt;link rel="apple-touch-icon" href="/mytouchicon.png"&gt;</pre></li>
+					<li><p>The favicon set up in the content</p><pre class="code sd2_strong">(ex) &lt;link rel="icon" href="/myicon.png"&gt;</pre></li>
+					<li><p>A simple icon created by the Samsung QuickAccess server.</p></li>
+				</ol>
+				<h4 class="sd2_body_min_title1 sd2_mb_30">Shortcut Promotion Banner</h4>
+				<!-- img_c -->
+				<div class="sd2_img_c sd2_mb_30">
+					<img src="/images/services/content/s_internet_webdeveloper04_160119.jpg" width="565" height="312" alt="Shortcut Promotion Banner" />
+				</div><!-- //img_c -->
+				<p class="sd2_paragraph01">Based on the <a href="http://www.w3.org/TR/appmanifest" target="_blank" class="sd2_link_go">W3C Manifest for web application standard</a>, Samsung Android for Internet lets web pages look and work more like native Android applications. With the ‘Add to Home’ feature, users are able to install your pages to their devices and launch and explore them without being aware of the browser container.</p>
+				<p class="sd2_paragraph01">Now Samsung Internet for Android promotes ‘Add to Home’ with notification banners. Samsung Internet for Android will recommend shortcut installation for frequently* visited sites if it has a manifest declared in a link element. This will give users easy access to the feature and certainly make users access your contents more frequently.</p>
+				<p class="sd2_paragraph01">Of course, Samsung Internet for Android still provides the ‘Add to Home’ menu. So users can install web applications to their home screens without going through the promotion banner.</p>
+				<p class="sd2_paragraph01 italic sd2_mb_40"><i>* Currently, the notification will show when the user visits a site at least 3 times during a 2 week period. This policy may change.</i></p>
+				<h4 class="sd2_body_min_title1">Secure Web Auto Login</h4>
+				<p class="sd2_paragraph01">Using fingerprint authentication, Samsung Internet for Android provides a more secure and easy way for users to login to sites. Once the user agrees to save their login info for a site, future sign-ins will be done with a single fingerprint scan. After the user identity is verified with fingerprint, the password field is auto-filled and submitted for login where applicable.</p>
+				<p class="sd2_paragraph01 sd2_mb_30">Since Samsung Internet for Android 3.2, the number of sites supported for Auto Login has been highly increased.</p>
+				<!-- img_c -->
+				<div class="sd2_img_c sd2_mb_30">
+					<img src="/images/services/content/s_internet_webdeveloper05_160119.jpg" width="700" height="299" alt="Secure Web Auto Login" />
+				</div><!-- //img_c -->
+				<p class="sd2_paragraph01">Use standard HTML forms and avoid overriding the ‘enter’ key to make the best use of this feature.</p>
+				<!-- sd2_code_wrap -->
+				<div class="sd2_code_wrap sd2_mb_40">
+					<input type="checkbox" name="show_line_1" id="show_line_5" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_5">Show Lines</label>
+					<pre class="line-numbers"><code class="language-html">&lt;form action="example_form.asp"&gt;
+ID: &lt;input type="text" name="UserName" value="username">&lt;br/&gt;
+Password: &lt;input type="password" name="PassWord" value="password">&lt;br/&gt;>
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+				</div><!-- //sd2_code_wrap -->
+				<h4 class="sd2_body_min_title1 sd2_mb_30">Audio Notification</h4>
+				<!-- img_c -->
+				<div class="sd2_img_c sd2_mb_30">
+					<img src="/images/services/content/s_internet_webdeveloper06_160119.jpg" width="700" height="299" alt="Audio Notification" />
+				</div><!-- //img_c -->
+				<p class="sd2_paragraph01">Samsung Internet for Android lets you provide audio contents to users with the experience of native music applications.</p>
+				<p class="sd2_paragraph01">Users can keep listening to audio streaming from your sites after switching to other tabs or applications. The Samsung Internet for Android icon is shown in the notification bar to indicate that audio streaming is coming from the web. And when the user opens the notification drawer, a mini-controller for the audio element is displayed to enable quick and easy control of audio playback.</p>
+				<p class="sd2_paragraph01">This mini-controller is also displayed on the lock screen for user convenience.</p>
+				<ul class="sd2_con_list sd2_oneline ">
+					<li><p>An icon and the title of the current audio streaming are shown in the mini-controller.</p></li>
+					<li><p>The icon displayed is determined following this priority:</p></li>
+				</ul>
+				<ol class="sd2_order_list">
+					<li><p>The apple-touch-icon declared in the content</p><pre class="code sd2_strong">(ex) &lt;link rel="apple-touch-icon" href="/mytouchicon.png"&gt;</pre></li>
+					<li><p>The favicon set up in the content</p><pre class="code sd2_strong">(ex) &lt;link rel="icon" href="/myicon.png"&gt;</pre></li>
+					<li><p>A simple icon created by the Samsung QuickAccess server.</p></li>
+				</ol>
+			</div><!-- //sd2_guide_wrap -->
+		</div><!-- //substance_wrap -->
+	</div><!-- //content_wrap -->
+	<!-- ***** IMPORT: sd2_partial_footer ***** -->
+	<div id="sd2_partial_footer"></div>
+	<!-- //***** IMPORT: sd2_partial_footer ***** -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$(".sd2_forum_list").fadeList();
 	$(".sd2_support_list").fadeList();
 	$(".sd2_select_btn").selectBox();
+	$(".sd2_show_line").showLine();
 });
 
 (function($){
@@ -160,6 +161,40 @@ $(document).ready(function(){
 			var selectForm=new SelectBox(this); 
 		})
 		return this; 
+	}
+
+	function ShowLine(selector){
+		this.showCheckbox=null;
+		this.init(selector);
+	}
+
+	ShowLine.prototype.init=function(selector){
+		this.showCheckbox=$(selector);
+		this.eventDefine();
+	}
+
+	ShowLine.prototype.eventDefine=function(){
+		var objThis=this;
+		this.showCheckbox.on("change", function(){
+			var item=$(this),
+				isShowLine = $(this).closest(".sd2_code_wrap").find(".sd2_is_show_line"),
+				lineRows = $(this).closest(".sd2_code_wrap").find(".line-numbers-rows"),
+				linePre = $(this).closest(".sd2_code_wrap").find("pre");
+
+
+			lineRows.toggle();
+			linePre.toggleClass("line-numbers");
+
+
+
+			return false;
+		})
+	}
+	$.fn.showLine=function(){
+		this.each(function(index){
+			var showLine=new ShowLine(this);
+		})
+		return this;
 	}
 })(jQuery)
 
