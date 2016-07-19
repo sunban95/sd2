@@ -82,7 +82,7 @@
 				<p class="sd2_paragraph01">Client apps can use the sample code below for connecting to Custom Tabs service provided. If bindService() throws an exception, Custom Tabs is not supported in the installed version. The package name must be set to Samsung Internet’s package name i.e. "com.sec.android.app.sbrowser"</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_40">
-					<input type="checkbox" name="show_line_1" id="show_line_1" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_1">Show Lines</label>
+					<input type="checkbox" name="show_line_1" id="show_line_1" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_1">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Package name of Samsung Internet
 public static final String SAMSUNG_INTERNET_PACKAGE_NAME = "com.sec.android.app.sbrowser";
 // Action for the service intent.
@@ -97,7 +97,7 @@ Context.BIND_WAIVE_PRIORITY);</code></pre>
 				<p class="sd2_paragraph01">Once binding the Custom Tabs service, you can use an ACTION_VIEW Intent to launch a Custom Tab from your app.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_40">
-					<input type="checkbox" name="show_line_1" id="show_line_2" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_2">Show Lines</label>
+					<input type="checkbox" name="show_line_1" id="show_line_2" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_2">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Package name of Samsung Internet
 public static final String SAMSUNG_INTERNET_PACKAGE_NAME = "com.sec.android.app.sbrowser";
 // Action for the service intent.
@@ -112,7 +112,7 @@ Context.BIND_WAIVE_PRIORITY);</code></pre>
 				<p class="sd2_paragraph01">Client apps can add customized menu items to the Custom Tab. The menu items are added using an array of bundles that consist of menu texts and pending Intents.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_40">
-					<input type="checkbox" name="show_line_1" id="show_line_3" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_3">Show Lines</label>
+					<input type="checkbox" name="show_line_1" id="show_line_3" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_3">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Key for title string for custom menu item
 public static final String CUSTOM_TABS_MENU_TITLE =
 "android.support.customtabs.customaction.MENU_ITEM_TITLE";
@@ -134,7 +134,7 @@ intent.putParcelableArrayList(CUSTOM_TABS_EXTRA_MENU_ITEMS, menuItemBundleList);
 				<p class="sd2_paragraph01">The color of the Custom Tab’s tool bar can be changed to be in sync in caller apps’ theme using Intent extra.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_40">
-					<input type="checkbox" name="show_line_1" id="show_line_4" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_4">Show Lines</label>
+					<input type="checkbox" name="show_line_1" id="show_line_4" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_4">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Intent extra for changing the color for tool bar. Color of type int indicates a Color.
 private static final String CUSTOM_TABS_TOOLBAR_COLOR = "android.support.customtabs.extra.TOOLBAR_COLOR";
 intent.putExtra(CUSTOM_TABS_TOOLBAR_COLOR, color);</code></pre>
@@ -233,7 +233,7 @@ intent.putExtra(CUSTOM_TABS_TOOLBAR_COLOR, color);</code></pre>
 				<p class="sd2_paragraph01">Use standard HTML forms and avoid overriding the ‘enter’ key to make the best use of this feature.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_40">
-					<input type="checkbox" name="show_line_1" id="show_line_5" class="sd2_show_line" checked><label class="sd2_show_line_label" for="show_line_5">Show Lines</label>
+					<input type="checkbox" name="show_line_1" id="show_line_5" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_5">Show Lines</label>
 					<pre class="line-numbers"><code class="language-html">&lt;form action="example_form.asp"&gt;
 ID: &lt;input type="text" name="UserName" value="username">&lt;br/&gt;
 Password: &lt;input type="password" name="PassWord" value="password">&lt;br/&gt;>
@@ -253,8 +253,8 @@ Password: &lt;input type="password" name="PassWord" value="password">&lt;br/&gt;
 					<li><p>The icon displayed is determined following this priority:</p></li>
 				</ul>
 				<ol class="sd2_order_list">
-					<li><p>The apple-touch-icon declared in the content</p><pre class="code sd2_strong">(ex) &lt;link rel="apple-touch-icon" href="/mytouchicon.png"&gt;</pre></li>
-					<li><p>The favicon set up in the content</p><pre class="code sd2_strong">(ex) &lt;link rel="icon" href="/myicon.png"&gt;</pre></li>
+					<li><p>The apple-touch-icon declared in the content</p><pre class="sd2_code sd2_strong">(ex) &lt;link rel="apple-touch-icon" href="/mytouchicon.png"&gt;</pre></li>
+					<li><p>The favicon set up in the content</p><pre class="sd2_code sd2_strong">(ex) &lt;link rel="icon" href="/myicon.png"&gt;</pre></li>
 					<li><p>A simple icon created by the Samsung QuickAccess server.</p></li>
 				</ol>
 			</div><!-- //sd2_guide_wrap -->

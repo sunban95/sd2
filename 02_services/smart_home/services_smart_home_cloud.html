@@ -62,11 +62,11 @@
 			<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_essential">
 				<h4 class="sd2_body_min_title1">Essential Contents</h4>
 				<ul class="sd2_link_list sd2_line">
-					<li class="sd2_gray"><a href="technical/smart_home_api_spec.html" class="sd2_page">API Specification</a></li>
+					<li class="sd2_gray sd2_line"><a href="technical/smart_home_api_spec.html" class="sd2_page">API Specification</a></li>
 					<li class="sd2_gray"><a href="technical/smart_home_api_feature.html" class="sd2_page">API Feature List</a></li>
-					<li class=""><a href="technical/smart_home_ui.html" class="sd2_page">UI Guidelines</a></li>
+					<li class="sd2_line"><a href="technical/smart_home_ui.html" class="sd2_page">UI Guidelines</a></li>
 					<li class=""><a href="technical/smart_home_logo.html" class="sd2_page">Logo Guidelines</a></li>
-					<li class="sd2_gray"><a href="technical/smart_home_terms.html" class="sd2_page">Developer Terms of Service</a></li>
+					<li class="sd2_gray sd2_line"><a href="technical/smart_home_terms.html" class="sd2_page">Developer Terms of Service</a></li>
 					<li class="sd2_gray"><a href="technical/smart_home_img.html" class="sd2_page">Smart Appliance UI Image Assets</a></li>
 					<li class="sd2_w100"><a href="technical/smart_home_3rdparty.html" class="sd2_page">Samsung Account 3rd Party Integration Development</a></li>
 				</ul>
@@ -81,16 +81,155 @@
 						<p class="sd2_paragraph01">The Smart Home Cloud API provides methods to control and monitor Samsung Smart Home devices. Through this Smart Home Control Service, a partner’s application can connect with various devices and provide enhanced services to their customer.</p>
 						<p class="sd2_paragraph01">Smart Home Control Service operates through Cloud-to-Cloud integration between the Partner Cloud and Smart Home Cloud.</p>
 						<!-- img_c -->
-						<div class="sd2_img_c sd2_m_b_25">
+						<div class="sd2_img_c sd2_mb_40">
 							<img src="/images/services/content/smarthome_visual_bana.jpg" width="490" height="200" alt="Smart Home Cloud API Overview" />
 						</div><!-- //img_c -->
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
+						<h4 class="sd2_body_min_title1">Smart Home Cloud API Specification</h4>
+						<p class="sd2_paragraph01 sd2_mb_30">Samsung provides several REST API for Partners so they are able to integrate their system to the Samsung Smart Home Cloud. The body of the REST API will use a standard JSON document. So partner developers will need to understand the JSON document, called by Smart Home Data Model.</p>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_mb_40">
+							<img src="/images/services/content/smarthome_01.jpg" width="720" height="328" alt="Smart Home Cloud API Specification" />
+						</div><!-- //img_c -->
+						<h4 class="sd2_body_min_title1">Smart Home Data Model</h4>
+						<p class="sd2_paragraph01 sd2_mb_30">The Smart Home Data Model is a data structure formatted as JSON to represent Samsung Smart Home devices like refrigerators, washers, air conditioners, air purifiers, robot vacuum cleaners, dryers, and ovens.</p>
+						<h5 class="sd2_body_min_title2 sd2_mb_30">Steps to integrate the Partner Cloud and Smart Home Cloud</h5>
+						<table class="sd2_table sd2_table_smarthome">
+							<colgroup>
+								<col width="150px"/><col/>
+							</colgroup>
+							<tr>
+								<th colspan="2" class="sd2_step_tit sd2_pd_15">Steps to integrate the Partner Cloud and Smart Home Cloud</th>
+							</tr>
+							<tr>
+								<td class="sd2_step_tit"><span class="sd2_step_no">01</span> Authentication</td>
+								<td>In order to connect with Samsung devices, your system needs to follow the Samsung Account authorization process. It means that you are able to communicate with the Samsung Home Cloud if it has a valid token obtained through OAuth process.</td>
+							</tr>
+							<tr>
+								<td class="sd2_step_tit"><span class="sd2_step_no">02</span> Discovery</td>
+								<td>A partner can obtain a list of all of Smart Home devices registered to a specific user. It contains detailed information such as type, name, model, version and resources.</td>
+							</tr>
+							<tr>
+								<td class="sd2_step_tit"><span class="sd2_step_no">03</span> Sensing</td>
+								<td>A partner can query information about the status of a specific device. The Sensing API provides the latest resource status of a specific device.</td>
+							</tr>
+							<tr>
+								<td class="sd2_step_tit"><span class="sd2_step_no">04</span> Subscription</td>
+								<td>A partner can register for notification of changes in Smart Home device and then receive the data in real time.</td>
+							</tr>
+							<tr>
+								<td class="sd2_step_tit"><span class="sd2_step_no">05</span> Notification</td>
+								<td>If Samsung Home Cloud detects change in device status, it sends the notification and status data to partners.</td>
+							</tr>
+							<tr>
+								<td class="sd2_step_tit"><span class="sd2_step_no">06</span> Control</td>
+								<td>A partner can control a specific device using the Control API of the Smart Home Cloud.</td>
+							</tr>
+							<tr>
+								<td class="sd2_step_tit"><span class="sd2_step_no">07</span> Unsubscription</td>
+								<td>A partner can unsubscribe from receiving notifications about a device’s change in status. Then, the partner will not receive any notification data from the device.</td>
+							</tr>
+						</table>
+						<p class="sd2_paragraph01 sd2_mb_30">* For more detailed information, please register as a partner.</p>
+						<h4 class="sd2_body_min_title1">Partnership Request</h4>
+						<p class="sd2_paragraph01 sd2_mb_0">To get the Smart Home Cloud API</p>
+						<!-- sd2_howto_wrap -->
+						<div class="sd2_howto_wrap sd2_howto_col_6 sd2_mb_40">
+							<!-- sd2_howto_container -->
+							<ul class="sd2_howto_container">
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_01">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Register<br/>
+											Samsung Account
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										If you don’t have Samsung Account, you can create new account <a href="http://developer.samsung.com/signup" class="sd2_strong">here</a>.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_02">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Apply Partnership<br/>
+											Request
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Complete required information and submit the <a href="http://developer.samsung.com/mypartnerzone/overview.do?sdkCd=12" class="sd2_strong">Request page</a>.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_03">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Confirm an approval<br/>
+											e-mail
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										If your request for Partnership Request is approved, you will receive an approval e-mail.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_04">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Develop App<br/>
+											and Server
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Develop your application and server together with the API specification and reference document
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_04">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Submit<br/>
+											Your App
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Submit your application for verification
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_06">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Ready for<br/>
+											Service
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Your service is ready to launch as you receive an approval e-mail.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+							</ul><!-- //sd2_howto_container -->
+						</div><!-- //sd2_howto_wrap -->
 					</div><!-- //sd2_overview_content -->
 				</div><!-- //sd2_overview_container -->
 				<div class="sd2_more_less_btn sd2_close">
@@ -115,7 +254,7 @@
 				<h4 class="sd2_body_min_title1">Notification URL</h4>
 				<p class="sd2_paragraph01">Enter URL to get a event notification of appliances from Samsung Smart Home Cloud (443 and 80 port only supported)<br/>Example: http://201.1.1.1:80/callback</p>
 				<div class="sd2_svc_btn_wrap">
-					<input type="text" style="width: 642px;" class="sd2_input-text"/>
+					<input type="text" style="width: 642px;" name="notUrl" class="sd2_input-text"/>
 					<a href="#" class="sd2_btn_submit" style="top: 3px;">Confirm</a>
 				</div>
 			</div><!-- //nt_wrap -->

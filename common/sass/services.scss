@@ -4,20 +4,18 @@
 	padding: 30px 0 0 0;
 	.sd2_howto_container {
 		table-layout: fixed;
-		.sd2_howoto_item {
-			width: 20%;
+		.sd2_howto_item {
 			display: table-cell;
 			padding-right: 2px;
 
-
 			.sd2_howto_header {
 				border-bottom: 1px solid #3f3f3f;
-				padding-bottom: 62px;
+				padding-bottom: 54px;
 				text-align: center;
 				position: relative;
 
 				.sd2_howto_title {
-					font-size: 14px;
+					font-size: 12px;
 					line-height: 1.6;
 				}
 			}
@@ -33,78 +31,121 @@
 			.sd2_howto_cnt {
 				font-size: 12px;
 				line-height: 1.6;
-				padding: 15px 10px 0 10px;
+				padding: 14px 10px 0 10px;
+				//word-break: break-all;
 			}
 		}
 
-		.sd2_howoto_item.sd2_howoto_01 {
+		.sd2_howto_item.sd2_howto_svc_01 {
 			.sd2_howto_header {
-				background:url(../../images/services/content/ico_howto_01.png) no-repeat center bottom 15px;
+				background:url(../../images/services/content/ico_howto_01.png) no-repeat center bottom 12px;
+			}
+		}
+		.sd2_howto_item.sd2_howto_svc_02 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_02.png) no-repeat center bottom 12px;
+			}
+		}
+		.sd2_howto_item.sd2_howto_svc_03 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_03.png) no-repeat center bottom 12px;
+			}
+		}
+		.sd2_howto_item.sd2_howto_svc_04 {
+			.sd2_howto_header {
+				background:url(../../images/services/content/ico_howto_04.png) no-repeat center bottom 12px;
 			}
 		}
 
-		.sd2_howoto_item.sd2_howoto_02 {
+		.sd2_howto_item.sd2_howto_svc_05 {
 			.sd2_howto_header {
-				background:url(../../images/services/content/ico_howto_02.png) no-repeat center bottom 15px;
+				background:url(../../images/services/content/ico_howto_05.png) no-repeat center bottom 12px;
 			}
 		}
 
-		.sd2_howoto_item.sd2_howoto_03 {
+		.sd2_howto_item.sd2_howto_svc_06 {
 			.sd2_howto_header {
-				background:url(../../images/services/content/ico_howto_03.png) no-repeat center bottom 15px;
-			}
-		}
-
-		.sd2_howoto_item.sd2_howoto_04 {
-			.sd2_howto_header {
-				background:url(../../images/services/content/ico_howto_04.png) no-repeat center bottom 15px;
-			}
-		}
-
-		.sd2_howoto_item.sd2_howoto_05 {
-			.sd2_howto_header {
-				background:url(../../images/services/content/ico_howto_05.png) no-repeat center bottom 15px;
+				background:url(../../images/services/content/ico_howto_06.png) no-repeat center bottom 13px;
 			}
 		}
 
 		@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
-			.sd2_howoto_item.sd2_howoto_01 {
+			.sd2_howto_item.sd2_howto_svc_01 {
 				.sd2_howto_header {
 					background-image:url(../../images/services/content/ico_howto_01@2x.png);
 					background-size: 35px 35px;
 				}
 			}
-
-			.sd2_howoto_item.sd2_howoto_02 {
+			.sd2_howto_item.sd2_howto_svc_02 {
 				.sd2_howto_header {
 					background-image:url(../../images/services/content/ico_howto_02@2x.png);
 					background-size: 35px 35px;
 				}
 			}
-
-			.sd2_howoto_item.sd2_howoto_03 {
+			.sd2_howto_item.sd2_howto_svc_03 {
 				.sd2_howto_header {
 					background-image:url(../../images/services/content/ico_howto_03@2x.png);
 					background-size: 35px 35px;
 				}
 			}
-
-			.sd2_howoto_item.sd2_howoto_04 {
+			.sd2_howto_item.sd2_howto_svc_04 {
 				.sd2_howto_header {
 					background-image:url(../../images/services/content/ico_howto_04@2x.png);
 					background-size: 35px 35px;
 				}
 			}
-
-			.sd2_howoto_item.sd2_howoto_05 {
+			.sd2_howto_item.sd2_howto_svc_05 {
 				.sd2_howto_header {
 					background-image:url(../../images/services/content/ico_howto_05@2x.png);
 					background-size: 35px 35px;
 				}
 			}
+			.sd2_howto_item.sd2_howto_svc_06 {
+				.sd2_howto_header {
+					background-image:url(../../images/services/content/ico_howto_06@2x.png);
+					background-size: 37px 35px;
+				}
+			}
 		}
 	}
 }
+.sd2_howto_wrap.sd2_howto_col_2 {
+	.sd2_howto_item {
+		width: 50%;
+	}
+}
+.sd2_howto_wrap.sd2_howto_col_3 {
+	.sd2_howto_item {
+		width: 33.3333333%;
+	}
+}
+.sd2_howto_wrap.sd2_howto_col_4 {
+	.sd2_howto_item {
+		width: 25%;
+	}
+}
+.sd2_howto_wrap.sd2_howto_col_5 {
+	.sd2_howto_item {
+		width: 20%;
+	}
+}
+.sd2_howto_wrap.sd2_howto_col_6 {
+	.sd2_howto_item {
+		width: 16.6666666%;
+	}
+}
+.sd2_howto_wrap.sd2_no_icon {
+	.sd2_howto_container {
+		.sd2_howto_item {
+			.sd2_howto_header {
+				padding-bottom: 14px;
+			}
+		}
+	}
+}
+
+
+
 
 
 
@@ -126,6 +167,13 @@
 
 
 
+
+
+
+
+
+
+
 /*service feature*/
 .sd2_svc_feature_wrap {
 	padding: 40px 28px;
@@ -143,8 +191,6 @@
 		}
 
 		.sd2_feature_btn_area {}
-
-
 	}
 
 	.sd2_feature_icon {
@@ -157,8 +203,6 @@
 		text-align: center;
 	}
 }
-
-
 .sd2_svc_feature_wrap.sd2_svc_feature_left {
 	padding-right: 0;
 
@@ -179,7 +223,6 @@
 .sd2_svc_feature_wrap.sd2_svc_feature_gray {
 	background: #f4f4f4;
 }
-
 
 .sd2_svc_feature_wrap.sd2_svc_feature_01 .sd2_feature_icon {
 	background:url(../../images/services/content/icon_landing_01_svc.png) no-repeat center top;
@@ -252,5 +295,56 @@
 	.sd2_svc_feature_wrap.sd2_svc_feature_10 .sd2_feature_icon {
 		background-image:url(../../images/services/content/icon_landing_10_view@2x.png);
 		background-size: 120px 90px;
+	}
+}
+
+
+
+
+/*service post*/
+.sd2_post_thumb {
+	padding-bottom: 30px;
+	width: 100%;
+	float: left;
+
+	.sd2_img {
+		img {
+			width: 170px;
+			height: auto;
+		}
+	}
+	.sd2_post_cnt {
+		.sd2_post_title {
+			font:16px 'sm-600';
+			margin-bottom: 23px
+			;
+			.sd2_new {
+
+			}
+		}
+		.sd2_post_txt {
+			margin: 7px 0 0 0;
+		}
+		.sd2_post_txt:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.sd2_post_thumb.sd2_post_left {
+	.sd2_img {
+		float: left;
+		margin-right: 30px;
+	}
+	.sd2_post_cnt {
+		padding-left: 200px;
+	}
+}
+.sd2_post_thumb.sd2_post_right {
+	.sd2_img {
+		float: right;
+		margin-left: 30px;
+	}
+	.sd2_post_cnt {
+		padding-right: 200px;
 	}
 }

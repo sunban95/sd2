@@ -71,9 +71,9 @@
 							</div>
 						</a>
 					</li>
-					<li><a href="technical/penup_release.html" class="sd2_page">Release Note</a></li>
+					<li class="sd2_line"><a href="technical/penup_release.html" class="sd2_page">Release Note</a></li>
 					<li><a href="http://img-developer.samsung.com/onlinedocs/penup/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class="sd2_gray"><a href="technical/penup_programming_guide.html" class="sd2_page">Programming Guide</a></li>
+					<li class="sd2_gray sd2_line"><a href="technical/penup_programming_guide.html" class="sd2_page">Programming Guide</a></li>
 					<li class="sd2_gray"><a href="#" class="">&nbsp;</a></li>
 				</ul>
 			</div><!-- //ec_wrap -->
@@ -87,16 +87,135 @@
 						<p class="sd2_paragraph01">PEN.UP is a creative social network service for digital arts. Users can share their own artworks as the artist, follow other artists, collect artworks they like, and communicate with other users using comments and the fanbook. If you want to find out more about the PEN.UP service, please visit <a href="https://www.penup.com" target="_blank" class="sd2_link_go">PEN.UP’s Website</a>.</p>
 						<p class="sd2_paragraph01">The PEN.UP SDK helps to integrate PEN.UP features into your application. The deep linking feature, provided when an artwork is posted using the PEN.UP SDK, can be a great opportunity to promote your drawing application. This will help many PEN.UP users, who are not familiar with your drawing application, to easily discover and install it.</p>
 						<!-- img_c -->
-						<div class="sd2_img_c sd2_m_b_25">
+						<div class="sd2_img_c sd2_mb_40">
 							<img src="/images/services/content/ss_penup_img01.jpg" width="235" height="184" alt="Samsung PEN.UP Overview" />
 						</div><!-- //img_c -->
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
+						<h5 class="sd2_body_min_title2">What is PEN.UP SDK?</h5>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_mb_40">
+							<img src="/images/services/content/ss_penup_img02.jpg" width="604" height="289" alt="PEN.UP Diagram" />
+						</div><!-- //img_c -->
+						<p class="sd2_paragraph01">The PEN.UP SDK enables the following features:</p>
+						<ol class="sd2_order_list sd2_mb_40">
+							<li><p class="sd2_mb_10">Authentication</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li class="sd2_pb_0"><p>Connecting to the PEN.UP service based on OAuth 2.0</p></li>
+									<li class="sd2_pb_0"><p>Supporting Single Sign-On (SSO) with the PEN.UP application whose version is 1.5.0 or above</p></li>
+								</ul>
+							</li>
+							<li><p>Post PEN.UP resources</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li class="sd2_pb_0"><p>Posting a new artwork or adding a new collection</p></li>
+									<li class="sd2_pb_0"><p>Post Dialog which provides a simple interface to post an artwork easily</p></li>
+									<li class="sd2_pb_0"><p>Deep linking to your application when posting an artwork</p></li>
+								</ul>
+							</li>
+							<li><p>Access to PEN.UP resources</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li class="sd2_pb_0"><p>Getting information such as artists, artworks, collections, and tags</p></li>
+								</ul>
+							</li>
+						</ol>
+						<h5 class="sd2_body_min_title2 sd2_mb_0">How Can I Develop an App Using PEN.UP SDK?</h5>
+						<!-- sd2_howto_wrap -->
+						<div class="sd2_howto_wrap sd2_howto_col_5">
+							<!-- sd2_howto_container -->
+							<ul class="sd2_howto_container">
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_01">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Register<br/>
+											Your App
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										For issuing your client ID, you should first register your app <a href="http://developer.samsung.com/penup/appregistration" class="sd2_strong">here</a>.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_02">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Download<br/>
+											PEN.UP SDK
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Download the PEN.UP SDK <a href="http://developer.samsung.com/penup#penupwebsite" class="sd2_strong">here</a>.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_03">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Develop<br/>
+											Your App
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Develop your application using PEN.UP SDK. You can refer to the <a href="http://developer.samsung.com/technical-doc/view.do?v=T000000166L" class="sd2_strong">programming guide</a>.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_04">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Test<br/>
+											Your App
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										You should test your app with debug client ID first.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_05">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Upload Your App<br/>
+											to Google Play
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										You can upload your app to Google Play. (The deep link is supported only for Google Play.)
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+							</ul><!-- //sd2_howto_container -->
+						</div><!-- //sd2_howto_wrap -->
+						<!-- pre_paragraph_wrap -->
+						<div class="sd2_pre_paragraph_wrap">
+							<!-- note_wrap -->
+							<div class="sd2_note_wrap">
+								<span class="sd2_title">Note</span>
+								<!-- note_con -->
+								<div class="sd2_note_con">
+									<p>If your application can post an artwork to PEN.UP using PEN.UP SDK, please email us at <a href="mailto:penup.sdk@samsung.com">penup.sdk@samsung.com</a> after uploading your application to Google Play. Then, after the verification process, we’ll expose your application more in PEN.UP.</p>
+								</div><!-- //note_con -->
+							</div><!-- //note_wrap -->
+						</div><!-- //pre_paragraph_wrap -->
+						<h5 class="sd2_body_min_title2">Restrictions</h5>
+						<ul class="sd2_con_list sd2_oneline">
+							<li class="sd2_pb_0"><p>Android SDK version: Android 4.0 Ice Cream Sandwich (API level 14) or above</p></li>
+							<li class="sd2_pb_0"><p>Supported devices : Android 4.0 ICS devices or above</p></li>
+						</ul>
 					</div><!-- //sd2_overview_content -->
 				</div><!-- //sd2_overview_container -->
 				<div class="sd2_more_less_btn sd2_close">
@@ -119,23 +238,6 @@
 					<li ><a href="#" class="sd2_down">PEN.UP <span class="sd2_bar">Sample App</span></a></li>
 				</ul>
 			</div><!-- //sample_wrap -->
-			<!-- video_wrap -->
-			<div class="sd2_video_wrap sd2_con_margin sd2_con_padding" id="sd2_video">
-				<h4 class="sd2_body_min_title1">Video</h4>
-				<ul class="sd2_video_list">
-					<li>
-						<a href="#">
-							<dl>
-								<dt><img src="../../images/galaxy/content/video.png" alt="" /></dt>
-								<dd>
-									<div class="sd2_title"><em>Make the world colorful with PEN.UP SDK</em>Apr 17, 2015</div>
-									<div class="sd2_explain">Let your imagination run wild, make it come to life in your artwork, and share it with other artists like you. Artworks created by using the S Pen can be shared to your network with the PEN.UP SDK. This provides a new avenue for creative people to come together and share their talents. Watch the walkthrough to have an idea on how to implement the PEN.UP SDK in your own apps together with the Pen SDK.</div>
-								</dd>
-							</dl>
-						</a>
-					</li>
-				</ul>
-			</div><!-- //video_wrap -->
 			<!-- faq_wrap -->
 			<div class="sd2_faq_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_faq">
 				<h4 class="sd2_body_min_title1">FAQ</h4>
@@ -189,6 +291,23 @@
 					<a href="#">3</a>
 				</div>
 			</div><!-- //faq_wrap -->
+			<!-- video_wrap -->
+			<div class="sd2_video_wrap sd2_con_margin sd2_con_padding" id="sd2_video">
+				<h4 class="sd2_body_min_title1">Video</h4>
+				<ul class="sd2_video_list">
+					<li>
+						<a href="#">
+							<dl>
+								<dt><img src="../../images/galaxy/content/video.png" alt="" /></dt>
+								<dd>
+									<div class="sd2_title"><em>Make the world colorful with PEN.UP SDK</em>Apr 17, 2015</div>
+									<div class="sd2_explain">Let your imagination run wild, make it come to life in your artwork, and share it with other artists like you. Artworks created by using the S Pen can be shared to your network with the PEN.UP SDK. This provides a new avenue for creative people to come together and share their talents. Watch the walkthrough to have an idea on how to implement the PEN.UP SDK in your own apps together with the Pen SDK.</div>
+								</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+			</div><!-- //video_wrap -->
 			<!-- event_wrap -->
 			<div class="sd2_event_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_event">
 				<h4 class="sd2_body_min_title1">Event material</h4>

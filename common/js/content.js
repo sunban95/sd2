@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(".sd2_forum_list").fadeList();
 	$(".sd2_support_list").fadeList();
 	$(".sd2_select_btn").selectBox();
-	$(".sd2_show_line").showLine();
+	$(".sd2_show_line").showLine(false);
 });
 
 (function($){
@@ -163,14 +163,36 @@ $(document).ready(function(){
 		return this; 
 	}
 
-	function ShowLine(selector){
+
+
+
+	function ShowLine(selector, isShowLine){
 		this.showCheckbox=null;
-		this.init(selector);
+		if(window.Prism) {
+			this.init(selector, isShowLine);
+		} else {
+			return;
+		}
 	}
 
-	ShowLine.prototype.init=function(selector){
+	ShowLine.prototype.init=function(selector, isShowLine){
 		this.showCheckbox=$(selector);
 		this.eventDefine();
+
+		if(!isShowLine) { // 라인 숨기기
+			setTimeout(function() {
+				if ("createEvent" in document) {
+					var evt = document.createEvent("HTMLEvents");
+					evt.initEvent("change", false, true);
+					$(selector)[0].dispatchEvent(evt);
+				} else {
+					$(selector)[0].fireEvent("onchange");
+				}
+			}, 100);
+			this.showCheckbox[0].checked = false;
+		} else { // 라인 표기
+			this.showCheckbox[0].checked = true;
+		}
 	}
 
 	ShowLine.prototype.eventDefine=function(){
@@ -181,18 +203,14 @@ $(document).ready(function(){
 				lineRows = $(this).closest(".sd2_code_wrap").find(".line-numbers-rows"),
 				linePre = $(this).closest(".sd2_code_wrap").find("pre");
 
-
 			lineRows.toggle();
 			linePre.toggleClass("line-numbers");
-
-
-
 			return false;
 		})
 	}
-	$.fn.showLine=function(){
+	$.fn.showLine=function(isShowLine){
 		this.each(function(index){
-			var showLine=new ShowLine(this);
+			var showLine=new ShowLine(this, isShowLine);
 		})
 		return this;
 	}

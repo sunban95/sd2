@@ -91,22 +91,22 @@
 					</li>
 				</ul>
 				<h5 class="sd2_body_min_title2">Android</h5>
-				<ul class="sd2_link_list sd2_line sd2_gray sd2_mb_30">
-					<li class=""><a href="technical/android/smart_connectivity_android_release.html" class="sd2_page">Release Note</a></li>
-					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class=""><a href="technical/android/smart_connectivity_android_guide.html" class="sd2_page">Programming Guide</a></li>
+				<ul class="sd2_link_list sd2_line sd2_mb_30">
+					<li class="sd2_gray sd2_line"><a href="technical/android/smart_connectivity_android_release.html" class="sd2_page">Release Note</a></li>
+					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_line"><a href="technical/android/smart_connectivity_android_guide.html" class="sd2_page">Programming Guide</a></li>
 				</ul>
 				<h5 class="sd2_body_min_title2">Tizen</h5>
-				<ul class="sd2_link_list sd2_line sd2_gray sd2_mb_30">
-					<li class=""><a href="technical/tizen/smart_connectivity_tizen_release.html" class="sd2_page">Release Note</a></li>
-					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class=""><a href="technical/tizen/smart_connectivity_tizen_guide.html" class="sd2_page">Programming Guide</a></li>
+				<ul class="sd2_link_list sd2_line sd2_mb_30">
+					<li class="sd2_gray sd2_line"><a href="technical/tizen/smart_connectivity_tizen_release.html" class="sd2_page">Release Note</a></li>
+					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_line"><a href="technical/tizen/smart_connectivity_tizen_guide.html" class="sd2_page">Programming Guide</a></li>
 				</ul>
 				<h5 class="sd2_body_min_title2">Windows</h5>
-				<ul class="sd2_link_list sd2_line sd2_gray">
-					<li class=""><a href="technical/windows/smart_connectivity_windows_release.html" class="sd2_page">Release Note</a></li>
-					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class=""><a href="technical/windows/smart_connectivity_windows_guide.html" class="sd2_page">Programming Guide</a></li>
+				<ul class="sd2_link_list sd2_line">
+					<li class="sd2_gray sd2_line"><a href="technical/windows/smart_connectivity_windows_release.html" class="sd2_page">Release Note</a></li>
+					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_line"><a href="technical/windows/smart_connectivity_windows_guide.html" class="sd2_page">Programming Guide</a></li>
 				</ul>
 			</div><!-- //ec_wrap -->
 			<!-- overview_wrap -->
@@ -118,16 +118,176 @@
 						<h4 class="sd2_body_min_title1">Overview</h4>
 						<p class="sd2_paragraph01">Smart Connectivity provides a reliable data channel between different kinds of devices which are connected to the internet using 3G or 4G or Wi-Fi and located across the globe. The devices can join as a group using unique groupId and communicate using data channel. The devices which are joined with same groupID can see each other; share the message(s), files, contents, connection management, group session lifetime management, peer management etc. The devices which are connected with different networks and the network may be behind the firewall and/or NAT, in this case Smart Connectivity SDK helps the devices to communicate with each other seamlessly.</p>
 						<!-- img_c -->
-						<div class="sd2_img_c sd2_m_b_25">
+						<div class="sd2_img_c sd2_mb_30">
 							<img src="/images/services/content/img1_connectivity_150722.jpg" width="660" height="340" alt="Smart Connectivity Overview" />
 						</div><!-- //img_c -->
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
+						<h4 class="sd2_body_min_title1">What Smart Connectivity SDK Provides to Developers/Partners?</h4>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+							<li><p>Smart Connectivity SDK provides the API’s, using them developer or partners can leverage the smart connectivity functionality in their applications.</p></li>
+							<li><p>The SDK has a capability to notify about peer status when their status changes i.e. from online to offline or vice versa</p></li>
+							<li><p>SDK provides a reliable peer connection using standard protocols like TCP or UDP or RELAY. The protocol is selected by SDK based on the NAT associated with peers.</p></li>
+							<li><p>Applications can be developed using SDK for several device categories like Smart phone, Smart TV, PC, Tablets, Laptops and Wearable devices and platforms like Windows, Tizen, and Android</p></li>
+						</ul>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_mb_30">
+							<img src="/images/services/content/img2_connectivity_150722.jpg" width="662" height="227" alt="Figure 1 Introduction of Smart Connectivity SDK" />
+							<div class="sd2_figure">Figure 1 Introduction of Smart Connectivity SDK</div>
+						</div><!-- //img_c -->
+						<p class="sd2_paragraph01 sd2_mb_40">Smart Connectivity SDK offers the following features:</p>
+						<h5 class="sd2_body_min_title2">Group Management</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+							<li><p>SDK provides API to create unique groupID, which can be used for forming a group.</p></li>
+							<li><p>Joining into a group by groupID.</p></li>
+							<li><p>Display the list of joined groups.</p></li>
+							<li><p>Provides a list of group ID’s created by particular user.</p></li>
+							<li><p>Extend the lifetime of groupID.</p></li>
+						</ul>
+						<h5 class="sd2_body_min_title2">Peer Management</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+							<li><p>Provides an API to list the peers associated with a particular groupID.</p></li>
+							<li><p>Provides an API to get the peer information.</p></li>
+						</ul>
+						<h5 class="sd2_body_min_title2">Connection Management</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+							<li><p>Peer devices which are using same groupID and connected to each other can list all active connection information.</p></li>
+						</ul>
+						<h5 class="sd2_body_min_title2">Messaging Capability</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+							<li><p>The peers belongs to same group can send and receive the messages from other peers without creating a data channel.</p></li>
+						</ul>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_mb_40">
+							<img src="/images/services/content/img3_connectivity_150722.jpg" width="662" height="274" alt="Figure 2 Send message without connection" />
+							<div class="sd2_figure">Figure 2 Send message without connection</div>
+						</div><!-- //img_c -->
+						<h5 class="sd2_body_min_title2">Data Sharing</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+							<li><p>The peers can share the data each other after establishing a data channel.</p></li>
+						</ul>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_mb_40">
+							<img src="/images/services/content/img4_connectivity_150722.jpg" width="660" height="342" alt="Figure 3 File transfer between peers" />
+							<div class="sd2_figure">Figure 3 File transfer between peers</div>
+						</div><!-- //img_c -->
+						<h5 class="sd2_body_min_title2">Data Encryption</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+							<li><p>The peers can enable or disable the encryption of data before sharing to other peers.</p></li>
+						</ul>
+						<h4 class="sd2_body_min_title1">Pre-requisite</h4>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
+							<li><p>Android V4.0 (Ice Cream Sandwich API level 14) or higher.</p></li>
+						</ul>
+						<h4 class="sd2_body_min_title1">Request for Corporate Partnership</h4>
+						<p class="sd2_paragraph01 sd2_mb_0">In the current release, the Smart Connectivity SDK and extension SDKs(optional) are available for corporate partners.</p>
+						<!-- sd2_howto_wrap -->
+						<div class="sd2_howto_wrap sd2_howto_col_6">
+							<!-- sd2_howto_container -->
+							<ul class="sd2_howto_container">
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_01">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Register<br/>
+											Samsung Account
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										If you don’t have Samsung Account, you can create new account <a href="http://developer.samsung.com/signup" class="sd2_strong">here</a>.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_02">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Apply Partnership<br/>
+											Request
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										To request for access right and app id, please apply through “<a href="http://developer.samsung.com/mypartnerzone/overview.do?sdkCd=09" class="sd2_strong">SDK Request</a>” menu.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_03">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Confirm an approval<br/>
+											e-mail
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										If your request for Partnership Request is approved by the Smart Connectivity SDK team, you will receive an approval e-mail. The approval e-mail will be sent to your Samsung Account email.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_04">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Apply for App<br/>
+											Id and App Secret
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Apply for your own app id and app secret from <a href="http://developer.samsung.com/account" class="sd2_strong">here</a>. And share us the app id and app secret, we’ll add them to our SCS server.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_05">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Develop<br/>
+											an App
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Develop your application with Smart Connectivity SDK.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_06">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Register Your App<br/>
+											in GALAXY Apps
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Go to <a href="http://seller.samsungapps.com/" target="_blank" class="sd2_link_go">GALAXY Apps Seller Office</a> and register your application in GALAXY Apps
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+							</ul><!-- //sd2_howto_container -->
+						</div><!-- //sd2_howto_wrap -->
+						<!-- pre_paragraph_wrap -->
+						<div class="sd2_pre_paragraph_wrap sd2_mb_40">
+							<!-- note_wrap -->
+							<div class="sd2_note_wrap">
+								<span class="sd2_title">Note</span>
+								<!-- note_con -->
+								<div class="sd2_note_con">
+									<p>Please email us at <a href="mailto:scssupport@samsung.com">scssupport@samsung.com</a> for any questions regarding the Smart Connectivity SDK.</p>
+								</div><!-- //note_con -->
+							</div><!-- //note_wrap -->
+						</div><!-- //pre_paragraph_wrap -->
 					</div><!-- //sd2_overview_content -->
 				</div><!-- //sd2_overview_container -->
 				<div class="sd2_more_less_btn sd2_close">

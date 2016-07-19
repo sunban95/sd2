@@ -200,7 +200,7 @@ pre.line-numbers > code {
 .line-numbers .line-numbers-rows {
 	position: absolute;
 	pointer-events: none;
-	top: -6px;
+	top: -2px;
 	font-family: 'sd-400' !important;
 	font-size: 100%;
 	left: -3.8em;

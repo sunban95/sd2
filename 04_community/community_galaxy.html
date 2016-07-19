@@ -23,6 +23,7 @@
 		</script>
 		<!-- //Import common templates -->
 		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
 		<script type="text/javascript" src="/common/js/content.js"></script>
 	</head>
 	<body>
@@ -307,7 +308,7 @@
 			var name=$this.attr("name");
 			var box=boxWrap.find('div[data-name='+name+']');
 			box.toggle();
-			$this.toggleClass("active");
+			$this.toggleClass("sd2_active");
 		}
 
 		var listItemSel=function(e){
@@ -315,13 +316,13 @@
 			var pageBtn=btn.filter(".page_sel");
 			pageBtn.text(txt); 
 			$(this).parents(".page_sel_box").css("display", "none");
-			pageBtn.removeClass("active");
+			pageBtn.removeClass("sd2_active");
 			return false; 
 		}
 
 		var searchShow=function(){
 			var $this=$(this); 
-			$this.parent().addClass("active");
+			$this.parent().addClass("sd2_active");
 			$this.prev().focus();
 		}
 		init()

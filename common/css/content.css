@@ -21,6 +21,8 @@ table.sd2_table td, table.sd2_table th{border:1px solid #c3c3c3; padding:10px}
 table.sd2_table th, table.sd2_table td{vertical-align:middle; line-height:22px}
 table.sd2_table th{text-align:center; background:#f8f8f8; }
 table.sd2_table td.sub_th{text-align:center; background:#f4f4f4; }
+table.sd2_table + .sd2_tb_script{display:block; text-align:center;font:12px 'sm-400'; color:#666; margin-top:5px}
+table.sd2_table .vertical_t{vertical-align:top}
 
 /*selectbox*/
 .sd2_select_btn{border:none; outline:none; cursor:pointer; text-align:left; font:12px 'sm-400'; color:#333; height:22px; padding:0 24px 0 5px; background:url(../../images/common/icon/select_arr.png) no-repeat right center; border-bottom:1px solid transparent; width:100%; height:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
@@ -255,7 +257,10 @@ table.sd2_table td.sub_th{text-align:center; background:#f4f4f4; }
 .sd2_con_btn a:hover{text-decoration:underline;}
 
 ul.sd2_link_list {overflow:hidden; border:1px solid #f4f4f4; border-top:none; }
-.sd2_link_list li{width:50%; float:left; font:16px 'sm-600' ; box-sizing:border-box; padding: 11px 30px 11px ;}
+.sd2_link_list li{width:50%; float:left; font:16px 'sm-600' ; box-sizing:border-box; padding: 11px 30px 11px ; height:40px;position:relative;}
+.sd2_link_list li.sd2_line:after{content:""; position:absolute; width:1px; height:36px; background:#e6e6e6; right:0; top:3px}
+.sd2_link_list li.sd2_line.sd2_gray:after{content:""; position:absolute; width:1px; height:36px; background:#fff; right:0; top:3px}
+
 .sd2_link_list li.sd2_w100{width:100%; padding: 11px 30px 10px ;}
 .sd2_link_list .sd2_border_r{border-right:1px solid #f4f4f4;  }
 .sd2_link_list .sd2_border_r2{border-right:1px solid #fff;  }
@@ -278,6 +283,7 @@ ul.sd2_link_list {overflow:hidden; border:1px solid #f4f4f4; border-top:none; }
 .sd2_con_list li h5{font:14px 'sm-600' ; color:#333; padding-bottom:12px}
 .sd2_con_list.sd2_oneline li{background-position:left 8px !important}
 .sd2_note_con .sd2_con_list.sd2_oneline li:last-child{margin-bottom:0}
+.sd2_con_list.sd2_narrow li{margin-bottom:2px}
 
 
 /*download가 한줄에 같이 있는 리스트*/
@@ -666,4 +672,12 @@ a.sd2_list_download_btn:hover .sd2_down{background-position:left -73px}
 /*overview -*/
 .sd2_overview_wrap{}
 .sd2_overview_wrap .sd2_overview_container{overflow:hidden}
+
+/*갤럭시 -  Getting Started*/
+.inner_ol li{margin-bottom:5px}
+.inner_ol li p{margin-bottom:15px}
+.sd2_toggle_btn{text-align:right; margin-bottom:5px }
+.sd2_toggle_btn a{font-size:13px; display:inline-block; }
+.sd2_toggle_btn a:hover{color:#0077c8; text-decoration:underline;}
+.sd2_toggle_btn a.active{color:#0077c8;}
 

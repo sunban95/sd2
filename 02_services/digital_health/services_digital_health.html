@@ -73,20 +73,20 @@
 					</li>
 				</ul>
 				<h5 class="sd2_body_min_title2">Health Data</h5>
-				<ul class="sd2_link_list sd2_line sd2_gray sd2_mb_30">
-					<li class=""><a href="/02_services/digital_health/technical/data/digital_health_data_release.html" class="sd2_page">Release Note</a></li>
-					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/health/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class=""><a href="/02_services/digital_health/technical/data/digital_health_data_guide.html" class="sd2_page">Programming Guide</a></li>
+				<ul class="sd2_link_list sd2_line sd2_mb_30">
+					<li class="sd2_gray sd2_line"><a href="/02_services/digital_health/technical/data/digital_health_data_release.html" class="sd2_page">Release Note</a></li>
+					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/health/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_line"><a href="/02_services/digital_health/technical/data/digital_health_data_guide.html" class="sd2_page">Programming Guide</a></li>
 				</ul>
 				<h5 class="sd2_body_min_title2">S Health Service</h5>
-				<ul class="sd2_link_list sd2_line sd2_gray sd2_mb_30">
-					<li class=""><a href="/02_services/digital_health/technical/service/digital_health_service_release.html" class="sd2_page">Release Note</a></li>
-					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/shealth/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class=""><a href="/02_services/digital_health/technical/service/digital_health_service_guide.html" class="sd2_page">Programming Guide</a></li>
+				<ul class="sd2_link_list sd2_line sd2_mb_30">
+					<li class="sd2_gray sd2_line"><a href="/02_services/digital_health/technical/service/digital_health_service_release.html" class="sd2_page">Release Note</a></li>
+					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/shealth/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_line"><a href="/02_services/digital_health/technical/service/digital_health_service_guide.html" class="sd2_page">Programming Guide</a></li>
 					<li class=""><a href="/02_services/digital_health/technical/service/digital_health_service_tracker.html" class="sd2_page">Tracker Design Guidelines</a></li>
 				</ul>
 				<ul class="sd2_link_list sd2_line sd2_gray">
-					<li class=""><a href="/02_services/digital_health/technical/digital_health_branding.html" class="sd2_page">S Health Branding Guidelines</a></li>
+					<li class="sd2_line"><a href="/02_services/digital_health/technical/digital_health_branding.html" class="sd2_page">S Health Branding Guidelines</a></li>
 				</ul>
 			</div><!-- //ec_wrap -->
 			<!-- overview_wrap -->
@@ -100,16 +100,162 @@
 						<p class="sd2_paragraph01">S Health is an engaging app for fitness and wellbeing that runs on Android devices not only Samsung devices. It keeps track of users' health data and data from S Health can be shared with other applications by using Samsung Digital Health SDK. The SDK provides secure access to health data with applicable data types, and it allows sharing health data between applications with user's consent. The application data could be visualized in a form of tile in the main dashboard of S Health.</p>
 						<p class="sd2_paragraph01">Samsung Digital Health SDK is composed of Health Data package and S Health Service package.</p>
 						<!-- img_c -->
-						<div class="sd2_img_c sd2_m_b_25">
+						<div class="sd2_img_c sd2_mb_30">
 							<img src="/images/services/content/post_health_02.jpg" width="384" height="423" alt="Figure 1: Samsung Digital Health service" />
 						</div><!-- //img_c -->
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
-						<p class="sd2_paragraph01">추가 내용</p>
+						<h4 class="sd2_body_min_title1">Samsung Digital Health SDK</h4>
+						<p class="sd2_paragraph01 sd2_mb_40">Samsung Digital Health SDK is composed of Health Data package and S Health Service package.</p>
+						<h5 class="sd2_body_min_title2">Health Data Package</h5>
+						<p class="sd2_paragraph01">Health Data Package has the following features:</p>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+							<li>
+								<h5>Health Data Store</h5>
+								<p>Samsung Digital Health SDK keeps users' health data secure. The health data store handles the service connection and provides APIs to read and write health data.</p>
+							</li>
+							<li>
+								<h5>Health Data Type</h5>
+								<p>You can use <a href="http://img-developer.samsung.com/onlinedocs/health/com/samsung/android/sdk/healthdata/HealthConstants.html" target="_blank" class="sd2_link_go">predefined types</a> and <a href="http://img-developer.samsung.com/health/daily_step_count_trend.html" target="_blank" class="sd2_link_go">custom data types</a> to use the health data store.</p>
+							</li>
+							<li>
+								<h5>Permissions and User Controls</h5>
+								<p>Health data such as steps and exercise is handled only with users' consent and a unified user interface allows users to easily control which data they want to share.</p>
+							</li>
+						</ul>
+						<h5 class="sd2_body_min_title2">S Health Service Package</h5>
+						<p class="sd2_paragraph01">S Health Service Package has the following features:</p>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+							<li>
+								<h5>Posting App’s Tracker Tile</h5>
+								<p class="sd2_paragraph01 sd2_mb_30">The <a href="http://img-developer.samsung.com/onlinedocs/shealth/com/samsung/android/sdk/shealth/tracker/TrackerTileManager.html" target="_blank" class="sd2_link_go">tracker tile manager</a> enables an app to define and post its tracker tile on S health. A tracker tile can consist of the application’s icon, relevant health data, and action button in a form of tile that would be displayed on the main dashboard of S Health. The user has the freedom of enabling as many tracker tiles as he may desire.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_mb_30">
+									<img src="/images/services/content/digital_health_new_img04.jpg" width="550" height="336" alt="Posting App’s Tracker Tile" />
+								</div><!-- //img_c -->
+							</li>
+							<li><h5>Launching S Health Tracker</h5><p>The <a href="http://img-developer.samsung.com/onlinedocs/shealth/com/samsung/android/sdk/shealth/tracker/TrackerTileManager.html" target="_blank" class="sd2_link_go">tracker tile manager</a> helps to launch the specific S Health’s tracker like "Steps" or "Food". The application can check or insert the user’s health data though S Health without a separate feature implementation.</p></li>
+						</ul>
+						<h4 class="sd2_body_min_title1">S Health Partnerships</h4>
+						<h5 class="sd2_body_min_title2">Partner Apps</h5>
+						<p class="sd2_paragraph01">Partner Apps is an exclusive feature of S Health that allows users to discover engaging health and fitness applications. To enable data exchange between your application and S Health and add your application to Partner Apps menu, please <a href="http://developer.samsung.com/health/apiaccess" class="sd2_strong">apply for Partner Apps</a>.</p>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_mb_30">
+							<img src="/images/services/content/digital_health_new_img02.jpg" width="649" height="256" alt="Partner Apps" />
+						</div><!-- //img_c -->
+						<h5 class="sd2_body_min_title2">Partner Accessories</h5>
+						<p class="sd2_paragraph01 sd2_mb_40">Various health and fitness accessories, equipment and connectivity protocols are supported. If you want to join Partner accessories, <a href="mailto:biz.shealth@samsung.com" class="sd2_strong">please let us know.</a>.</p>
+						<h4 class="sd2_body_min_title1">S Health Branding Guidelines</h4>
+						<p class="sd2_paragraph01">We recommend you to keep <a href="http://developer.samsung.com/technical-doc/view.do?v=T000000213L" class="sd2_strong">the branding guidelines</a> when you connect to S Health in your application.</p>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+							<li>
+								<h5>Notification for working with S Health</h5>
+								<p>If your application works with S Health, notify user with the concrete description when your application is launched.</p>
+							</li>
+							<li>
+								<h5>Connection to S Health</h5>
+								<p>When you connect to S Health in your application, mark the entry point for S Health connection and explain benefits of S Health.</p>
+							</li>
+							<li>
+								<h5>Permission setting for used health data types</h5>
+								<p>Samsung Digital Health SDK provides the permission setting UI through permission manager APIs for user to select health data usage for each data type in your application.</p>
+							</li>
+							<li>
+								<h5>S Health’s brand name and icon</h5>
+								<p>When you connect to S Health from your application, use its brand name as S Health and <a href="http://img-developer.samsung.com/contents/cmm/s_health_icon.zip">the official S Health's icon</a>.</p>
+							</li>
+						</ul>
+						<h4 class="sd2_body_min_title1 sd2_mb_0 sd2_pb_0">Developing an Application Using the SDK</h4>
+						<!-- sd2_howto_wrap -->
+						<div class="sd2_howto_wrap sd2_howto_col_4 sd2_mb_30">
+							<!-- sd2_howto_container -->
+							<ul class="sd2_howto_container">
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_01">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											SDK<br/>
+											Download
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Download Samsung Digital Health SDK.<br/><br/>
+										<a href="#" class="sd2_strong">SDK Download</a>
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<!-- sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_02">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											App Development<br/>
+											& Test
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Integrate Samsung Digital Health SDK into your application and test with S Health or SDK’s tools. Please refer to related documents for your convenience.<br/><br/>
+										<a href="http://developer.samsung.com/resources/health" class="sd2_strong">Technical Resources</a>
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_03">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Publish Your<br/>
+											Application
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Publish the application integrated with our SDK in Google Play. If you decide to publish in China, we recommend publishing the application on popular app markets such as Baidu Market or Tencent MyApp.
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+								<li class="sd2_howto_item sd2_howto_svc_04">
+									<!-- sd2_howto_header -->
+									<div class="sd2_howto_header">
+										<!-- sd2_howto_title -->
+										<div class="sd2_howto_title">
+											Apply for<br/>
+											Partner Apps
+										</div><!-- //sd2_howto_title -->
+										<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+									</div><!-- //sd2_howto_header -->
+									<!-- sd2_howto_cnt -->
+									<div class="sd2_howto_cnt">
+										Apply for Partner Apps by filling in the request form. Please make sure to test your application with <a href="http://img-developer.samsung.com/health/Checklist_for_Samsung_Digital_Health_App.xlsx" target="_blank" class="sd2_link_go">checklist</a> before applying for Partner Apps.<br/><br/>
+										<a href="http://developer.samsung.com/health/apiaccess" class="sd2_strong">Apply for Partner Apps</a>
+									</div><!-- //sd2_howto_cnt -->
+								</li><!-- //sd2_howto_item -->
+							</ul><!-- //sd2_howto_container -->
+						</div><!-- //sd2_howto_wrap -->
+						<!-- pre_paragraph_wrap -->
+						<div class="sd2_pre_paragraph_wrap sd2_mb_40">
+							<!-- note_wrap -->
+							<div class="sd2_note_wrap">
+								<span class="sd2_title">Note</span>
+								<!-- note_con -->
+								<div class="sd2_note_con">
+									<p>The developer is responsible for making sure that the application is seamlessly integrated with S Health and is free of bugs.</p>
+								</div><!-- //note_con -->
+							</div><!-- //note_wrap -->
+						</div><!-- //pre_paragraph_wrap -->
+						<h4 class="sd2_body_min_title1">Restrictions</h4>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+							<li><p>The SDK runs on devices with Android 4.4 KitKat (API level 19) or above.</p></li>
+							<li><p>The SDK works with S Health 4.x. The latest S Health is available on all Samsung smartphones since Galaxy S3 and also non-Samsung Android smartphones with KitKat or above. The SDK provides APIs to check whether the device support S health 4.x. See <a href="#sd2_faq" class="sd2_strong">FAQ</a> for more information.</p></li>
+							<li><p>Availability of predefined data types can be different depending on each country's laws.</p></li>
+						</ul>
+						<h4 class="sd2_body_min_title1">Developer Forum</h4>
+						<p class="sd2_paragraph01 sd2_mb_40">Please send any feedback regarding Samsung Digital Health SDK to <a href="mailto:dev.shealth@samsung.com" class="sd2_strong">dev.shealth@samsung.com</a> and email any business-related inquiries to <a href="mailto:biz.shealth@samsung.com" class="sd2_strong">biz.shealth@samsung.com</a>.</p>
+						<h4 class="sd2_body_min_title1">Developer Feedback</h4>
+						<p class="sd2_paragraph01">The developers can discuss technical questions and share tips when developing applications with Samsung Digital Health SDK in <a href="http://developer.samsung.com/forum/en?boardName=SDK&searchSubIdAll=&searchSubId=0000000026&searchType=ALL&listLines=10&topCtgy=04" class="sd2_strong">Samsung Developers Forum</a>.</p>
 					</div><!-- //sd2_overview_content -->
 				</div><!-- //sd2_overview_container -->
 				<div class="sd2_more_less_btn sd2_close">
