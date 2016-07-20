@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/sub.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/galaxy.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li><a href="#">Rich Notification</a></li>
+							<li class="sd2_now"><a href="#">Programming Guide</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Programming Guide <span class="sd2_page_title_side">Jun 23, 2016</span></h3>
+					</div><!-- //page_title -->
+					<div class="sd2_downLoad_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<ul class="sd2_link_list sd2_line sd2_withDown">
+							<li class="sd2_w100 sd2_gray">Rich Notification Programming Guide<a href="#" class="sd2_list_download_btn">Download <span class="sd2_down"></span></a></li>
+						</ul>
+					</div>
+					<!-- guide_text_wrap -->
+					<div class="sd2_guide_text_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<p class="sd2_paragraph01">The goal of the Rich Notifications SDK is to offer a way for developers to reach users with a minimum effort. It provides the flexibility to personalize and brand content, making it compelling and actionable.</p>
+						<div class="sd2_img_c sd2_mb_40">
+							<img src="/images/galaxy/content/post_richnotif_01.jpg" alt="Gear User Interface">
+							<span class="sd2_figure">Figure 1: Gear User Interface</span>
+						</div>
+						<!-- sd2_note_wrap -->
+						<div class="sd2_note_wrap sd2_mt_20">
+							<span class="sd2_title">Note</span>
+							<!-- note_con -->
+							<div class="sd2_note_con">
+								<p>See attached programming guide pdf file for more information.</p>
+							</div><!-- //note_con -->
+						</div><!-- //sd2_note_wrap -->
+					</div><!-- //guide_text_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+</html>

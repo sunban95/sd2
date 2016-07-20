@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/galaxy.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap  sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">Distribute</a></li>
+							<li class="sd2_now"><a href="#">Validation Policy</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Validation Policy</h3>
+					</div><!-- //page_title -->
+					<!-- intro_wrap -->
+					<div class="intro_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">1.	Introduction</h4>
+						<p class="sd2_paragraph01">This document specifies Validation guidelines related to application, widget or any passive content (hereinafter referred to as the “content or “contents”) that runs on mobile devices for Samsung Galaxy Apps.
+						 The Validation guide is organized by the Samsung Galaxy Apps policy for content registration, and by requirement criteria such as usability, functionality, and compatibility.<br />
+						 This document describes the Validation guide which will be used to test content when developers request content registration for Samsung Galaxy Apps.<br />
+						 Samsung will from time to time update and conduct audits to satisfy that this policy is being complied with for stakeholders; users, sellers, mobile operators or the public.<br />
+						 Samsung will complete a detailed review of the content and send feedback to developers with notification e-mails.<br />
+						 Samsung reserves the right to approve or withhold approval and reject any content at its sole discretion. If any registered content is found objectionable by users, or if it DOES NOT comply with Validation guidelines, Samsung reserves the right to remove any content from Samsung Galaxy Apps at any time without seller’s consent. </p>
+					</div><!-- //intro_wrap -->
+					<!-- sd2_process_wrap -->
+					<div class="sd2_process_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<p class="sd2_paragraph01">Following is the renewed (as of Nov, 2015) Validation process ; <br />
+						Validation normally takes a one single day (business day). However, it may take longer if many applications are waiting for validation. Also, Gear, Open Theme and other specialized application may take 5 days or more until validation is done.</p>
+						<!-- img_c -->
+						<div class="sd2_img_c sd2_m_b_25">
+							<img src="/images/galaxy/content/img_ac_policy01_2_en.jpg" alt="" />
+						</div><!-- //img_c -->
+						<h5 class="sd2_body_min_title2">2.1 1<sup>st</sup> Step : Pre Review</h5>
+						<p class="sd2_paragraph01">On the first validation step, validation team examines security issue, contents and basic function test such as installation, execution, uninstallation and etc.</p>
+
+						<h5 class="sd2_body_min_title2">2.2 2<sup>nd</sup> Step : Device Test</h5>
+						<p class="sd2_paragraph01">On the second validation step, validation team examines application functions based on functional review criteria. (see 3.1 ~ 3.4)</p>
+					</div><!-- //sd2_process_wrap -->
+					<!-- sd2_policy_wrap -->
+					<div class="sd2_policy_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">3.	Validation Policy</h4>
+						<p class="sd2_paragraph01">Galaxy Apps Validation team review applications based on Validation guide and decide whether or not to approve it. If any application contains any content violates general sentiments or give users an unpleasant feeling, it can be rejected. Also, if any defects are detected after approving, Galaxy Apps Validation Team can suspend the application from Galaxy Apps without seller's consent.</p>
+						<h5 class="sd2_body_min_title2">3.1. Functionality</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.1.1</em><p>Application should be installed on device without error.</p></li>
+							<li><em>3.1.2</em><p>An icon should be displayed on device main menu after installation.</p></li>
+							<li><em>3.1.3</em><p>Application should be removed from the device when uninstalling application.</p></li>
+							<li><em>3.1.4</em><p>Application should provide functions according to the description or help.</p></li>
+							<li><em>3.1.5</em><p>Each function of application should work without malfunction.</p></li>
+							<li><em>3.1.6</em><p>For log-in features, the seller should provide testable account. (ID and password)</p></li>
+							<li><em>3.1.7</em><p>For revision application, user should be able to upgrade without error.</p></li>
+							<li><em>3.1.8</em><p>When resubmitting application, previous defects should be fixed. If resubmitting application without modification with no comments (Comments to Validation Team), it will be rejected. </p></li>
+							<li><em>3.1.9</em><p>If the application is to be installed as an upgrade to an existing application, its version number MUST be higher than that of the existing application.</p></li>
+							<li><em>3.1.10</em><p>Application that is a test version or does not provide any valid functions or hidden functions will be rejected.</p></li>
+							<li><em>3.1.11</em><p>Application that includes malwares such as viruses or that distribute malicious code will be rejected.</p></li>
+							<li><em>3.1.12</em><p>Application that automatically adds homescreen shortcuts or icons on the user’s device for advertising purposes will be rejected.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.2. Usability</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.2.1</em><p>Application should be designed to be valuable, entertaining, unique or informative. If application just offers the simple web site links or puzzles which only changed puzzle board color, it may be rejected.</p></li>
+							<li><em>3.2.2</em><p>Application should minimize user effort. If it is not easy to understand due to complex interface, it may be rejected.</p></li>
+							<li><em>3.2.3</em><p>Application should be designed by considering aesthetic factors. UIs in application should be arranged harmoniously and use proper size or color in order to enhance readability.</p>
+								<ul class="sd2_con_list sd2_oneline sd2_narrow sd2_mg_10 sd2_ml_0">
+									<li><p> Menu, graphics and text must be clearly visible and work correctly.</p></li>
+									<li><p> The main icon represents the application and it is recommended to be a circular shape.</p></li>
+									<li><p> Application should cover the entire screen of a device.</p></li>
+									<li><p> Application should use input capabilities applicable to the device.</p></li>
+									<li><p> Application should not contain any overlapped or truncated text, graphics distortion, or any kinds of display errors.</p></li>
+									<li><p> Application should be displayed and work correctly regardless of the screen’s orientation.</p></li>
+									<li><p> Application should not have any UI without function. </p></li>
+								</ul>
+							</li>
+							<li><em>3.2.4</em><p>Application should be launched smoothly within a reasonable time (5 seconds), or provide appropriate progress indication (loading progress bar) for any task that takes time.</p></li>
+							<li><em>3.2.5</em><p>If the user wants to delete any data in application, it should get user confirmation by the display of a popup dialog. (e.g. Do you want to delete the item? Yes, No)</p></li>
+							<li><em>3.2.6</em><p>Application that is primarily designed for the display of advertisements will be rejected.</p></li>
+							<li><em>3.2.7</em><p>Duplicated or repetitive applications that are registered by one seller will be rejected.</p></li>
+							<li><em>3.2.8</em><p>Application that designed to show frequent advertisements when user plays will be rejected.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.3. Interrupt Handling</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.3.1</em><p>Application should not crash or cause malfunctions due to system events while running application. (e.g. Alarm, SMS/MMS, email, receiving call)</p></li>
+							<li><em>3.3.2</em><p>Application should not crash or cause malfunctions due to H/W events such as END, SEND, VOLUME, CENTER, HOLD key.</p></li>
+							<li><em>3.3.3</em><p>User should be able to resume or end application with task manager.</p></li>
+							<li><em>3.3.4</em><p>Application should not crash or cause malfunctions due to attaching /detaching device accessories. (e.g. ear phone)</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.4. Device Compatibility</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.4.1</em><p>Application should turn off sound in silent mode.</p></li>
+							<li><em>3.4.2</em><p>Application should sustain default settings in device regardless of changing any options in application.</p></li>
+							<li><em>3.4.3</em><p>Application should not cause malfunctions to the embedded mobile features such as Bluetooth, G-sensor, Wi-Fi, camera, call function, etc.</p></li>
+							<li><em>3.4.4</em><p>Application should not crash when rotating device.</p></li>
+							<li><em>3.4.5</em><p>Application should run normally on all devices in the same compatibility group. (ex. resolution, reliability, etc)</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.5. Copyright and Trademarks</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">							
+							<li><em>3.5.1</em><p>Application should not use the "Samsung” brand, trademark, logo or other identifiers (unless explicitly agreed upon with Samsung)</p></li>
+							<li><em>3.5.2</em><p>Application should not use any content without permission from the copyright owner.</p></li>
+							<li><em>3.5.3</em><p>Application should not provide any method to share copyrighted contents such as media or images via P2P or a specific server.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.6. Metadata</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.6.1</em><p>Icon, screenshot, description and tag in Samsung Galaxy Apps should be consistent with ones installed on device and should adhere to 4+ age rating. (see Age Rating Guide)</p></li>
+							<li><em>3.6.2</em><p>Default description and application title should be written in English if selecting 2 or more countries for sale. (You may add description and application title in 20 languages including Korean on seller office) </p></li>
+							<li><em>3.6.3</em><p>Age rating should comply with the age rating guide. (age rating can be adjusted by the reviewer according to the age rating guide)</p></li>
+							<li><em>3.6.4</em><p>Any link for an advertising application such as YouTube that are not valid or that contain banned contents based on this guide will be rejected.</p></li>
+							<li><em>3.6.5</em><p>All included and specified URLs in application such as privacy policy, terms &amp; conditions and support should be fully functional.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.7. Adult Content</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">							
+							<li><em>3.7.1</em><p>Application must not contain material that depict or encourage pornography, nudity, sexually explicit behavior, violence (especially exploitative or sadistic violence towards vulnerable or defenseless people, minors, or animals). All such application is banned from registration with Samsung Galaxy Apps.</p></li>
+							<li><em>3.7.2</em><p>Application must not contain explicit sex scenes. (images of activities that are sexual or sexually suggestive)</p>
+								<ul class="sd2_con_list sd2_oneline sd2_narrow sd2_mg_10 sd2_ml_0 ">
+									<li>Application for educational purpose is allowed with 18+ age rating. However, several countries will be excluded from the sale’s available countries.</li>
+								</ul>
+							</li>
+							<li><em>3.7.3</em><p>Application must not contain nudity. (any images of adults/non-adults that reveals genitals, buttocks, nipples)</p></li>
+							<li><em>3.7.4</em><p>Application must not contain any images or words of a sexually suggestive manner.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.8. Violence</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.8.1</em><p>Application must not describe murder or suicide.</p></li>
+							<li><em>3.8.2</em><p>Application must not depict blood or gore in a cruel way.</p></li>
+							<li><em>3.8.3</em><p>Application must not depict violence towards vulnerable or defenseless people / minors / animals.</p></li>
+							<li><em>3.8.4</em><p>Application must not include child abuse.</p></li>
+							<li><em>3.8.5</em><p>Application must not depict intense violence including masochism or torture.</p></li>
+							<li><em>3.8.6</em><p>Application must not contain molestation or rape.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.9. Alcohol and Drug</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.9.1</em><p>Application must not depict illegal alcohol/tobacco/drug use directly or indirectly.</p></li>
+							<li><em>3.9.2</em><p>Any application without warning of drug use or the use of medical information in description is not allowed.<br />
+								e.g. application description should contain a warning message such as: “NOTE: The information in this application is intended to provide general medical information, it is not a substitute for the expertise and judgment of your healthcare professional. You should consult your health care professional before taking any drugs.”<br />
+								Note: Based on context, if the application describes the above things without any intention to foment illegal use, the application can be allowed.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.10. Legal Requirement</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">   							
+							<li><em>3.10.1</em><p>Application should not link to websites that contain illegal or inappropriate materials.</p></li>
+							<li><em>3.10.2</em><p>If content include FOSS(Free and Open Source Software), the seller/developer must comply with all applicable Open Source Software license terms. Moreover, the developer must not use any FOSS in the development in such a way that would cause the non-FOSS portions of the SDK to be subject to the FOSS licensing terms or obligations.</p></li>
+							<li><em>3.10.3</em><p>Application must observe legal requirements as well as the moral values of locations where it is published. If any content fails to comply with legal requirements or moral values, it will be rejected.</p></li>
+							<li><em>3.10.4</em><p>Application must not describe illegal activities or services, such as prostitution (in countries where this is illegal)</p></li>
+							<li><em>3.10.5</em><p>Application must not distribute illegal goods, such as banned drugs or pornographic material.</p></li>
+							<li><em>3.10.6</em><p>Application should not include misleading or fraudulent words in application name, description, tags and its contents into other similar application.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.11. Defamation or Slander</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">							
+							<li><em>3.11.1</em><p>Application must not include speech perceived to disparage a person or group of people based on their ethnic group such as the following:</p>
+								<ul class="sd2_con_list sd2_oneline sd2_narrow sd2_mg_10 sd2_ml_0 ">
+									<li><p> Race, Gender, Ethnicity, Nationality, Religion, Disability, Ideology, Defamation of character (Historical character, celebrity, Politician, royal family) and etc.</p></li>							
+								</ul>	
+							</li>
+							<li><em>3.11.2</em><p>Application must not contain any material portrays or promotes political propaganda.</p></li>
+							<li><em>3.11.3</em><p>Application must not contain swear words, or other type of swear words by transforming pronunciation or spelling.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.12. Privacy</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.12.1</em><p>Application must not cause security warnings to mislead the user and must not exploit any malicious means for obtaining passwords or other sensitive data such as credit card numbers, etc.</p></li>
+							<li><em>3.12.2</em><p>Application must not record or monitor audio streams or personal information.</p></li>
+							<li><em>3.12.3</em><p>Application must not use any functions that charge a fee without user's knowledge and consent.</p></li>
+							<li><em>3.12.4</em><p>Data of application that has access to diary, file, phone book and PIM(Personnel Information Management) should not be deleted without user’s consent.</p></li>
+							<li><em>3.12.5</em><p>Application must not exploit the user’s individual data and publish it to others without the user’s explicit consent. (A user’s individual data includes, without limitation, contacts, photos, text or voice communications-SMS/MMS/Call log, browsing history, location information, and other data either stored on the mobile device or stored in the cloud /web server accessible from the mobile device.)</p></li>
+							<li><em>3.12.6</em><p>If the application uses, collects, modifies, updates, transfers and/or transmits user’s personal information (including but not limited to user’s location information), it MUST notify the user before using it for the first time about how and where the data will be used and obtain user’s consent with the following statements.</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap sd2_request">
+									<span class="sd2_title">User Consent Request</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>< AppName > application may use, collect, modify, update, transfer and/or transmit user’s personal information (including but not limited to user’s location information) or share user's location information with other users. Do you agree to use < AppName > application? <br />
+										- Yes, I agree - No, I do not agree</p>
+										<p class="confirm">[ Confirm ]</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+							</li>
+							<li><em>3.12.7</em><p>If the application shows or provides push messages, advertisements, or other unrequested or unsolicited information, it MUST notify the user in advance of the initial use of the application and obtain user’s consent with the following statements.</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap sd2_request">
+									<span class="sd2_title">User Consent Request</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>< AppName > application may show advertisements using user’s location information. Do you agree to use < AppName > application?<br />- Yes, I agree - No, I do not agree</p>
+										<p class="confirm">[ Confirm ]</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+							</li>
+							<li><em>3.12.8</em><p>If the Application that uses, collects, transmits, or share the following user’s personal information must comply	with applicable children’s privacy statutes.<br />
+							: The name, physical address, Zip code, telephone number, email address, photos, videos, audio recording, geolocation information, persistent identifier, medical treatment, other personal data, and combines with an identifier described above.</p></li>
+							<li><em>3.12.9</em><p>Application must clearly declare the permissions that are required to have in order to interact with the application’s features in the Manifest file.</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p> If the application contains unnecessary permissions or uses excessive personal information other than given permission by user, it can be rejected.</p></li>
+								</ul>
+							</li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.13. Location</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li>
+								<em>3.13.1</em><p>If the application uses, collects, transfers and/or transmits user’s location information, it MUST notify the user prior to each use of the application and obtain user’s consent with the following statements.</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap sd2_request">
+									<span class="sd2_title">User Consent Request</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>< AppName > application may use, collect, transfer and/or transmit user’s location information or share user's location information with other users. Continue?</p>
+										<p class="confirm">[ YES ] [ NO ]</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+							</li>
+							<li>
+								<em>3.13.2</em><p>If the application uses, collects, transfers and/or transmits user’s location information and shows or provides advertisements using user’s location information, it MUST notify the user prior to each use of the application and obtain user’s consent with the following statements.</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap sd2_request">
+									<span class="sd2_title">User Consent Request</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>< < AppName > application may use, collect, transfer and/or transmit user’s location information and show advertisements using user’s location information or share user's location information with other users. Continue?</p>
+										<p class="confirm">[ YES ] [ NO ]</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+							</li>
+							<li>
+								<em>3.13.3</em><p>If the application shows or provides advertisements using user’s location information, it MUST notify the user prior to each use of the application and obtain user’s consent with the following statements.</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap sd2_request">
+									<span class="sd2_title">User Consent Request</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>< < AppName > application may use, collect, transfer and/or transmit user’s location information and show advertisements using user’s location information or share user's location information with other users. Continue?</p>
+										<p class="confirm">[ YES ] [ NO ]</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+							</li>
+						</ol>
+
+
+
+
+
+
+
+
+
+
+						<h5 class="sd2_body_min_title2">3.14. Privacy</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.14.1</em><p>Application can include the 3rd party advertisement that must appropriate for the Samsung advertisement guidelines. Samsung reserves the right to reject or remove the advertisement which is not deemed suitable for the Samsung advertisement guidelines.</p>
+							</li>
+							<li><em>3.14.2</em><p>Any applications with advertisement containing the following contents will be rejected.</p>
+								<ul class="sd2_con_list sd2_oneline sd2_narrow sd2_mg_10 sd2_ml_0 ">
+									<li><p> Any type of gratuitous displays of violence and abuse of humans and animals.</p></li>
+									<li><p> Any type of depictions of sex, pornography, pedophilia.</p></li>
+									<li><p> Any type of adult friend finders or dating sites with a sexual emphasis, adult toys, videos, or other adult products.</p></li>
+									<li><p> Any type of obscene, vulgar or inappropriate language.</p></li>
+									<li><p> Any type of defamatory, libelous, slanderous and/or unlawful content.</p></li>
+									<li><p> Any type of promotions and unnecessary references of alcohol, smoking and drug.</p></li>
+									<li><p> Any type of offensive references and discrimination towards humanity. (e.g. racial, political, ethnic, religious, gender-based, sexuality-based or personal)</p></li>
+									<li><p> Any type of overtly political communication.</p></li>
+									<li><p> Any form of illegal activity or their promotion.</p></li>
+									<li><p> Any type of illegal substance, activity or service which can mislead or deceive users.</p></li>
+									<li><p> Any type of advertisement which is supported by push notification. </p></li>
+									<li><p> Any type of uncertified pharmaceutical products.</p></li>
+									<li><p> Any type of content reasonable public consensus seems to be improper or inappropriate.</p></li>											
+								</ul>	
+							</li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.15. Game</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">							
+							<li><em>3.15.1</em><p>Game must not include any lottery, betting or gaming elements which use or require real money, or which can transfer virtual money into real money or similar prizes where the player also risks losing money or valuables.</p></li>
+							<li><em>3.15.2</em><p>In the case of an 18+ game application for the Korea market, only such game applications that use the age rating from GRB are available.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.16. Android Application Requirement</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.16.1</em><p>In the background, only specific functions can be executed. (audio playing, location, etc)</p></li>
+							<li><em>3.16.2</em><p>If the application applies copy protection, it should use Zirconia, which is Samsung Galaxy Apps’ DRM solution.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.17. Etc</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.17.1</em><p>Content includes VoIP features is only allowed in countries where paid services are available:<br />
+								Argentina, Australia, Austria, Belgium, Brazil, Bulgaria, Canada, China, Chile, Croatia, Czech Republic, Denmark, Finland, France, Germany, Greece Hong Kong, Hungary, India, Indonesia, Ireland, Italy, South Korea, Lithuania, Malaysia, Mexico, Morocco, Netherlands, Norway, Philippines, Poland, Portugal, Romania, Russian Federation, Serbia (Republic of), Singapore, Slovakia, South Africa, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, United Arab Emirates, United Kingdom, Vietnam</p></li>
+							<li><em>3.17.2</em><p>Store type application which offers application downloading service in it is not allowed.</p></li>
+							<li><em>3.17.3</em><p>Application must not provide automatic update. A revision request at Samsung Galaxy Apps is required for content update.</p></li>
+							<li><em>3.17.4</em><p>Application must not contain excessively unpleasant, repellent and vulgar expressions.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">3.18. Kids Category & Kids Store</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>3.18.1</em><p>Application for Kids must comply with applicable children’s privacy statutes including, but not limited to, COPPA. statute.</p></li>
+							<li><em>3.18.2</em><p>Application in Kids category must be specially designed for Kids under age 13.</p></li>
+							<li><em>3.18.3</em><p>Application for Kids must use parental screening or obtain parental permission before connecting to linking to outside services such as in app purchase or other plug-ins.</p></li>
+							<li><em>3.18.4</em><p>Application for Kids must not contain inappropriate advertising for Kids.</p></li>
+						</ol>
+					</div><!-- //sd2_policy_wrap -->
+					<!-- sd2_tip_wrap -->
+					<div class="sd2_tip_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">Tips for Validation</h4>
+						<h5 class="sd2_body_min_title2">4.1. Comments to Validation Team</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>4.1.1</em><p>Leave testable ID and password for log-in features.</p></li>
+							<li><em>4.1.2</em><p>Leave updated contents or functions for revision or re-examination. By so doing, it helps save the time and effort of reviewers.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">4.2. Information Integrity</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>4.2.1</em><p>Retain the copyright holder’s integrity.</p></li>
+							<li><em>4.2.2</em><p>If the application contains any copyrighted contents which are permitted from the copyright owner, please attach the certificate of contents to the seller office (attach materials for requesting Validation) when submitting application.</p></li>
+						</ol>
+						<h5 class="sd2_body_min_title2">4.3. Application Reliability</h5>
+						<ol class="sd2_inner_ol sd2_narrow sd2_other">
+							<li><em>4.3.1</em><p>Test your application on the target device through a <a href="#" class="sd2_link_go2">remote test lab</a> before submitting it to Samsung Galaxy Apps. By so doing, the developer can see if the application can pass the Samsung Galaxy Apps Validation in advance.</p></li>
+							<li><em>4.3.2</em><p>If you need technical support, you can get helpful information from the <a href="http://developer.samsung.com/home.do" class="sd2_link_go2">Samsung Developer site.</a></p></li>
+						</ol>
+					</div><!-- //sd2_tip_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+</html>

@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li class="sd2_now"><a href="#">Rich Notification</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Rich Notification</h3>
+					</div><!-- //page_title -->
+					<!-- ec_wrap -->
+					<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_essential">
+						<h4 class="sd2_body_min_title1">Essential Contents</h4>
+						<ul class="sd2_link_list sd2_line">
+							<li class="sd2_gray sd2_w100">
+								<a href="#" class="sd2_list_download_btn">
+									<div class="sd2_link_item">
+										Rich Notification SDK 2.0.3 
+										<span class="sd2_version_date"><span class="sd2_version">Version : 1.1.3</span><span class="sd2_date">Jun 23, 2016</span></span>
+										<span class="sd2_down"></span>
+									</div>
+								</a>
+							</li>
+							<li class="sd2_line"><a href="http://img-developer.samsung.com/onlinedocs/sms/rich-notification/index.html" class="sd2_blank" target="_blank">API Reference </a></li>
+							<li><a href="#" class="sd2_page">Release Note</a></li>
+							<li class="sd2_gray sd2_line"><a href="#"  class="sd2_page">Programming Guide</a></li>
+							<li class="sd2_gray"></li>
+						</ul>
+					</div><!-- //ec_wrap -->
+					<!-- overview_wrap -->
+					<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overView">
+						<!-- sd2_overview_container -->
+						<div class="sd2_overview_container" style="height:410px">
+							<!-- sd2_overview_content -->
+							<div class="sd2_overview_content">
+								<h4 class="sd2_body_min_title1">OverView</h4>
+								<p class="sd2_paragraph01">The goal of the Rich Notifications SDK is to offer a way for developers to reach users with a minimal amount of effort. It provides the flexibility to personalize and brand content, making it compelling and actionable.</p>
+
+								<h5 class="sd2_body_min_title2">Design Principles</h5>
+
+								<p class="sd2_paragraph01">Rich Notifications have the following characteristics:</p>
+								<p class="sd2_paragraph01"><strong>Glance-able:</strong> Rich Notifications are a lightweight way for service providers to send updates to users in real-time. They are concise and informative, offering bite-sized updates that highlight the most important details at a glance.</p>
+								<p class="sd2_paragraph01"><strong>Actionable:</strong> Actions are placed on the top level of Rich Notifications, allowing users to take control with single touch. Users can quickly perform actions such as responding to a message, navigating to a destination, or liking a photo without having to pull out their phone or dig through Apps.</p>
+								<p class="sd2_paragraph01"><strong>Delightful:</strong> Rich Notifications were designed with personalization in mind. They support full color graphics, rich text, and flexible content layouts. They offer a stylish and engaging interface for users to interact with their favorite services.</p>
+
+								<h5 class="sd2_body_min_title2">Content Structure</h5>
+								<p class="sd2_paragraph01">A standard notification is made of the following components:</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_richnotification01.jpg" alt="Figure 1: Rich Notification Components" />
+									<span class="sd2_figure">Figure 1: Rich Notification Components</span>
+								</div><!-- //img_c -->
+
+								<h6 class="sd2_body_min_title3">| Tap to View More Details</h6>
+								<p class="sd2_paragraph01">Developers have the option to include secondary content with any notification. This content will be shown when the user taps on the body of the notification</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_richnotification02_160118.jpg" alt="Figure 2: Tap to expand a notification and view more details" />
+									<span class="sd2_figure">Figure 2: Tap to expand a notification and view more details</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">Actions</h5>
+								<p class="sd2_paragraph01">Actions are an important part of Rich Notifications. They allow users to engage with the content and perform tasks. There are two types of Actions: Primary Actions and More Options.</p>
+								
+								<h6 class="sd2_body_min_title3">| Primary Actions</h6>
+								<p class="sd2_paragraph01">Primary Actions are the most important action associated with the notification. These actions can work in one of two ways: single tap and a selectable list of commands.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_richnotification03_160118.jpg" alt="Figure 3: Action task with a single tap" />
+									<span class="sd2_figure">Figure 3: Action task with a single tap</span>
+								</div><!-- //img_c -->
+								<h6 class="sd2_body_min_title3">| More Options</h6>
+								<p class="sd2_paragraph01">The “More Options” icon produces a menu of additional actions that the user might want to take on the notification. These options are less accessible by design, placing the emphasis on the Primary Action.</p>
+
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_richnotification04.jpg" alt="Figure 4: Tap on the More Options icon for additional actions" />
+									<span class="sd2_figure">Figure 4: Tap on the More Options icon for additional actions</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">Templates</h5>
+								<p class="sd2_paragraph01">Developers can choose from a variety of templates that provide alternative visual layouts and content structures. There are two types of templates: Primary and Secondary.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_richnotification06_160118.jpg" alt="Figure 5: Example Primary Templates." />
+									<span class="sd2_figure">Figure 5: Example Primary Templates.</span>
+								</div><!-- //img_c -->
+
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_richnotification07_160118.jpg" alt="Figure 6: Example Secondary Templates (Optional)." />
+									<span class="sd2_figure">Figure 6: Example Secondary Templates (Optional)</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">Restrictions</h5>
+								<p class="sd2_paragraph01">Rich Notification SDK has the following restrictions:</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Devices with Android 4.4 KitKat (API level 19) or higher support Rich Notification SDK.</p></li>
+									<li><p>Rich Notification SDK requires Gear Manager to connect Wearable Device.</p></li>
+								</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div><!-- //sd2_overview_content -->
+						</div><!-- //sd2_overview_container -->
+						<div class="sd2_more_less_btn sd2_close sd2_mt_20">
+							<a href="#" class="sd2_more">more</a>
+						</div>
+					</div><!-- //overview_wrap -->
+					<!-- sd2_td_wrap -->
+					<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
+						<h4 class="sd2_body_min_title1">Technical Document</h4>
+						<ul class="sd2_link_list2">
+							<li><a href="#" class="sd2_blank">API Reference</a></li>
+							<li><a href="#" class="sd2_page">Release Note</a></li>
+							<li><a href="#" class="sd2_page">Programming Guide</a></li>
+						</ul>
+					</div><!-- //sd2_td_wrap -->
+					<!-- sample_wrap -->
+					<div class="sd2_sample_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_samples">
+						<h4 class="sd2_body_min_title1">Samples</h4>
+						<ul class="sd2_link_list sd2_gray" >
+							<li class="sd2_w100"><a href="#" class="sd2_down">Rich Notification<span class="sd2_bar">Sample App</span></a></li>
+						</ul>
+					</div><!-- //sample_wrap -->
+					<!-- sd2_video_wrap -->
+					<div class="sd2_video_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_video">
+						<h4 class="sd2_body_min_title1">Video</h4>
+						<ul class="sd2_video_list">
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt=""></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt=""></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt=""></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+						</ul>
+					</div><!-- //sd2_video_wrap -->
+					<!-- faq_wrap -->
+					<div class="sd2_faq_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_faq">
+						<h4 class="sd2_body_min_title1">FAQ</h4>
+						<ul class="sd2_faq sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q01</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q02</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q03</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q04</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q05</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+						<div class="sd2_paging">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div><!-- //faq_wrap -->
+					<!-- sd2_event_wrap -->
+					<div class="sd2_event_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_event">
+						<h4 class="sd2_body_min_title1">Event material</h4>
+						<ul class="sd2_event sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+						<div class="sd2_paging">
+							<a href="#" class="sd2_active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div><!-- //sd2_event_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+	<script type="text/javascript">
+		var more_container=null; 
+		var btn=null;
+		var now_h=0;
+		var all_h;
+		var more_list=null;
+		var classN="sd2_"; 
+
+		var init=function(container){
+			more_container=$(container); 
+			btn=more_container.next("."+classN+"more_less_btn").find("a");
+			all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
+			//all_h=more_container.find("."+classN+"overview_content").height();
+			console.log(all_h)
+			now_h=more_container.height();
+
+			eventDefine();
+		}
+
+		var eventDefine=function(){
+			btn.on("click", btn_click);
+		}
+
+		var btn_click=function(e){
+			var $this=$(this); 
+			if($this.hasClass(classN+"more")){
+				$this.removeClass(classN+"more").addClass(classN+"less"); 
+				$this.text("less");
+				more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
+			}else{
+				$this.removeClass(classN+"less").addClass(classN+"more"); 
+				$this.text("more");
+				more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
+			}
+			return false; 
+		}
+
+		init(".sd2_overview_container");
+	</script>
+</html>

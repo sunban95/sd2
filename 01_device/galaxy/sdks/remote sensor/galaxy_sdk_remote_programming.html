@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/sub.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/galaxy.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li><a href="#">Remote Sensor</a></li>
+							<li class="sd2_now"><a href="#">Programming Guide</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Programming Guide <span class="sd2_page_title_side">Sep 11, 2015</span></h3>
+					</div><!-- //page_title -->
+					<div class="sd2_downLoad_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<ul class="sd2_link_list sd2_line sd2_withDown">
+							<li class="sd2_w100 sd2_gray">Remote Sensor Programming Guide<a href="#" class="sd2_list_download_btn">Download <span class="sd2_down"></span></a></li>
+						</ul>
+					</div>
+					<!-- guide_text_wrap -->
+					<div class="sd2_guide_text_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<p class="sd2_paragraph01">Remote Sensor allows you to retrieve user activity, pedometer (step counter), and wearing state data from a wearable device to use in your application. The host device on which your application is running requests the data, and the wearable device transmits it.</p>
+
+						<p class="sd2_paragraph01">You can use Remote Sensor to:</p>
+
+						<ul class="sd2_con_list sd2_oneline sd2_mt_30 sd2_mb_30">
+							<li><p>Get user activity data from the wearable device.<br />
+									When the user of a wearable device starts running or walking, the application on the host device can be notified.</p></li>
+							<li><p>Get pedometer data from the wearable device.<br />
+									The application on the host device can get the user’s step count.</p></li>
+							<li><p>Check whether the user is wearing the wearable device.</p></li>
+						</ul>
+						<!-- sd2_note_wrap -->
+						<div class="sd2_note_wrap ">
+							<span class="sd2_title">Note</span>
+							<!-- note_con -->
+							<div class="sd2_note_con">
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Devices with Android 4.3 (Jelly Bean API level 18) or higher support Remote Sensor.</p></li>
+									<li><p>Remote Sensor only supports Bluetooth connections. Support for BLE (Bluetooth Low Energy) will be added in a future release.</p></li>
+									<li><p>The supported devices are Samsung wearable devices (such as Gear Series and Gear Fit). Gear 1 (Android OS) is not supported.</p></li>
+								</ul>
+							</div><!-- //note_con -->
+						</div><!-- //sd2_note_wrap -->
+						<!-- sd2_note_wrap -->
+						<div class="sd2_note_wrap sd2_mt_20">
+							<span class="sd2_title">Note</span>
+							<!-- note_con -->
+							<div class="sd2_note_con">
+								<p>See attached programming guide pdf file for more information.</p>
+							</div><!-- //note_con -->
+						</div><!-- //sd2_note_wrap -->
+					</div><!-- //guide_text_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+</html>

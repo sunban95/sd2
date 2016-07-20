@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap  sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li class="sd2_now"><a href="#">Accessory</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Accessory</h3>
+					</div><!-- //page_title -->
+					<!-- ec_wrap -->
+					<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_essential">
+						<h4 class="sd2_body_min_title1">Essential Contents</h4>
+						<ul class="sd2_link_list sd2_line">
+							<li class="sd2_gray sd2_w100">
+								<a href="#" class="sd2_list_download_btn sd2_modal_opener" data-target="#sd2_sdk">
+									<div class="sd2_link_item">
+										Accessory SDK 
+										<span class="sd2_version_date"><span class="sd2_version">Version : 2.3.2</span><span class="sd2_date">Mar 28, 2016</span></span>
+										<span class="sd2_down"></span>
+									</div>
+								</a>
+							</li>
+							<li class="sd2_line"><a href="http://img-developer.samsung.com/onlinedocs/sms/accessory/index.html" class="sd2_blank" target="_blank">API Reference</a></li>
+							<li ><a href="galaxy_sdk_access_technical_release.html" class="sd2_page">Release Note</a></li>
+							<li class="sd2_gray sd2_line"><a href="galaxy_sdk_access_programming.html"  class="sd2_page">Programming Guide</a></li>
+							<li class="sd2_gray"></li>
+						</ul>
+					</div><!-- //ec_wrap -->
+					<!-- overview_wrap -->
+					<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overView">
+						<!-- sd2_overview_container -->
+						<div class="sd2_overview_container" style="height:700px">
+							<!-- sd2_overview_content -->
+							<div class="sd2_overview_content">
+								<h4 class="sd2_body_min_title1">OverView</h4>
+								<p class="sd2_paragraph01">Accessory SDK allows you to connect accessory devices to Samsung smart devices. With Accessory SDK, you can define a new service between the accessory and smart device, enabling you to use the various smart device functions from the accessory device. The service is compatible with various connectivity environments, which makes accessory development efficient and convenient.</p>
+								
+								<p class="sd2_paragraph01">Accessory SDK adds new functions to the service as Samsung smart devices improve. Future updates will enable the accessory and the smart device to exchange more information and support more interworking.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_Accessory_01.jpg" alt="Figure 1: Samsung Smart Device and Accessories" />
+									<span class="sd2_figure">Figure 1: Samsung Smart Device and Accessories</span>
+								</div><!-- //img_c -->
+
+								<p class="sd2_paragraph01">The Samsung Accessory Eco-system consists of Samsung smart devices and accessory devices which use the Accessory SDK. Samsung smart devices are equipped with the Samsung Accessory Service Framework, which supports various accessory services. Accessory devices use the framework to interwork with Samsung smart devices.</p>
+
+								<p class="sd2_paragraph01">The Accessory SDK provides a single protocol that supports multiple connectivity technologies, such as Wi-Fi, Bluetooth classic, and BLE (Bluetooth v4.0). The Samsung Accessory Service Framework supports service discovery that is independent of the connectivity technology, and establishes connections between applications for data exchange. You do not need technical knowledge of each connectivity model to develop Accessory services.</p>
+
+								<p class="sd2_paragraph01">Accessory devices communicate with Samsung smart devices through the various connectivity channels supported by the devices. Samsung smart devices can be connected to many accessory devices to implement services in applications. Establishing a connection between the Samsung smart device and an accessory device allows the latter to offer additional functions supported by the Samsung smart device.</p>
+
+								<p class="sd2_paragraph01">You can use the Accessory SDK to:</p>
+
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Control the smart device remotely (for example, controlling music volume)</p></li>
+									<li><p>Provide notification relay or alarm</p></li>
+									<li><p>Find the smart device</p></li>
+								</ul>
+
+								<p class="sd2_paragraph01">You can also define and implement your own functionality.</p>
+
+								<h5 class="sd2_body_min_title2">Using Remote Control</h5>
+								<p class="sd2_paragraph01">With Accessory SDK, you can listen to music while carrying your smart device in a bag, and at the same time control the music selection and volume with the Gear accessory device on your wrist. Similarly, you can remotely control other smart device features, like the camera.</p>
+
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_Accessory_02.jpg" alt="Figure 2: Using an accessory device for remote control" />
+									<span class="sd2_figure">Figure 2: Using an accessory device for remote control</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">Providing Notification Relay</h5>
+								<p class="sd2_paragraph01">The notification relay is a feature that enables you to receive notifications and messages on your smart device remotely (for example, you are walking around the office while your phone is on your desk), by relaying them to your Gear accessory device to let you know that something is going on.</p>
+
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_Accessory_03.jpg" alt="Figure 3: Notification relay in the accessory device" />
+									<span class="sd2_figure">Figure 3: Notification relay in the accessory device</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">Finding the Device</h5>
+								<p class="sd2_paragraph01">The Accessory SDK provides the “Find My Phone” feature, which allows you to use an accessory device to find your smart device.</p>
+
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_Accessory_04.jpg" alt="Figure 4: Locating the device with the accessory" />
+									<span class="sd2_figure">Figure 4: Locating the device with the accessory</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">What Is Accessory File Transfer SDK?</h5>
+								<p class="sd2_paragraph01">Accessory File Transfer SDK allows you to transfer files between devices using any type of connectivity supported by the Samsung Accessory Service Framework. You can, for example, develop applications that record a voice memo and send it to the smart device (for example, the Voice Memo application on the Gear sends the recorded memo to the Galaxy Note 3 device).</p>
+
+								<p class="sd2_paragraph01">The Accessory File Transfer SDK contains the Accessory File Transfer Service, which enables file transfer between smart devices that use and connect via Samsung Accessory Service Framework. Since Accessory File Transfer Service requires the Samsung Accessory Service Framework for the actual file transfer, the service can only be used in applications that also have the Accessory SDK. With Accessory File Transfer, you can send files of any size over all connectivity types supported by the Samsung Accessory Service Framework.</p>
+
+								<h5 class="sd2_body_min_title2">Restrictions</h5>
+
+								<p class="sd2_paragraph01">Accessory SDK has the following restrictions</p>
+
+								<ul class="sd2_con_list sd2_oneline sd2_mb_25">
+									<li><p>Accessory SDK only supports the GALAXY Gear (from January 2014 version), Samsung Gear 2, Samsung Gear 2 Neo, Samsung Gear S, and Samsung Gear S2.</p></li>
+									<li><p>Both the smart and accessory device must have the Samsung Accessory Service Framework installed.</p></li>
+									<li><p>Devices with Android 4.3 or higher support Accessory SDK (since they are equipped with the Samsung Accessory Service Framework).</p></li>
+								</ul>
+
+								<p class="sd2_paragraph01">Accessory File Transfer SDK has the following restrictions:</p>
+
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Accessory File Transfer SDK only supports the GALAXY Gear (from January 2014 version), Samsung Gear 2, Samsung Gear 2 Neo, Samsung Gear S, and Samsung Gear S2.</p></li>
+									<li><p>Smart devices running and connected to the Samsung Accessory Service Framework support Accessory File Transfer SDK.</p></li>
+									<li><p>Both the sending and receiving device must have the Accessory File Transfer library installed.</p></li>
+									<li><p>Devices with Android 4.3 or higher support Accessory SDK(since they are equipped with the Samsung Accessory Service Framework).</p></li>
+								</ul>
+							</div><!-- //sd2_overview_content -->
+						</div><!-- //sd2_overview_container -->
+						<div class="sd2_more_less_btn sd2_close">
+							<a href="#" class="sd2_more">more</a>
+						</div>
+					</div><!-- //overview_wrap -->
+					<!-- sd2_td_wrap -->
+					<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
+						<h4 class="sd2_body_min_title1">Technical Document</h4>
+						<ul class="sd2_link_list2">
+							<li><a href="http://img-developer.samsung.com/onlinedocs/sms/accessory/index.html" class="sd2_blank" target="_blank">API Reference</a></li>
+							<li><a href="galaxy_sdk_access_technical_release.html" class="sd2_page">Release Note</a></li>
+							<li><a href="galaxy_sdk_access_programming.html" class="sd2_page">Programming Guide</a></li>
+						</ul>
+					</div><!-- //sd2_td_wrap -->
+					<!-- sample_wrap -->
+					<div class="sd2_sample_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_samples">
+						<h4 class="sd2_body_min_title1">Samples</h4>
+						<ul class="sd2_link_list sd2_gray" >
+							<li class="sd2_w100"><a href="#" class="sd2_down">Accessory<span class="sd2_bar">Sample App</span></a></li>
+						</ul>
+					</div><!-- //sample_wrap -->
+					<!-- faq_wrap -->
+					<div class="sd2_faq_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_faq">
+						<h4 class="sd2_body_min_title1">FAQ</h4>
+						<ul class="sd2_faq sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q.01</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A.</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q.02</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A.</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q.03</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A.</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q.04</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A.</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q.05</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A.</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+						<div class="sd2_paging">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div><!-- //faq_wrap -->
+					<!-- event_wrap -->
+					<div class="sd2_event_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_event">
+						<h4 class="sd2_body_min_title1">Event material</h4>
+						<ul class="sd2_event sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Developer Day 2014 at MWC</a><span class="sd2_date">Apr 9, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<a href="/what-is-new/blog/Samsung-Developer-Day-2014-at-MWC-Session-Videos" class="sd2_link_go" target="_blank" >Samsung Developer Day 2014 at MWC</a>
+										<ul class="sd2_event_file">
+											<li><a href="#none" class="{rsrc_download_info:{atcId:'E000000005', fileId:'0000000007', ctgyId:'ST040100', type:'RS060000'}}">MWC_SESSION_Gear_SDK_V3.pdf (4.93MB)</a></li>
+											<li><a href="#none" class="{rsrc_download_info:{atcId:'E000000005', fileId:'0000000008', ctgyId:'ST040100', type:'RS060000'}}">MWC_SESSION_SamsungMobile_SDK_V3.pdf (4.19MB)</a></li>
+											<li><a href="#none" class="{rsrc_download_info:{atcId:'E000000005', fileId:'0000000009', ctgyId:'ST040100', type:'RS060000'}}">MWC_SESSION_S_Health_SDK_V6.pdf (3.29MB)</a></li>
+											<li><a href="#none" class="{rsrc_download_info:{atcId:'E000000005', fileId:'0000000010', ctgyId:'ST040100', type:'RS060000'}}">MWC_SESSION_Multi_Screen_V3_final.pdf (1.94MB)</a></li>
+											<li><a href="#none" class="{rsrc_download_info:{atcId:'E000000005', fileId:'0000000011', ctgyId:'ST040100', type:'RS060000'}}">MWC_SESSION_Samsung_GamePlatform_V5.pdf (1.66MB)</a></li>
+											<li><a href="#none" class="{rsrc_download_info:{atcId:'E000000005', fileId:'0000000012', ctgyId:'ST040100', type:'RS060000'}}">MWC_SESSION_Group_play_V3.pdf (1.79MB)</a></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+					</div><!--// event_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+		<!-- popup_modal_wrap -->
+		<div class="sd2_popup_modal_wrap" id="sd2_sdk">
+			<!-- pop_wrap -->
+			<div class="sd2_pop_wrap sd2_sdk">
+				<!-- pop_header -->
+				<div class="sd2_pop_header">
+					<h1 class="sd2_pop_title">SDK LICENSE AGREEMENT</h1>
+					<a href="#" class="sd2_pop_close">close</a>
+				</div><!-- //pop_header -->
+				<!-- device_info_wrap -->
+				<div class="sd2_device_info_wrap">
+					<!-- pop_con_wrap -->
+					<div class="sd2_pop_con_wrap">
+						<!-- sd2_sdk_con -->
+						<div class="sd2_sdk_con">
+							<p class="sd2_sdk_header">READ CAREFULLY BEFORE USING THE SDK: THIS SDK LICENSE AGREEMENT (“AGREEMENT”) IS A LEGAL AGREEMENT BETWEEN YOU(“LICENSEE”) AND SAMSUNG ELECTRONICS CO., LTD.(“SAMSUNG”) AND IS EFFECTIVE UPON YOUR ACCEPTANCE. BY CLICKING ON THE “I AGREE” BUTTON, INSTALLING, COPYING OR OTHERWISE USING THE SDK, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT CLICK ON THE “I AGREE” BUTTON AND DO NOT INSTALL OR USE THE SDK.</p>
+
+							<h2 class="sd2_sdk_title">NOTICE:</h2>
+							<p class="sd2_sdk_para">The SDK is not intended to enable the design of Applications that (i) are used in any medical, life-saving or life sustaining systems (ii) used for the diagnosis of disease or the cure, mitigation, treatment, or prevention of disease or for any use that is intended to affect bodily structure or function or (iii) to be used as an accessory to a regulated medical device or to transform a computing platform into a regulated medical device.</p>
+							<h2 class="sd2_sdk_title">Definitions</h2>
+							<p class="sd2_sdk_para">In this Agreement, the following capitalized terms shall have the meanings below:</p>
+
+							<p class="sd2_sdk_para">"Affiliate" shall mean any corporation or other entity that is controlled by, or is under common control with a party (a corporation or other entity shall be deemed to control another if it owns or controls more than fifty percent (50%) of the voting stock or other ownership interest of the corporation or entity).</p>
+
+							<p class="sd2_sdk_para">"Application" means a software program developed by Licensee for specific use with the SAMSUNG products in compliance with the Documentation and the program requirements and under Licensee’s own trademark and/or brand, including, in respect of such software programs, all bug fixes, enhancements, modifications, new releases, new versions, revisions, supplements, updates and upgrades.</p>
+
+							<p class="sd2_sdk_para">"Authorized Users" means Licensee’s employees or other authorized contractors who have written and binding agreements with Licensee to protect the unauthorized use and disclosure of SAMSUNG’s and other third party Confidential Information (to the extent they will have access to such Confidential Information).</p>
+
+							<p class="sd2_sdk_para">"Confidential Information" has the meaning given in Clause 5.1.</p>
+
+							<p class="sd2_sdk_para">"Documentation" means any technical specifications and other specifications or documentation that SAMSUNG may make available or provide to Licensee relating to or for use in connection with the SDK.</p>
+
+							<p class="sd2_sdk_para">"Open Source Software" means any software or software component, module or package that contains, or is derived in any manner (in whole or in part) from, any software that is distributed as free software, open source software or similar licensing or distribution models, including, without limitation, software licensed or distributed under any of the following licenses or distribution models, or licenses or distribution models similar to any of the following: (a) GNU’s General Public License (GPL) or Lesser/Library GPL (LGPL); (b) the Artistic License (e.g., PERL); (c) the Mozilla Public License; (d) the Netscape Public License; (e) the Sun Community Source License (SCSL); (f) the Sun Industry Standards License (SISL); (g) the BSD License; and (h) the Apache License.</p>
+
+							<p class="sd2_sdk_para">"Published API(s)" means the documented Application Programming Interface(s) contained in the SDK.</p>
+
+							<p class="sd2_sdk_para">"Sample Code” means the software marked as “sample” or delivered in a folder marked “sample” that may be included as a part of the SDK. Sample Code may be in source code or object code format.</p>
+
+							<p class="sd2_sdk_para">"SDK" means Samsung Enterprise SDK, which includes the APIs, applications, Documentation, data, files, libraries, materials, IDE (Integrated Development Environment), Sample Code, software (source code and object code), simulators and tools provided or made available to Licensee by SAMSUNG pursuant to this Agreement for use in connection with the development of Applications, including any Updates that SAMSUNG may provide or make available. For the purpose of clarity, SDK is SAMSUNG’s proprietary information and software is considered neither as open source nor in the public domain.</p>
+
+							<p class="sd2_sdk_para">"Term" means the term of this Agreement as specified in Clause 1.</p>
+
+							<p class="sd2_sdk_para">"Third Party Software" shall mean any software, computer programming code or accompanying documentation owned by any third party including, but not limited to, any of following:</p>
+							<ol class="sd2_inner_ol sd2_mg_10 sd2_narrow">
+								<li>(a) any software licensed from a third party, or</li>
+								<li>(b) any software placed in the public domain and accessible to anyone without any specific license terms attached thereto, or</li>
+								<li>(c) any software disclosed or distributed under a license that permits users to use, modify, improve or distribute such software and/or documentation and requires any or all of the following:
+									<ol class="sd2_inner_ol sd2_mg_10">
+										<li> i.the making available of source code, object code and/or accompanying documentation of the software or any modifications to, or derivatives of, such software and/or documentation; or</li>
+										<li>ii.the granting of the right to distribute, use, create modifications to, or create derivative works from, such software and/or documentation at no charge or on a royalty-free basis.</li>
+									</ol> 
+								</li>
+								<li>(d) any software licensed under the Academic Free License, Apache Software License, the Artistic License (e.g., PERL); Berkeley Software Distribution License; Eclipse Public License; GNU’s General Public License; GNU’s Lesser/Library GPL; MIT License; the Mozilla Public License; the Python License, the Sleepy Cat license, the Sun Community Source License; or licenses approved by the Free Software Foundation or the Open Source Initiative.</li>
+							</ol>
+							<p class="sd2_sdk_para">"Updates" means, in respect of the SDK or any part of the SDK, bug fixes, enhancements, modifications, new releases, new versions, supplements, updates or, upgrades.</p>
+							<h3 class="sd2_sdk_title2">1. Term</h3>
+							<p class="sd2_sdk_para">This Agreement is effective upon Licensee’s acceptance, by clicking on the “I AGREE” button, and continues to be effective until terminated by Licensee or SAMSUNG in accordance with Clause 9 (“Term”).</p>
+
+							<h3 class="sd2_sdk_title2">2. Grant of SDK License and Restrictions</h3>
+							<ol class="sd2_inner_ol sd2_narrow sd2_other2">
+								<li><em>2.1</em><p>Subject to the provisions of this Agreement, SAMSUNG hereby grants Licensee a limited, non-exclusive, personal, revocable, non-sub licensable and non-transferable license during the Term to:</p>
+									<ol class="sd2_inner_ol sd2_mt_5">
+										<li>(a) install a reasonable number of copies of the SDK on computers that Licensee owns or controls, for internal use by Licensee or Authorized Users solely for the purpose of developing or testing Applications; and</li>
+										<li>(b) make a reasonable number of copies of the Documentation and distribute such copies to Authorized Users for internal use solely for the purpose of developing or testing Applications.</li>
+									</ol>
+								</li>
+								<li><em>2.2</em><p>Licensee acknowledges and agrees that an Application must satisfy SAMSUNG’s technical standards before it can be tested on the relevant SAMSUNG product pursuant to SAMSUNG’s internal quality assessment process. SAMSUNG reserves the right to reject any Application at its sole discretion. SAMSUNG’s testing of an Application shall not be construed as Samsung’s approval on the Application on any aspect. If a material change is made to the Application, Licensee must submit the revised version for SAMSUNG’s approval.</p></li>
+								<li><em>2.3</em><p>Licensee must ensure that the SAMSUNG copyright disclaimers and other proprietary notices that appear in the SDK and Documentation are retained and reproduced in full in all copies of the SDK and Documentation that Licensee makes as permitted under this Agreement.</p></li>
+								<li><em>2.4</em><p>Licensee must not, directly or indirectly, sell, redistribute, rent, lease, lend or sublicense all or any part of the SDK, or enable or allow others to do such things. Licensee must not use the SDK for any purpose that is not expressly permitted under this Agreement. Except to the extent permitted by licensing terms in respect to the Third Party Software components or Sample Code included in the SDK, Licensee must not, directly or indirectly, copy (except as expressly permitted under this Agreement), modify, adapt, redistribute, decompile, reverse engineer, disassemble, or create derivative works of the SDK or any part thereof, or enable or allow others to do such things. The foregoing restrictions apply except as prohibited by applicable law and only to the extent of such prohibition.</p></li>
+								<li><em>2.5 </em><p>Licensee must not exploit the SDK in any unauthorized way, including but not limited to, by way of trespass or burdening network capacity. Any attempt to do so constitutes a violation of the rights of SAMSUNG and licensors of the SDK. </p></li>
+								<li><em>2.6</em><p>Except for the limited license granted to Licensee in this Agreement, all rights, title, and interest in and to the SDK and any Updates that are made available to Licensee under this Agreement remain, at all times, the sole and exclusive property of SAMSUNG. Licensee agrees to cooperate with SAMSUNG to maintain SAMSUNG's ownership of the SDK, and Licensee agrees to promptly provide notice of any claims or threatened claims relating to the SDK. Apart from the license rights expressly set out in this Agreement, SAMSUNG does not grant to Licensee and Licensee does not receive, whether by implication, estoppel or otherwise, any ownership right, title or interest nor any security interest or other interest in any intellectual property rights relating to the SDK, nor in any copy of any part of the foregoing, nor any other licenses, immunity or rights, express or implied.</p></li>
+								<li><em>2.7</em><p>Except as expressly permitted under this Agreement, nothing in this Agreement grants Licensee any right to use any of SAMSUNG’s trademarks, trade names, copyrights, service marks, logos, domain names, patents, trade secrets, other brand features distinctive to SAMSUNG or other intellectual property, which remain, at all times, the sole and exclusive property of SAMSUNG.</p></li>
+								<li><em>2.8</em><p>SAMSUNG may, at any time without notice, extend, enhance, or otherwise modify the SDK. If SAMSUNG makes available Updates, such Updates will be governed by this Agreement (unless a separate license is provided with the Update, in which case the terms of that license will govern the Update). Licensee acknowledges that SAMSUNG has no obligation, whether express or implied, to announce or make available any Updates. Where an Update is made available, such Update may have APIs, features, services and/or functionality that are different from those found in the SDK licensed under this Agreement.</p></li>
+								<li><em>2.9</em><p>From time to time during the Term, SAMSUNG may provide Licensee with test versions of the SDK. Licensee acknowledges and agrees that Licensee must not rely on such test versions to perform in the same manner as a final-release commercial-grade product and Licensee must not use such test versions with data that is not sufficiently backed up on a regular basis.</p></li>
+								<li><em>2.10</em><p>SAMSUNG has no obligation to provide any maintenance, technical or other support in respect of the SDK.</p></li>
+								<li><em>2.11</em><p>If the Application is distributed, offered, resold, or licensed ("Distribute") under the white-labeling of a third party, SAMSUNG may object to such Distribution if SAMSUNG deems the Distribution adversely affects SAMSUNG's business. In that case, Licensee shall immediately cease to Distribute the Application and discuss in good faith to find an alternative which should be mutually beneficial to both Licensee and SAMSUNG.</p></li>
+							</ol>
+
+							<h3 class="sd2_sdk_title2">3. Conditions and Requirements</h3>
+							<ol class="sd2_inner_ol sd2_narrow sd2_other2">
+								<li><em>3.1</em><p>General Conditions and Requirements <br />Licensee acknowledges and agrees that the Applications must comply with the conditions and requirements set out below, as modified by SAMSUNG from time to time:</p>
+									<ol class="sd2_inner_ol sd2_narrow">
+										<li>(a) Licensee will comply with all applicable laws and regulations in connection with this Agreement;</li>
+										<li>(b) If an Application captures, collects or records any form of user or device data, images, pictures or voice data (collectively "Recordings"), or processes, maintains, uploads, syncs, or transmits any form of user data, content or information (collectively "Transmissions"), such Recordings and Transmissions must comply with all applicable laws and regulations (including but not limited to privacy laws) as well as any SAMSUNG’s internal policies or requirements in relation to such matters (including but not limited to any notice or consent requirements). In particular, Licensee must ensure that a reasonably distinctive and conspicuous visual indication that a Recording is taking place is displayed to the user as part of the Application.</li>
+										<li>(c) Licensee will be solely responsible for any and all claims and/or damages arising from or related to the Application installing or launching other executable code itself through the use of a plug-in architecture, calling other frameworks, other APIs or otherwise except as authorized by SAMSUNG in writing in advance. Licensee will be solely responsible for any and all claims and/or damages arising from or related to the download or use of interpreted code in any Application other than the code that is interpreted and run by SAMSUNG's Published APIs and built-in interpreters except as authorized otherwise by SAMSUNG in advance in writing.</li>
+										<li>(d) Applications must comply with all applicable laws and regulations (including the laws and regulations of any jurisdiction in which the Applications are offered or made available) and SAMSUNG’s internal policies and regulations. Especially, in respect of any Application that uses the Health package, Licensee shall comply with any and all of SAMSUNG’s registration processes. Before Applications are available to customer, end users or the public, Licensee shall obtain all required and necessary permissions and/or approvals from relevant government authorities. In addition, in respect of any Application that may collect, transmit, maintain, process, share, disclose or otherwise use personal information, location information, health information or other data that relates to a user ("User Information Handling"), Licensee shall comply, and the Application must be compliant, with all applicable privacy and data collection laws and regulations with respect to such User Information Handling. Licensee must ensure that any processing or transmission of the end user data is conducted in a manner that preserves the accuracy and security of the data. Licensee must not design or market Applications for the purpose of violating any legal rights of any person (including but not limited to privacy rights).</li>
+										<li>(e) Without limiting Licensee’s obligations under paragraph (f), Licensee must ensure that any Application that offers health information or location information based services or functionality notifies and obtains consent from an individual before the individual’s health or location data is collected, transmitted or otherwise used by the Application. In addition, Applications that use health information based APIs shall comply with SAMSUNG’s registration process. </li>					
+										<li>(f) Applications that use location-based APIs for real-time route guidance, MUST NOT BE USED FOR ANY EMERGENCY OR LIFE SAVING PURPOSES DUE TO ITS INACCURACY and Licensee must have an end user license agreement in relation to such Applications that includes the following notice: "REAL TIME LOCATION DATA ACCESSED VIA THIS APPLICATION MAY BE INACCURATE OR INCOMPLETE. LICENSEE’S USE OF THIS APPLICATION IS AT ITS SOLE RISK." Licensee shall not use the Application for nuclear energy equipment, air traffic control, the operation of communication system, public transportation control, life support devices, or other devices that may cause deaths, injuries or severe physical or environmental losses in the event that the Application fails to perform in such devices. Any attempt to do so shall be deemed as a material breach under this Agreement.</li>					
+										<li>(g) Applications must not disable, override or otherwise interfere with any SAMSUNG-implemented system including, but not limited to, those that are intended to notify a user that the user's location data is being collected, transmitted, maintained, processed or used, or intended to obtain consent for such use. Applications may not provide services for which the user's consent has been denied or withdrawn.</li>					
+										<li>(h) If an Application includes any Third Party Software, Licensee must comply with all licensing terms applicable to such Third Party Software. However, Licensee shall separate the portion of the Third Party Software from the portion of the SDK in Licensee’s Application and shall not cause the portion of the SDK in Licensee’s Application, any derivative works thereof, and/or SAMSUNG’s Confidential Information to be subject to the licensing terms applicable to such Third Party Software (e.g., public disclosure, public distribution). Licensee shall indemnify, defend and hold harmless SAMSUNG, its distributors and its customers from and against any and all claims, demands, damages, costs or expenses (including reasonable attorney’s fees) and liabilities arising out of or in relation to the use of Third Party Software.</li>
+										<li>(i) Applications may be rejected if they contain content or materials of any kind (including, but not limited to, text, graphics, images, photographs, sounds, etc.) that SAMSUNG reasonably determines to be objectionable (for example, materials that may be considered obscene, pornographic or defamatory).</li>
+										<li>(j) Prior to distribution, public release or public demonstration of the Application, Licensee shall obtain prior key signing for the Application from SAMSUNG. </li> 
+										<li>(k) Licensee shall promptly respond to SAMSUNG regarding the use of policies and APIs in connection with the Application and/or SDK, upon SAMSUNG’s request. </li> 
+										<li>(l) Licensee warrants that the use of Licensee’s Application does not and will not infringe the intellectual property rights, or other proprietary rights of any third party and shall immediately notify Samsung in the event of any such infringement.</li>
+										<li>(m) Licensee warrants that the Application is free from material errors and defects. Licensee warrants that the Application has been designed and developed for installation and operation solely on the devices that have been fully tested and approved by Samsung. Licensee warrants that the Application will operate with each applicable key.</li>
+										<li>(n) Licensee acknowledges and agrees that in connection with Licensee’s use of the SDK, Samsung may collect and use information about the Application and use of Application. Licensee shall obtain all consents from the users of the Application necessary for Samsung to use the foregoing information for the purpose of improving SDK and for providing services, if any, related to the SDK. For the purpose of clarity, Samsung reserves the right to charge for use of the SDK in the future.</li>
+										<li>(o) Applications SHALL NOT BE USED FOR ANY MEDICAL PURPOSES, including, without limitation, diagnosis of disease or other conditions; cure, mitigation, treatment, or prevention of disease; detection, diagnosis, monitoring, management or treatment of any medical condition, disease or vital physiological processes; transmission of time-sensitive health information (collectively, “Medical Purposes”). Licensee shall not develop, make, promote, market, distribute, license, sell or use Application for any Medical Purposes. Licensee hereby represents and warrants that no Application is and will be classified as a medical device under any applicable jurisdiction in the world, including, without limitation, U.S. Food and Drug Administration. Any breach of this Section 15 shall be deemed as a material breach under this Agreement. Where Licensee allegedly or actually breaches this Section 15, subject to Samsung’s interpretation, Samsung has a right to revoke the license granted under this Agreement and/or block access to Published APIs by Applications, at its sole discretion.</li>
+									</ol>
+								</li>
+							</ol>
+							<h3 class="sd2_sdk_title2">4. Licensee’s Responsibilities</h3>
+							<ol class="sd2_inner_ol sd2_narrow sd2_other2">
+								<li><em>4.1</em><p> Licensee represents and warrants to SAMSUNG and agrees that</p>
+									<ol class="sd2_inner_ol sd2_narrow">
+										<li>(a) Licensee has the requisite corporate authority to enter into this Agreement and perform its obligations under this Agreement, and this Agreement does not conflict with any other agreement or obligation by which it is bound;</li>
+										<li>(b) Licensee is and will be responsible for the Authorized Users’ use of the SDK and their compliance with this Agreement; and</li>
+										<li>(c) Licensee will be solely responsible for all activities Licensee and the Authorized Users undertake in connection with the SDK, the Applications and the development of Applications.</li>
+									</ol>
+								</li>
+							</ol>
+							<h3 class="sd2_sdk_title2">5. Confidentiality and Press Release</h3>
+							<ol class="sd2_inner_ol sd2_narrow sd2_other2">
+								<li><em>5.1</em><p>Licensee acknowledges and agrees that the SDK (including all test versions of the SDK) constitute "Confidential Information" for the purposes of this Agreement, unless SAMSUNG expressly indicates otherwise or makes the terms and conditions of the SDK publicly available. Notwithstanding the foregoing, Confidential Information does not include information that Licensee can demonstrate by written evidence:: (i) information that is generally and legitimately available to the public through no fault or breach by Licensee, (ii) information that SAMSUNG makes generally made available to the public, (iii) information that Licensee independently develops without use or reliance of any Confidential Information, (iv) information that Licensee lawfully obtains from a third party who has the right to transfer or disclose the information to Licensee without limitation, or (v) any Open Source Software included in the SDK, the licensing terms of which do not contain obligations of confidentiality.</p></li>
+								<li><em>5.2</em><p>Licensee must protect Confidential Information using a degree of care that is no less than that which Licensee uses to protect Licensee’s own confidential information of the same or similar importance (and in any event, no less than a reasonable degree of care). Licensee may use Confidential Information solely for the purpose of exercising Licensee’s rights and performing Licensee’s obligations under this Agreement and Licensee must not use Confidential Information for any other purpose, or for Licensee’s own or any third party’s benefit, without the prior written consent of SAMSUNG. Licensee may disclose Confidential Information to the extent required by law, provided that Licensee takes reasonable steps to notify SAMSUNG of the relevant requirement prior to disclosing the Confidential Information and Licensee takes reasonable steps to obtain protective treatment against disclosure of the Confidential Information.</p></li>
+								<li><em>5.3</em><p>Licensee must not issue any press releases or make any other public statements relating to this Agreement, its terms and conditions, or Licensee’s relationship with SAMSUNG without the express prior written approval of SAMSUNG.</p></li>
+							</ol>
+							<h3 class="sd2_sdk_title2">6. DISCLAIMER OF WARRANTY</h3>
+							<p class="sd2_sdk_para">SAMSUNG EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTIBILITY, FITNESS FOR A PARTICULAR PUPOSE AND NON-INFRINGEMENT. FURTHER, SAMSUNG DOES NOT REPRESENT OR WARRANT THAT ANY PORTION OF THE SDK IS FREE OF INACCURACIES, ERRORS, BUGS OR INTERRUPTIONS, OR IS RELIABLE, ACCURATE, COMPLETE, OR OTHERWISE VALID. THE SDK IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT ANY WARRANTY OF ANY KIND FROM SAMSUNG. <br />
+							LICENSEE’S USE OF THE SDK IS AT ITS OWN DISCRETION AND RISK, AND LICENSEE WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE THAT RESULTS FROM THE USE OF THE SDK INCLUDING, BUT NOT LIMITED TO, ANY DAMAGE TO LICENSEE’S COMPUTER SYSTEM OR LOSS OF DATA. FOR THE PURPOSE OF CLARITY, THE SAMPLE CODE IS LICENSED “AS-IS” AND LICENSEE BEARS THE RISK OF USING IT. SAMSUNG GIVES NO EXPRESS AND/OR IMPLIED WARRANTIES, GUARANTEE OR CONDITIONS.</p>
+
+							<h3 class="sd2_sdk_title2">7. LIMITATION OF LIABILITY</h3>
+							<p class="sd2_sdk_para">SUBJECT TO TERMS AND CONDITIONS OF THIS AGREEMENT AND TO THE FULLEST EXTENT ALLOWED AND PERMITTED BY APPLICABLE LAWS AND REGULATIONS, SAMSUNG SHALL NOT, UNDER ANY CIRCUMSTANCES, BE LIABLE TO LICENSEE OR ANY THIRD PARTY THROUGH LICENSEE FOR PERSONAL INJURY OR ANY CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, INDIRECT, PUNITIVE OR SPECIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR IN RELATION TO THIS AGREEMENT, LICENSEE’S USE OF THE SDK, OR LICENSEE’S DEVELOPMENT OF APPLICATIONS, WHETHER BASED ON BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, EVEN IF IT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF ANY REMEDY. THE SDK LICENSED HEREUNDER IS NOT DESIGNED OR INTENDED FOR USE TO ENABLE THE DESIGN OF APPLICATIONS USED IN ANY MEDICAL, LIFE SAVING OR LIFE SUSTAINING SYSTEMS, TRANSPORTATION SYSTEMS, NUCELAR SYSTEMS, OR FOR ANY OTHER MISSION CRITICAL APPLICATION IN WHICH THE FAILURE OF THE SDK COULD LEAD TO PERSONAL INJURY OR DEATH OR FOR USE IN ANY SECURIT-RELATED USE CASES. LICENSEE’S UNDERSTSANDING, ACKNOWLEDGEMENT AND ACCEPTANCE OF THIS AGREEMENT ARE THE LEGAL BASIS AND CONSIDERATION FOR THE LICENSES GRANTED UNDER IT.</p>
+
+							<h3 class="sd2_sdk_title2">8. Indemnity</h3>
+							<ol class="sd2_inner_ol sd2_narrow sd2_other2">
+								<li><em>8.1</em><p>To the fullest extent permitted by law, Licensee agrees to indemnify, defend and hold harmless SAMSUNG, its Affiliates, directors, officers, employees, independent contractors and agents (each a "SAMSUNG Indemnified Party") from any and all claims, losses, liabilities, damages, expenses and costs (including without limitation reasonable attorneys fees) (collectively "Losses") incurred by a SAMSUNG Indemnified Party as a result of Licensee’s (or an Authorized User’s) breach of this Agreement, any claims that the Applications violate or infringe any third party intellectual property or proprietary rights, or otherwise related to or arising from Licensee’s (or any Authorized User’s) use of the SDK, the Applications or Licensee’s (or any Authorized User’s) development or distribution of Applications.</p></li>
+								<li><em>8.2</em><p>Licensee acknowledges that the SDK is not intended to be used in the development of any Application where death, personal injury, or severe physical or environmental damage could result from errors or inaccuracies in the content, data or information provided by the Application or by Application failures. To the extent permitted by law, Licensee agrees to indemnify, defend and hold harmless each SAMSUNG Indemnified Party from any Losses incurred by such SAMSUNG Indemnified Party as a result of Licensee’s use of the SDK in the development of any such Applications.</p></li>
+								<li><em>8.3</em><p>Licensee must not enter into a settlement or like agreement with any third party that affects SAMSUNG's rights or binds SAMSUNG in any way related to or arising from Licensee’s (or any Authorized User’s) use of the SDK without the prior written consent of SAMSUNG.</p></li>
+							</ol>
+
+							<h3 class="sd2_sdk_title2">9. Termination</h3>
+							<ol class="sd2_inner_ol sd2_narrow sd2_other2">
+								<li><em>9.1</em><p>Right to Terminate.<br />This Agreement and all rights granted by SAMSUNG hereunder maybe immediately terminated:</p>
+									<ol class="sd2_inner_ol">
+										<li>(a) by Licensee if Licensee ceases use of the SDK;</li>
+										<li>(b) by SAMSUNG: (i) if Licensee has breached any terms of this Agreement; or (ii) if SAMSUNG is required by law to terminate this Agreement or the rights granted by SAMSUNG;</li>					
+										<li>(c) by either party for any reason or no reason upon thirty (30) days prior written notice to the other party; or</li>
+										<li>(d) by SAMSUNG if Google develops or has developed a software development kit which is same as or similar to the SDK. Licensee agrees and acknowledges that it has been advised of the possibility of Google developing or having developed a software development kit which is same or similar to this SDK, when executing this Agreement.<br>
+										SAMSUNG will have no liability to pay compensation or damages, or to provide an indemnity, of any kind as a result of terminating this Agreement in accordance with its terms, and termination of this Agreement is without prejudice to any other right or remedy that SAMSUNG may have, now or at any time in the future.</li>
+									</ol>
+								</li>
+								<li><em>9.2</em><p> Consequences of Termination <br />Upon the termination of this Agreement: (a) all rights granted in this Agreement will terminate; (b) Licensee shall promptly stop using the SDK and return the SDK to SAMSUNG or destroy all electronic copies of the SDK and, at SAMSUNG’s request, provide written certification of such destruction to SAMSUNG. The provisions of Clauses 1, 2.4, 2.5, 2.6, 2.7, 2.8, 3, 4, 5, 6, 7, 8, 9 and 10 will survive the expiration or termination of this Agreement.</p></li>
+							</ol>
+
+							<h3 class="sd2_sdk_title2">10. General</h3>
+							<ol class="sd2_inner_ol sd2_narrow sd2_other2">
+								<li><em>10.1</em><p>Assignment. <br />Licensee may not assign the Agreement, in whole or in part, without SAMSUNG’s prior written consent, and any attempt to do so without such consent shall be void. SAMSUNG may assign this Agreement without the Licensee’s consent. This Agreement shall be binding upon and shall inure to the benefit of the parties hereto and their respective successors and permitted assigns.</p></li>
+								<li><em>10.2</em><p>Relationship of Between Licensee and SAMSUNG. <br />This Agreement will not be construed as creating an agency, partnership, joint venture, fiduciary duty, or any other form of legal relationship between Licensee and SAMSUNG, and Licensee must not represent the existence of any such relationship, whether expressly, by implication or otherwise.</p></li>
+								<li><em>10.3</em><p>Third Party Rights <br />This Agreement is not for the benefit of any third parties.</p></li>
+								<li><em>10.4</em><p>Development by SAMSUNG. <br />Nothing in this Agreement limits or otherwise affects SAMSUNG's right to acquire, develop, license, market, promote, or distribute any product or technology that performs the same or similar functions as the Applications or any other products or technologies that Licensee develops, markets, promotes or distributes, or that otherwise competes with the Applications or such products or technologies.</p></li>
+								<li><em>10.5</em><p>Notices. <br />Any notices or other communication made pursuant to this Agreement must be in writing and will be deemed to have been fully given or made when: (a) personally delivered; or (b) three (3) days after being mailed via commercially reputable overnight delivery service, to the following address:</p>
+									<p>SAMSUNG:<br />
+										(Maetandong) 129, Samsung-ro <br />
+										Yeongtong-gu,Suwon-si, Gyeonggi-do, Republic of Korea 443-742</p>
+									<p>Licensee agrees to receive notices and other communications to be made to Licensee pursuant to this Agreement by email and Licensee agrees that any notices that SAMSUNG sends to Licensee by email will satisfy any legal communication requirements.</p> 
+									<p>A party may change its email or mailing address by giving the other party written notice in accordance with this Clause.</p>
+								</li>
+								<li><em>10.6</em><p>No Waiver. <br />Failure by SAMSUNG to insist upon strict performance of any of the provisions contained in this Agreement shall in no way constitute a waiver of SAMSUNG’s rights as set forth in this Agreement, at law or in equity, or a waiver of any other provisions or the right to take action in respect of a subsequent default by Licensee in the performance or compliance with any of the terms and conditions set forth in this Agreement.</p></li>
+								<li><em>10.7</em><p> Remedies. <br />Licensee acknowledges that any disclosure, use or misappropriation of Confidential Information of SAMSUNG in violation of this Agreement would cause SAMSUNG irreparable harm for which there may be no adequate remedy at law. Accordingly, Licensee agrees that SAMSUNG shall have the right to apply to any court of competent jurisdiction for injunctive relief and specific performance, without prejudice to any remedies otherwise available to SAMSUNG at law or in equity.</p></li>
+								<li><em>10.8</em><p>Governing Law; Venue. <br />This Agreement shall be governed by and construed in accordance with the laws of the Republic of Korea, without regard to any conflict-of-laws rules. All disputes, controversies or claims between the parties arising out of or in connection with this Agreement (including its existence, validity or termination) shall be finally resolved by arbitration to be held in Seoul, Korea and conducted in English under the Rules of Arbitration of the International Chamber of Commerce; provided, however, that each party may enforce its or its affiliates’ intellectual property rights in any court of competent jurisdiction, including but not limited to equitable relief. The arbitral award shall be final and binding on the parties. Except to the extent entry of judgment and any subsequent enforcement may require disclosure, all matters relating to the arbitration, including the award, shall be held in confidence.</p></li>
+								<li><em>10.9</em><p>Entire Agreement. <br />This Agreement contains the entire agreement between the parties with respect to the use of the SDK licensed hereunder and supersedes all existing agreements and all other oral, written or other communications between the parties concerning this subject matter. If any provision of this Agreement (or any portion thereof) is invalid, illegal or unenforceable, the validity, legality and enforceability of the remainder of this Agreement shall not be affected or impaired.</p></li>
+							</ol>
+						</div><!-- //sd2_sdk_con -->
+						<div class="sd2_sdk_agree">
+							<div class="sd2_checkbox">
+								<input type="checkbox" id="sd2_sdk_agree"/><label for="sd2_sdk_agree">I agree to this SDK License Agreement</label>
+							</div>
+							<a href="#" class="sd2_down_btn">DownLoad</a>
+						</div>
+					</div><!-- //pop_con_wrap -->
+				</div><!-- //device_info_wrap -->
+			</div><!-- //pop_wrap -->
+		</div><!-- //popup_modal_wrap -->
+	</body>
+	
+</html>

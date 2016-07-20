@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/galaxy.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap  sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">Distribute</a></li>
+							<li class="sd2_now"><a href="#">Troubleshooting</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Troubleshooting(Mobile Galaxy)</h3>
+					</div><!-- //page_title -->
+					<!-- sd2_pre_txt -->
+					<div class="sd2_pre_txt sd2_con_margin sd2_con_padding sd2_pb_0">
+						<p class="sd2_paragraph01">This document helps you check frequent failure issues. It summarizes some failure examples of functional, contents and security issues in sequence. For each failure issue, support links are provided for you.</p>
+					</div><!-- //sd2_pre_txt -->
+					<!-- sd2_fun_wrap -->
+					<div class="sd2_fun_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">1. Functional Defects</h4>
+						<table class="sd2_table">
+							<caption>Functional Defects</caption>
+							<colgroup>
+								<col width="20%">
+								<col width="80%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">Issue Type</th>
+									<th scope="col" class="none">Troubleshooting</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1-1. Power Button (Hold Key)</td>
+									<td>
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong> : <br />Current activity is not paused when power button pressed.</li>
+											<li><strong>Probable Cause</strong>: <br />onPause() callback is not invoked properly.</li>
+											<li><strong>Suggested Resolution</strong>: <br />Make power button call onPause() first than any others.
+												<a href="http://developer.android.com/reference/android/app/Activity.html#onPause%28%29" target="_blank" class="sd2_link_go small_font">http://developer.android.com/reference/android/app/Activity.html#onPause%28%29</a><br />
+												<a href="http://developer.android.com/reference/java/util/concurrent/locks/Lock.html" target="_blank" class="sd2_link_go small_font">http://developer.android.com/reference/java/util/concurrent/locks/Lock.html</a>
+											</li>
+										</ul>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>1-2. Back Key</td>
+									<td>
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong>: <br />Application does not go back to the previous activity when user presses Back key.( Android 2.0 and above)</li>
+											<li><strong>Probable Cause</strong>: <br />There might several activities running on a stack or on a background thread when user presses back key.</li>
+											<li><strong>Suggested Resolution</strong>: <br />Rearrange the paths of activities. <br />
+													Default behavior of android back key is to go back to the previous activity. Check onBackPressed() verse.</li>
+											<li><strong>References</strong><br />
+												<ul class="sd2_con_list sd2_oneline">
+													<li><p>Android Activity class#onBackPressed() :</p>
+														<a href="http://developer.android.com/reference/android/app/Activity.html#onBackPressed()" target="_blank" class="sd2_link_go small_font">http://developer.android.com/reference/android/app/Activity.html#onBackPressed()</a>
+													</li>
+													<li><p>Task & Back Stack :</p>
+														<a href="http://developer.android.com/reference/android/app/Activity.html#onBackPressed()" target="_blank" class="sd2_link_go small_font">http://developer.android.com/reference/android/app/Activity.html#onBackPressed()</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>1-3. Test Information</td>
+									<td class="none">
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong>: <br />Some of application functions cannot be verified due to the lack of test information provided.</li>
+											<li><strong>Suggested Resolution</strong>: <br />Provide proper test information if needed.
+												<ul class="sd2_con_list sd2_oneline">
+													<li><p>Test ID and password: When application requires ID and password for log-in or to use additional functions.</p></li>
+													<li><p>Video file: When application co-works with other devices, video file should show its functions working.<br />
+														When application uses its own purchase module. Video file should show its successful purchase. 
+													</p></li>
+												</ul>
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- //sd2_fun_wrap -->
+					<!-- sd2_def_wrap -->
+					<div class="sd2_def_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">2. Contents Defects</h4>
+						<table class="sd2_table">
+							<caption>Contents Defects</caption>
+							<colgroup>
+								<col width="20%">
+								<col width="80%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">Issue Type</th>
+									<th scope="col" class="none">Troubleshooting</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2-1. Application Title and Description Language</td>
+									<td>
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong> : <br /> Application title and description language is not in English.</li>
+											<li><strong>Probable Cause</strong>: <br />Seller puts application title and description in some language other than English even s/he selects sales country more than 2.<br />
+												Seller selects incorrect sales country; s/he should have selected one local country to use local language.
+											</li>
+											<li><strong>Suggested Resolution</strong>: <br />Use English when seller wants to service application in 2 countries at least.</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>2-2. Icon and Screenshots</td>
+									<td>
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong>: <br />Icon and Screenshots are not appropriate for all ages.</li>
+											<li><strong>Probable Cause</strong>: <br />Icon and screenshot images are not proper for all ages because they are too sexual, violent or horrifying.</li>
+											<li><strong>Suggested Resolution</strong>: <br />Check Age Rating Guide <br />
+													<a href="http://seller.samsungapps.com/qa/downloadSupportFiles.as?type=3" target="_blank" class="sd2_link_go small_font">http://seller.samsungapps.com/qa/downloadSupportFiles.as?type=3</a><br />
+													Icon and Screenshots should be for all ages.
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>2-3. Samsung Brand Usage</td>
+									<td class="none">
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong>: <br />Seller uses Samsung identifiers including brand, logos, trademarks and graphics which are copyrighted or trademarked.</li>
+											<li><strong>Suggested Resolution</strong>: <br />Samsung brand and relevant identifiers are not released to be used.<br />
+												Brand Guidelines : <a href="http://www.samsung.com/us/common/legal.html" target="_blank" class="sd2_link_go small_font">http://www.samsung.com/us/common/legal.html</a><br />
+												If Samsung or Samsung Galaxy Apps is in text for descriptive purpose, it’s allowed. (e.g. XYZ for Samsung)
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- //sd2_def_wrap -->
+					<!-- sd2_secu_wrap -->
+					<div class="sd2_secu_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">3. Security Defects</h4>
+						<table class="sd2_table">
+							<caption>Security Defects</caption>
+							<colgroup>
+								<col width="20%">
+								<col width="80%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">Issue Type</th>
+									<th scope="col" class="none">Troubleshooting</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>3-1. Android Debug Key</td>
+									<td>
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong> : <br />The android debug key is used for signing APK.</li>
+											<li><strong>Probable Cause</strong>: <br />This error is common if developer submitted your application on Samsung Galaxy Apps seller office without changing of android debug key for signing apk. 
+												<dl>
+													<dt>Android debug key</dt>
+													<dd>
+														<ul class="sd2_con_list sd2_oneline sd2_narrow">
+															<li><p>Keystore name: "debug.keystore"</p></li>
+															<li><p>Keystore password: "android"</p></li>
+															<li><p>Key alias: "androiddebugkey"</p></li>
+															<li><p>Key password: "android"</p></li>
+															<li><p>CN: "CN=Android Debug,O=Android,C=US"</p></li>
+														</ul>
+													</dd>
+												</dl>
+											</li>
+											<li><strong>Suggested Resolution</strong>: <br />Use English when seller wants to service application in 2 countries at least.</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<td>3-2. Debuggable Option</td>
+									<td>
+										<ul class="sd2_mb_10 sd2_normal_list">
+											<li><strong>Problem</strong> : <br />Registered application is a debuggable APK.</li>
+											<li><strong>Probable Cause</strong>: <br />The debuggable attribute set to 'True' in the manifest file(android:debuggable="true").</li>
+											<li><strong>Suggested Resolution</strong>: <br />Disable the debugging option by setting the android:debuggable attribute to 'false' or removing the android:debuggable attribute from the <application> tag in	manifest file. For more details, refer to below guideline from Google.<br />
+												<a href="http://developer.android.com/tools/publishing/preparing.html" target="_blank" class="sd2_link_go small_font">http://developer.android.com/tools/publishing/preparing.html</a> [Turn off logging and debugging]
+											</li>
+										</ul>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div><!-- //sd2_secu_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+</html>

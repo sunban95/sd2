@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li class="sd2_now"><a href="#">Pen</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Pen</h3>
+					</div><!-- //page_title -->
+					<!-- ec_wrap -->
+					<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_essential">
+						<h4 class="sd2_body_min_title1">Essential Contents</h4>
+						<ul class="sd2_link_list sd2_line">
+							<li class="sd2_gray sd2_w100">
+								<a href="#" class="sd2_list_download_btn">
+									<div class="sd2_link_item">
+										Pen SDK 2.0.3 
+										<span class="sd2_version_date"><span class="sd2_version">Version : 4.1.0(Static)</span><span class="sd2_date">Feb 5, 2016</span></span>
+										<span class="sd2_down"></span>
+									</div>
+								</a>
+							</li>
+							<li class="sd2_line"><a href="http://img-developer.samsung.com/onlinedocs/sms/pen/index.html" class="sd2_blank" target="_blank">API Reference - Full version</a></li>
+							<li><a href="#" class="sd2_page">Release Note</a></li>
+							<li class="sd2_gray sd2_line"><a href="http://developer.samsung.com/onlinedocs/sms/pen-light/index-all.html"  class="sd2_page" target="_blank">API Reference - Light version</a></li>
+							<li class="sd2_gray"><a href="#"  class="sd2_page">Programming Guide</a></li>
+						</ul>
+					</div><!-- //ec_wrap -->
+					<!-- overview_wrap -->
+					<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overView">
+						<!-- sd2_overview_container -->
+						<div class="sd2_overview_container" style="height:580px">
+							<!-- sd2_overview_content -->
+							<div class="sd2_overview_content">
+								<h4 class="sd2_body_min_title1">OverView</h4>
+								<p class="sd2_paragraph01">Pen SDK allows you to develop applications, such as S Note, that use handwritten input. Pen SDK uses pens, fingers or other kinds of virtual pens for input and makes it feel like you are actually writing on a notepad with various useful editing functions.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/sms_pen_150818_00.png" alt="Figure 1: Pen SDK" />
+									<span class="sd2_figure">Figure 1: Pen SDK</span>
+								</div><!-- //img_c -->
+								<p class="sd2_paragraph01">With Pen SDK, creating Android applications that handle handwritten inputs is quite simple. All that needs to be done is add a view provided by Pen SDK onto the application’s layout. Through this view, inputs like pressure and speed from the S Pen are captured and processed precisely to give the realistic feel of a real pen and paper to users. Created contents such as handwritings, drawings or shapes via Pen SDK can also be edited with the various advanced editing features provided by the SDK, which can increase the satisfaction level of application users.</p>
+
+								<p class="sd2_paragraph01">Pen SDK 4.x has been improved performance-wise and has added new features. The overall performance has been boosted up with the use of hardware such as NEON or GPU adaptively while reducing the power consumption. Paragraph formatting of the text box is improved to provide users with the richer ways of editing texts. And the newly added recognition engine enables the new method to add or edit various shapes without accessing the menus.</p>
+
+								<p class="sd2_paragraph01">Pen SDK supports the following features:</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Advanced editing</p></li>
+									<li><p>Recognition based shape editing</p></li>
+									<li><p>General recognition</p></li>
+								</ul>
+
+								<h5 class="sd2_body_min_title2">Advanced Editing</h5>
+								<p class="sd2_paragraph01">Pen SDK provides advanced ways to edit documents effectively with pens on relatively small screens. Basic objects like handwritings, drawing or shapes can be selected with a rectangle or an arbitrary shape using the lasso. Properties of the selected objects can changed with the built-in functions: group/ungroup, change z-order, color or size, etc.</p>
+
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/sms_pen_150818_01.jpg" alt="Figure 2: Advanced editing" />
+									<span class="sd2_figure">Figure 2: Advanced editing</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">Recognition Based Shape Editing</h5>
+								<p class="sd2_paragraph01">The needs of using shapes while making contents have been there for a while to make richer documents. Limitations of the mobile environment, such as small screen size, no hardware input devices or handheld usage, still exist, but the recognition engine inside Pen SDK 4.x will automatically converts the user’s rough inputs into much refined shapes. Once shapes have been recognized and added to documents, more editing options can be applied to the added shapes, which can be compatible to those widely used word processors on PC.</p>
+
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/sms_pen_150818_02.jpg" alt="Figure 3: Recognition based shape editing" />
+									<span class="sd2_figure">Figure 3: Recognition based shape editing</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">General Recognition</h5>
+								<p class="sd2_paragraph01">Pen SDK can convert input strokes into various useful data format with the built-in recognition and beautification engine. Using the text recognition, user’s handwritten texts on screen can be converted into meaningful text that can be used for searching or can be highlighted.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/sms_pen_150818_03.jpg" alt="Figure 4: Searching handwritten text" />
+									<span class="sd2_figure">Figure 4: Searching handwritten text</span>
+								</div><!-- //img_c -->
+								<p class="sd2_paragraph01">Also, using formula recognition and shape beautification, handwritten can be converted into mathematic equations with better looking objects.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/sms_pen_150818_04.jpg" alt="Figure 5: Sketch to vector" />
+									<span class="sd2_figure">Figure 5: Sketch to vector</span>
+								</div><!-- //img_c -->
+									<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/sms_pen_150818_05.jpg" alt="Figure 6: Formula recognition" />
+									<span class="sd2_figure">Figure 6: Formula recognition</span>
+								</div><!-- //img_c -->
+
+								<h5 class="sd2_body_min_title2">Restrictions</h5>
+								<p class="sd2_paragraph01">Pen SDK has the following restrictions:</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Pen SDK supports devices with Android 4.0 (Ice Cream Sandwich API level 14) or higher.</p></li>
+									<li><p>Some functions such as writing pressure or hover will be limited on the devices without the built-in S Pen.</p></li>
+								</ul>
+							</div><!-- //sd2_overview_content -->
+						</div><!-- //sd2_overview_container -->
+						<div class="sd2_more_less_btn sd2_close">
+							<a href="#" class="sd2_more">more</a>
+						</div>
+					</div><!-- //overview_wrap -->
+					<!-- sd2_td_wrap -->
+					<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
+						<h4 class="sd2_body_min_title1">Technical Document</h4>
+						<ul class="sd2_link_list2">
+							<li><a href="#" class="sd2_blank">API Reference: Full Version</a></li>
+							<li><a href="#" class="sd2_blank">API Reference: Light Version</a></li>
+							<li><a href="#" class="sd2_page">Programming Guide</a></li>
+							<li><a href="#" class="sd2_page">Overview of Pen package</a></li>
+							<li><a href="#" class="sd2_page">Using Pen SDK in Eclipse development environment</a></li>
+						</ul>
+					</div><!-- //sd2_td_wrap -->
+					<!-- sample_wrap -->
+					<div class="sd2_sample_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_samples">
+						<h4 class="sd2_body_min_title1">Samples</h4>
+						<ul class="sd2_link_list sd2_gray" >
+							<li class="sd2_w100"><a href="#" class="sd2_down">Pen<span class="sd2_bar">Sample App</span></a></li>
+						</ul>
+					</div><!-- //sample_wrap -->
+					<!-- faq_wrap -->
+					<div class="sd2_faq_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_faq">
+						<h4 class="sd2_body_min_title1">FAQ</h4>
+						<ul class="sd2_faq sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q01</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q02</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q03</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q04</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q05</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+						<div class="sd2_paging">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div><!-- //faq_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+	<script type="text/javascript">
+		var more_container=null; 
+		var btn=null;
+		var now_h=0;
+		var all_h;
+		var more_list=null;
+		var classN="sd2_"; 
+
+		var init=function(container){
+			more_container=$(container); 
+			btn=more_container.next("."+classN+"more_less_btn").find("a");
+			all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
+			//all_h=more_container.find("."+classN+"overview_content").height();
+			console.log(all_h)
+			now_h=more_container.height();
+
+			eventDefine();
+		}
+
+		var eventDefine=function(){
+			btn.on("click", btn_click);
+		}
+
+		var btn_click=function(e){
+			var $this=$(this); 
+			if($this.hasClass(classN+"more")){
+				$this.removeClass(classN+"more").addClass(classN+"less"); 
+				$this.text("less");
+				more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
+			}else{
+				$this.removeClass(classN+"less").addClass(classN+"more"); 
+				$this.text("more");
+				more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
+			}
+			return false; 
+		}
+
+		init(".sd2_overview_container");
+	</script>
+</html>

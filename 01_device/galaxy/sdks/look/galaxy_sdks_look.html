@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li class="sd2_now"><a href="#">Look</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Look</h3>
+					</div><!-- //page_title -->
+					<!-- ec_wrap -->
+					<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_essential">
+						<h4 class="sd2_body_min_title1">Essential Contents</h4>
+						<ul class="sd2_link_list sd2_line">
+							<li class="sd2_gray sd2_w100">
+								<a href="#" class="sd2_list_download_btn">
+									<div class="sd2_link_item">
+										Look SDK 2.0.3 
+										<span class="sd2_version_date"><span class="sd2_version">Version : 1.3.1</span><span class="sd2_date">May 26, 2016</span></span>
+										<span class="sd2_down"></span>
+									</div>
+								</a>
+							</li>
+							<li class="sd2_line"><a href="http://img-developer.samsung.com/onlinedocs/sms/look/index.html" class="sd2_blank" target="_blank">API Reference</a></li>
+							<li><a href="galaxy_sdk_look_technical_release.html" class="sd2_page">Release Note</a></li>
+							<li class="sd2_gray sd2_line"><a href="#"  class="sd2_page">Programming Guide : SPen</a></li>
+							<li class="sd2_gray"><a href="#"  class="sd2_page">Programming Guide : Edge</a></li>
+							<li class="sd2_line"><a href="#" class="sd2_page">Getting Started</a></li>
+						</ul>
+					</div><!-- //ec_wrap -->
+					<!-- overview_wrap -->
+					<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overView">
+						<!-- sd2_overview_container -->
+						<div class="sd2_overview_container" style="height:380px">
+							<!-- sd2_overview_content -->
+							<div class="sd2_overview_content">
+								<h4 class="sd2_body_min_title1">OverView</h4>
+								<p class="sd2_paragraph01">Look offers specialized widgets and service components for extended functions of the Samsung Android devices.<br />Look supports the following functions:</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Edge</p>
+										<ul class="sd2_sub">
+											<li>Edge Single Mode</li>
+											<li>Edge Single Plus Mode</li>
+											<li>Edge Feeds Mode</li>
+											<li>Edge Immersive Mode (will be deprecated in N)</li>
+										</ul>
+									</li>
+									<li>
+										<p>S-Pen</p>
+										<ul class="sd2_sub">
+											<li>AirButton (will be deprecated in N)</li>
+											<li>SmartClip (will be deprecated in N)</li>
+											<li>WritingBuddy (will be deprecated in N)</li>
+											<li>PointerIcon</li>
+										</ul>
+									</li>
+								</ul>
+								<h5 class="sd2_body_min_title2">Edge</h5>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/sms_look_01_20160203.png" alt="Figure 1: Edge Mode" />
+									<span class="sd2_figure">Figure 1: Edge</span>
+								</div><!-- //img_c -->
+								<p class="sd2_paragraph01">From Galaxy S6 Edge M OS, Edge Feed mode and Edge Single Plus mode are supported and this feature has been added to Look SDK 1.3.0. For more information, please refer to this document: <a href="http://img-developer.samsung.com/contents/cmm/sms/pdf/Edge_UI_Design_Guideline_v1.0.pdf" class="sd2_link_go" target="_blank">'[Samsung_Galaxy edge] UI_Design Guideline_v1.0'</a></p>
+								<h6 class="sd2_body_min_title3">Edge Single Mode</h6>
+								<p class="sd2_paragraph01">The Application for Edge Single Mode is viewed on the Edge(curved) screen area. You can publish one with the cocktail provider, which is added in the Edge screen area. You can enable some Edge Single Modes in Edge Settings, and change them through the revolving action on Edge service.</p>
+								<h6 class="sd2_body_min_title3">Edge Single Plus Mode</h6>
+								<p class="sd2_paragraph01">Edge Single Plus mode is similar with Edge Single Mode, but can provide many contents using the wide UI. Look v1.3.0 supports the options where you can define the variable width and API which can describe the Edge Single Plus mode.</p>
+								<p class="sd2_paragraph01">Edge Single Plus mode is supported in Galaxy S6 Edge M OS, and Galaxy S6 Edge+ M OS.</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap">
+									<span class="sd2_title">Note</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>Multiple Single Plus Panel can be supported for one packages but Single Mode(160 px) will be hidden automatically if App support Single Plus Panel.</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+								<h6 class="sd2_body_min_title3">Edge Feeds Mode</h6>
+								<p class="sd2_paragraph01">Edge Feeds Mode is similar with Edge Single Mode but with simpler information.</p>
+								<p class="sd2_paragraph01">Look v1.2.0 supports Edge Feeds Mode for Galaxy S6 Edge because it supports only Edge feeds Modes.7</p>
+								
+								<h6 class="sd2_body_min_title3">Edge Immersive Mode</h6>
+								<p class="sd2_paragraph01">ou can use the extra edge screen as a sub-window for the main activity to offer wider views.</p>
+								<p class="sd2_paragraph01">A screen with a 16:10 expanded view is provided by arranging components of each screen as Edge screen area. This is provided while a specific Application is running, or in a specific screen of the Application and once you get out of the screen or application, this automatically disappears.</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap">
+									<span class="sd2_title">Note</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>Edge Single mode, Edge Single Plus mode, or Edge Feeds mode developed using the SDK may appear on the Lock and Cover of the device. Personal information may be displayed on the application. For privacy reasons, caution is advised.</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap">
+									<span class="sd2_title">Note</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>When you submit an Edge application into Seller Office, please make sure of the following guidelines.</p>
+										<ol class="inner_ol">
+											<li><p>1) Only the same mode of Edge binaries can be registered under one content ID.</p></li>
+											<li><p>2) For the multiple registrations, General binaries and Edge binaries cannot be registered at the same time.</p></li>
+											<li><p>3) Edge function cannot be added to the registered general application.</p></li>
+										</ol>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+								<h5 class="sd2_body_min_title2">S-Pen</h5>
+								<h6 class="sd2_body_min_title3">AirButton</h6>
+								<p class="sd2_paragraph01">AirButton is an expanded view for quick access to recent contents or menus. You can use S-Pen to view contents, select menus or insert images for quick content access. AirButton shows you information anywhere and anytime. It can also perform additional operations when you point your S-Pen near the target view and press the side button.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_Look_02.jpg" alt="Figure 2: AirButton" />
+									<span class="sd2_figure">Figure 2: AirButton</span>
+								</div><!-- //img_c -->
+								<p class="sd2_paragraph01">AirButton uses S-Pen to show context-appropriate contents for your application and to perform appropriate interactions based on user selections. You can configure gravity, direction, and display type for AirButton</p>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap sd2_mb_20">
+									<span class="sd2_title">Note</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>AirButton is not supported for Note modes after Note4 and Note Edge. (See 4.1. Air Button of "Programming Guide")</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+								<h6 class="sd2_body_min_title3">SmartClip</h6>
+								<p class="sd2_paragraph01">SmartClip allows you to capture and extract metadata such as texts and URLs and to crop screenshots using S-Pen. When you point your S-Pen near the target view, press the side button, and select Smart Select. As seen in Figure 3, you can draw on the screen to collect Metadata from the Android View. In addition to simple screen captures, you can also collect information from the contents displayed on the screen and any additional information provided by the application. The information can be converted into text. You can search the clipped contents or send the clipped texts to other applications. You can use the Pinboard application to view or manage clipped contents.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_mb_40">
+									<img src="/images/galaxy/content/SMS_Look_04.jpg" alt="Figure 3: SmartClip S-Pen crop" />
+									<span class="sd2_figure">Figure 3: SmartClip S-Pen crop</span>
+								</div><!-- //img_c -->
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_mb_40">
+									<img src="/images/galaxy/content/SMS_Look_03.jpg" alt="Figure 4: Metadata management" />
+									<span class="sd2_figure">Figure 4: Metadata management</span>
+								</div><!-- //img_c -->
+								<p class="sd2_paragraph01">Images and texts clipped by S-Pen are extracted from the screen. Internal information is not extracted if the application uses CustomView for screen configuration. The Look API allows you to provide additional information.</p>
+								<p class="sd2_paragraph01">For example, the URL or Deep Link provided for clipping from the application screen allows easier access to the URL or application.</p>
+								<p class="sd2_paragraph01">You can directly add metatags to view or register a callback in order to add metadata when the screen is clipped</p>
+								<h6 class="sd2_body_min_title3">WritingBuddy</h6>
+								<p class="sd2_paragraph01">WritingBuddy displays an editor to make hand-writing easier with the S-Pen. When you point your S-Pen near the target view, an input editor appears. You can then write on this editor.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_Look_01.jpg" alt="Figure 5: WritingBuddy" />
+									<span class="sd2_figure">Figure 4: Metadata management</span>
+								</div><!-- //img_c -->
+								<h6 class="sd2_body_min_title3">PointerIcon</h6>
+								<p class="sd2_paragraph01">PointerIcon changes when you place S-Pen on View. For example, you can configure the selected color icon from the drawing application to indicate the current status as displayed in Figure 6.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_mb_25">
+									<img src="/images/galaxy/content/SMS_Look_05.jpg" alt="Figure 6: PointerIcon" />
+									<span class="sd2_figure">Figure 6: PointerIcon</span>
+								</div><!-- //img_c -->
+								<h5 class="sd2_body_min_title2">Restrictions</h6>
+								<p class="sd2_paragraph01">Look has the following restrictions:</p>
+								<ul class="sd2_con_list sd2_oneline sd2_narrow sd2_mb_25">
+									<li><p>All Look API functions require S-Pen excluding Edge.</p></li>
+									<li><p>These functions are only available on devices that support Look.</p></li>
+								</ul>
+							</div><!-- //sd2_overview_content -->
+						</div><!-- //sd2_overview_container -->
+						<div class="sd2_more_less_btn sd2_close">
+							<a href="#" class="sd2_more">more</a>
+						</div>
+					</div><!-- //overview_wrap -->
+					<!-- sd2_td_wrap -->
+					<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
+						<h4 class="sd2_body_min_title1">Technical Document</h4>
+						<ul class="sd2_link_list2">
+							<li><a href="#" class="sd2_blank">API Reference</a></li>
+							<li><a href="#" class="sd2_page">Release Note</a></li>
+							<li><a href="#" class="sd2_page">Programming Guide: Spen</a></li>
+							<li><a href="#" class="sd2_page">Programming Guide: Edge</a></li>
+							<li><a href="#" class="sd2_page">How to Use the Edge Simulator</a></li>
+							<li><a href="#" class="sd2_page">Edge UI UX Design Guide for Galaxy S7</a></li>
+							<li><a href="#" class="sd2_page">Edge UI UX Design Guide for Galaxy S6</a></li>
+						</ul>
+					</div><!-- //sd2_td_wrap -->
+					<!-- sample_wrap -->
+					<div class="sd2_sample_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_samples">
+						<h4 class="sd2_body_min_title1">Samples</h4>
+						<ul class="sd2_link_list sd2_gray" >
+							<li class="sd2_w100"><a href="#" class="sd2_down">Look<span class="sd2_bar">Sample App</span></a></li>
+						</ul>
+					</div><!-- //sample_wrap -->
+					<!-- faq_wrap -->
+					<div class="sd2_faq_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_faq">
+						<h4 class="sd2_body_min_title1">FAQ</h4>
+						<ul class="sd2_faq sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q01</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q02</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q03</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q04</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q05</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+						<div class="sd2_paging">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div><!-- //faq_wrap -->
+					<!-- video_wrap -->
+					<div class="sd2_video_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_video">
+						<h4 class="sd2_body_min_title1">Video</h4>
+						<ul class="sd2_video_list">
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt="" /></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt="" /></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt="" /></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+						</ul>
+					</div><!-- //video_wrap -->
+					<!-- event_wrap -->
+					<div class="sd2_event_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_event">
+						<h4 class="sd2_body_min_title1">Event material</h4>
+						<ul class="sd2_event sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_date">Apr 8, 2014</span><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+						<div class="sd2_paging">
+							<a href="#" class="sd2_active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div><!--// event_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+</html>

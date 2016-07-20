@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/sub.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/galaxy.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="/">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li><a href="#">Pen</a></li>
+							<li class="sd2_now"><a href="#">Release Note</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Release Note <span class="sd2_page_title_side">Feb 5, 2016</span></h3>
+					</div><!-- //page_title -->
+					<!-- sd2_intro_wrap -->
+					<div class="sd2_intro_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">Introduction</h4>
+						<ul class="sd2_con_list fl_list">
+							<li>
+								<h5>Release Version</h5>
+								<p>4.1.0(Static)</p>
+							</li>
+							<li>
+								<h5>Release Date</h5>
+								<p>Feb 5, 2016</p>
+							</li>
+							<li>
+								<h5>Release Contents</h5>
+								<table class="sd2_table">
+									<caption>Release Contents</caption>
+									<colgroup>
+										<col width="126px">
+										<col width="123px">
+										<col width="*">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th rowspan="2" class="sd2_tc">SDK</th>
+											<td class="sub_th">Libraries</td>
+											<td>Provides the Samsung Pen SDK libraries.</td>
+										</tr>
+										<tr>
+											<td class="sub_th">Sample</td>
+											<td>Provides a sample application.</td>
+										</tr>
+										<tr>
+											<th rowspan="2">Documents</th>
+											<td class="sub_th">API References</td>
+											<td>For more information about Pen SDK APIs, see<a href="#" class="sd2_link_go">API Reference</a></td>
+										</tr>
+										<tr>
+											<td class="sub_th">Programming Guides</td>
+											<td>The programming guide includes an overview, HelloPen application, and feature descriptions.</td>
+										</tr>
+									</tbody>
+								</table>
+							</li>
+						</ul>
+					</div><!-- //sd2_intro_wrap -->
+					<!-- sd2_known_wrap -->
+					<div class="sd2_known_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">Known Issues</h4>
+						<ul class="sd2_con_list sd2_oneline">
+							<li>
+								<p>Some features may not operate properly on low-end devices which have GPU does not support OpenGL ES 2.0 or above and extensions GL_EXT_unpack_subimage, GL_EXT_blend_minmax.
+									Known issues will be fixed on the next SPen SDK update.
+								</p>
+								<ul class="sd2_sub">
+									<li>Erasing strokes operates incorrectly.</li>
+									<li>Drawing stroke operates incorrectly.</li>
+									<li>Canvas is blink while zoom canvas or draw strokes slowly.</li>
+									<li>All of object are broken when move them</li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- //sd2_known_wrap -->
+					<!-- sd2_change_wrap -->
+					<div class="sd2_change_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">Change History</h4>
+						<ul class="other sd2_toggle_list sd2_border_b">
+							<li class="sd2_active">
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Mobile SDK 4.1.0</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap" style="display:block">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Only supports static mode.</p>
+												<ul class="sd2_sub">
+													<li>Since this version, all application has to include the library and .so files (SDK core).</li>
+													<li>Your APK size should be increased but user cannot install additional Pen SDK APK.</li>
+													<li>For APK size, SDK offer the light version. If application uses View and Stroke Object only, it can use the light version.
+														(But, if application want to load a file which include all object types, it have to use the full version)<br />
+														For more detail information of light version, refer to “Supported Features” chapter in Programming Guide of light version.</li>
+												</ul>
+											</li>
+											<li><p>Support Android Studio</p>
+												<ul class="sd2_sub">
+													<li>Since this version, SDK will be released by AAR format which include all library, native shared objects and image/xml resources.</li>
+													<li>	If developer just adds the ARR file into application project, you can include Pen SDK all.<br/>
+														For more detail information, refer to Programming Guide document.</li>
+													<li>If you want to use the Eclipse yet, please refer to “Technical Document” in developer web site.</li>
+												</ul>
+											</li>
+											<li>
+												<p>com.samsung.android.sdk.pen.recognition package</p>
+												<ul class="sd2_sub">
+													<li>In this release, new API added.
+														<ul class="sd2_sub">
+															<li>SpenSignatureVerification.completeRegistration()</li>
+															<li>SpenSignatureVerification.isRegistrationCompleted()</li>
+															<li>SpenSignatureVerification.isRegistrationPrepared()</li>
+															<li>SpenSignatureVerification.prepareRegistration(List<spenobjectstroke>)</spenobjectstroke></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<p>com.samsung.android.sdk.pen.document package</p>
+												<ul class="sd2_sub">
+													<li>
+														In this release, new API added.
+														<ul class="sd2_sub">
+															<li>
+																SpenObjectLine.SpenObjectLine(int type, PointF startPoint, PointF endPoint, boolean isTemplateObject)</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<p>com.samsung.android.sdk.pen.settingui package</p>
+												<ul class="sd2_sub">
+													<li>
+														In this release, some classes are removed.
+														<ul class="lists ml15">
+															<li>
+																SpenSettingTextLayout.java</li>
+															<li>
+																SpenSettingDockingLayout.java</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<p>com.samsung.android.sdk.pen.document package</p>
+												<ul class="sd2_sub">
+													<li>
+														In this release, new API added.
+														<ul class="sd2_sub">
+															<li>
+																SpenObjectLine.SpenObjectLine(int type, PointF startPoint, PointF endPoint, boolean isTemplateObject)</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<p>com.samsung.android.sdk.pen.engine package</p>
+												<ul class="sd2_sub">
+													<li>In this release, new classe is added.
+														<ul class="sd2_sub">
+															<li>SpenSimpleSurfaceView
+																<ul class="sd2_sub">
+																	<li>This class supports simple drawing. (Stroke / Eraser / Remover)</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+													<li>
+														Some APIs are removed
+														<ul class="sd2_sub">
+															<li>SpenSimpleView.clearScreen().</li>
+															<li>SpenSimpleView.getShapeSettingInfo() / setShapeSettingInfo(SpenSettingShapeInfo)</li>
+															<li>SpenSimpleView.getTextSettingInfo() / setTextSettingInfo(SpenSettingTextInfo)</li>
+															<li>SpenMultiView.getRemoverSettingInfo() / setRemoverSettingInfo(SpenSettingRemoverInfo)</li>
+															<li>SpenMultiView.getTextSettingInfo() / setTextSettingInfo(SpenSettingTextInfo)</li>
+															<li>SpenMultiView.getShapeSettingInfo() / setShapeSettingInfo(SpenSettingShapeInfo)</li>
+															<li>SpenMultiView.getSelectionSettingInfo() / setSelectionSettingInfo(SpenSettingSelectionInfo)</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 4.0.7</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 4.0.7</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 4.0.5</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 4.0.5 has been released to fix backward compatibility issue in Android ICS (4.0.3)</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 4.0.0</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 4.0.0 has been released with stabilized shape recognition engine.</p></li>
+											<li><p>com.samsung.android.sdk.pen.document package</p>
+												<ul class="sd2_sub">
+													<li>In this release, new objects are added:
+														<ul class="sd2_sub">
+															<li>SpenObjectShapeBase
+																<ul class="sd2_sub">
+																	<li>Base class of SpenObjectShape and SpenObjectLine.</li>
+																	<li>This manages outline properties and connection feature.</li>
+																</ul>
+															</li>
+															<li>SpenObjectShape
+																<ul class="sd2_sub">
+																	<li>Defines a generic “shape” in Pen SDK.</li>
+																	<li>Supports the predefined shape types.</li>
+																	<li>Supports the outline and filling properties.</li>
+																	<li>Supports the rich-text properties.</li>
+																	<li>SpenObjectLine can connect to the specified point of SpenObjectShape.</li>
+																</ul>
+															</li>
+															<li>SpenObjectLine
+																<ul class="sd2_sub">
+																	<li>Defines a generic “line” in Pen SDK.</li>
+																	<li>Connect between the SpenObjectShapes.</li>
+																	<li>Supports the line properties and arrow types.</li>
+																	<li>If the connected SpenObjectShape is moved, SpenObjectLine will be changed automatically.</li>
+																</ul>
+															</li>
+															<li>Refer to “4.2.4 Inserting Shape/Line Objects” of the programming guide document.</li>
+														</ul>
+													</li>
+													<li>SpenNoteFileSignature class is added for lock/unlock using user signature.</li>
+													<li>The base class of SpenObjectTextBox and SpenObjectImage is changed from SpenObjectBase to SpenObjectShape</li>
+													<li>The text span and paragraph in SpenObjectTextBox
+														<ul class="sd2_sub">
+															<li>The internal classes for text span and paragraph are separated from SpenObjectTextBox
+																<ul class="sd2_sub">
+																	<li>SpenObjectTextBox.TextSpanInfo→SpenTextSpanBase</li>
+																	<li>SpenObjectTextBox.BoldStyleSpanInfo→SpenBoldSpan</li>
+																	<li>SpenObjectTextBox.FontNameSpanInfo→SpenFontNameSpan</li>
+																	<li>SpenObjectTextBox.FontSizeSpanInfo→SpenFontSizeSpan</li>
+																	<li>SpenObjectTextBox.ForegroundColorSpanInfo→SpenForegroundColorSpan</li>
+																	<li>SpenObjectTextBox.HyperTextStyleSpanInfo→SpenHyperTextSpan</li>
+																	<li>SpenObjectTextBox.ItalicStyleSpanInfo→SpenItalicSpan</li>
+																	<li>SpenObjectTextBox.UnderlineStyleSpanInfo→SpenUnderlineSpan</li>
+																	<li>SpenObjectTextBox.TextParagraphInfo→SpenTextParagraphBase</li>
+																	<li>SpenObjectTextBox.AlignParagraphInfo→SpenAlignmentParagraph</li>
+																	<li>SpenObjectTextBox.LineSpacingParagraphInfo→SpenLineSpacingParagraph</li>
+																</ul>
+															</li>
+															<li>SpenObjectTextBox.BackgroundColorSpanInfo and SpenObjectTextBox.TextDirectionSpanInfo are deprecated.</li>
+															<li>Old classes should be converted to new classes internally.</li>
+															<li>SpenBulletParagraph is added.</li>
+															<li>setTextSpan(), setTextParagraph(), findTextSpan() and findTextParagraph() … are added for new separated classes.</li>
+															<li>SpenObjectShape can use the span and paragraph classes.</li>
+														</ul>
+													</li>
+													<li>Some features are deprecated or changed.
+														<ul class="sd2_sub">
+															<li>SpenObjectImage doesn’t support “image border” and “crop rect” anymore.</li>
+															<li>In SDK 3.1, when an image set to flipped SpenObjectImage, flip status of this object should be reset and it display the non-flipped image. But since SDK 4.0, flip status is not reset and the flipped image should be displayed.</li>
+															<li>Adds “compatible mode” parameter to SpenNoteDoc.save(). If “compatible mode” is “false”, shape and line cannot be displayed on SDK 3.1. If “true”, SDK 3.1 can display shape and line object to image type, but save performance should be worse.</li>
+														</ul>
+													</li>
+													<li>Some APIs are added.
+														<ul class="sd2_sub">
+															<li>SpenNoteDoc.appendPage(int width, int height)</li>
+															<li>SpenNoteDoc.insertPage(int width, int height)</li>
+															<li>SpenNoteFile.releaseCoverImagePath(String coverImagePath)</li>
+															<li>SpenObjectTextBox.setBulletType(int type)</li>
+															<li>The “threshold” parameter is added to SpenPageDoc.findTopObjectAtPosition() and findObjectXXX().</li>
+															<li>SpenPageDoc.setDefaultSaveOption(boolean compatibleMode)</li>
+															<li>SpenPageDoc.getObjectRectList(int typeFilter)</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.1.8</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 3.1.8 supports German handwriting recognition</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.1.7</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 3.1.7 has been released to fix backward compatibility issue in Android Jelly Bean (4.1.2), and improve backward compatibility for Galaxy S6</p></li>
+											<li><p>The number of support languages for Text Recognition is limited to 3 (en_US, ko_KR,, zn_CN).</p></li>
+											<li><p>New API removeCache(Context, String) in com.samsung.android.sdk.pen.document.SpenNoteFile is added</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.1.4</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<p>In this release, we include some new APIs:</p>
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>com.samsung.android.sdk.pen.document.SpenObjectStroke</p>
+												<ul class="sd2_sub">
+													<li>addPoint(PointF, float, int, float, float) is added.</li>
+													<li>getOrientations() is added.</li>
+													<li>getTilts() is added.</li>
+													<li>setPoints(PointF[], float[], int[], float[], float[])is added.</li>
+													<li>SpenObjectStroke(String, PointF[], float[], int[], float[], float[]) is added.</li>
+													<li>SpenObjectStroke(String, PointF[], float[], int[], float[], float[], boolean) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.document.SpenNoteDoc</p>
+												<ul class="sd2_sub">
+													<li>attachTemplatePage(String, String, int) is added.</li>
+													<li>copyPage(SpenPageDoc, int) is added.</li>
+													<li>getTemplatePageCount() is added.</li>
+													<li>getTemplatePageName(int) is added.</li>
+													<li>insertPages(String, int, int) is added.</li>
+													<li>reviseObjectList(ArrayList&lt;SpenObjectBase&gt;) is added.</li>
+													<li>close(boolean) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.document.SpenPageDoc</p>
+												<ul class="sd2_sub">
+													<li>appendObjectList(ArrayList&lt;SpenObjectBase&gt;) is added.</li>
+													<li>getGeoTagState() is added.</li>
+													<li>removeGeoTag() is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.settingui.SpenSettingPenLayout</p>
+												<ul class="sd2_sub">
+													<li>getPenList() is added.</li>
+													<li>getPenPresetInfoList() is added.</li>
+													<li>setExtendedPresetEnable(boolean) is added.</li>
+													<li>setPenList(ArrayList&lt;String&gt;) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.settingui.SpenSettingPenLayout.PresetListener</p>
+												<ul class="sd2_sub">
+													<li>onChanged(int) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.engine.SpenView</p>
+												<ul class="sd2_sub">
+													<li>getZoomPadRect() is added.</li>
+													<li>isZoomPadDrawing() is added.</li>
+													<li>setPenButtonSelectionEnabled(boolean) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.engine.SpenControlTextBox</p>
+												<ul class="sd2_sub">
+													<li>isSelectByKey() is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.engine. SpenSurfaceView</p>
+												<ul class="sd2_sub">
+													<li>setTextCursorEnabled(boolean) is added.</li>
+													<li>setZoomPadBoxPosition(PointF) is added.</li>
+													<li>getZoomPadRect() is added.</li>
+													<li>getZoomPadRect() is added.</li>
+													<li>isZoomPadDrawing() is added.</li>
+													<li>isZoomPadStrorking() is added.</li>
+													<li>setPenButtonSelectionEnabled(boolean) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.Spen</p>
+												<ul class="sd2_sub">
+													<li>initialize(Context, int, int) is added.</li>
+													<li>initialize(Context, int, int, boolean) is added</li>
+												</ul>
+											</li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.1.3</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 3.1.3 has been released to resolve issues in Android L.</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.1.2</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 3.1.2 has been released to fix some minor issues in Android L.</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.1.1</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 3.1.1 has been released to enhanced stability with Android L.</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.1.0</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 3.1.0 has been released in order to be compatible with Android.</p></li>
+											<li><p>Documents / Programming Guides: Initialization and related exception flow should be concerned. Please refer to chapter 3 in programming guide for more information.</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.0.19</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Samsung Pen SDK 3.0.19 has been released with enhanced stability and better performance.</p></li>
+											<li><p>ShapeRecognition example is added. (com.samsung.android.sdk.pen.pg.example5_9).</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.0.19 beta</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Improved performance compares to 3.0.18 in re-drawing, selection & moving functions.</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Pen SDK 3.0.18 beta</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Pen SDK is separated from the Samsung Mobile SDK to make an efficient environment for the application development.</p></li>
+											<li><p>New permission will be required when you initialize Pen SDK, Refer the programming guide for more information.</p></li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Mobile SDK 1.0.4</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>Remove ON-KEYDown() from SpenControlBase.java</p>
+												<ul class="sd2_sub">
+													<li>This file is only used internally. So we decided to remove this.</li>
+												</ul>
+											</li>
+											<li><p>Add onPopulateAccessibilityEvent to SpenTextBox.java</p>
+												<ul class="sd2_sub">
+													<li>To support android accessibility system. This is not added for SDK user.</li>
+												</ul>
+											</li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<a href="#" class="sd2_list">Samsung Mobile SDK 1.0.3</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<ul class="sd2_con_list sd2_oneline">
+											<li><p>com.samsung.android.sdk.pen.document.SpenNoteDoc</p>
+												<ul class="sd2_sub">
+													<li>revertToTemplatePage(intpageIndex, String absolutePath) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.settingui.SpenSettingPenLayout</p>
+												<ul class="sd2_sub">
+													<li>setPresetSaveEnabled(boolean enable) is added.</li>
+													<li>setSeekBarChangeListener(SpenSettingPenLayout.SeekBarChangeListener listener) is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.settingui.SpenSettingPenLayout.SeekBarChangeListener</p>
+												<ul class="sd2_sub">
+													<li>onProgressChanged() is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.engine.SpenSurfaceView</p>
+												<ul class="sd2_sub">
+													<li>isZoomPadEnabled() is added.</li>
+												</ul>
+											</li>
+											<li><p>com.samsung.android.sdk.pen.engine.SpenView</p>
+												<ul class="sd2_sub">
+													<li>isZoomPadEnabled() is added.</li>
+												</ul>
+											</li>
+										</ul>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+					</div><!-- //sd2_change_wrap -->
+					<div class="sd2_features_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
+						<h4 class="sd2_body_min_title1">Features</h4>
+						<ul class="sd2_con_list sd2_oneline">
+							<li><p>Drawing engine based on Stroke offers advanced edit functions, multiple selections, group/ungroup, move forward/backward, and zoom in/out.</p></li>
+							<li><p>Various tools, such as brushes and color pens.</p></li>
+							<li><p>Recognition function to convert objects written on the canvas to drawings.</p></li>
+						</ul>
+					</div>
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+</html>

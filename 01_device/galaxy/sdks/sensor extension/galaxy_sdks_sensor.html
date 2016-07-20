@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/galaxy.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li class="sd2_now"><a href="#">Sensor Extension</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Sensor Extension</h3>
+					</div><!-- //page_title -->
+					<!-- sd2_ec_wrap -->
+					<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_essential">
+						<ul class="sd2_link_list sd2_line">
+							<li class="sd2_gray sd2_w100">
+								<a href="#" class="sd2_list_download_btn">
+									<div class="sd2_link_item">
+										Sensor Extension SDK 1.1.4 
+										<span class="sd2_version_date"><span class="sd2_version">Version : 1.1.4</span><span class="sd2_date">Mar 28, 2016</span></span>
+										<span class="access">Get Access</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<!-- sd2_note_wrap -->
+						<div class="sd2_note_wrap">
+							<span class="sd2_title">Note</span>
+							<!-- note_con -->
+							<div class="sd2_note_con">
+								<p>Sensor Extension SDK is available to allowed developers, please complete the request form and we will get back to you through email in developer information.</p>
+							</div><!-- //note_con -->
+						</div><!-- //sd2_note_wrap -->
+					</div><!-- //sd2_ec_wrap -->
+					<!-- sd2_overview_wrap -->
+					<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_pb_15" id="sd2_overView">
+						<!-- sd2_overview_container -->
+						<div class="sd2_overview_container">
+							<!-- sd2_overview_content -->
+							<div class="sd2_overview_content">
+								<h4 class="sd2_body_min_title1">OverView</h4>
+								<p  class="sd2_paragraph01">Sensor Extension SDK allows the user to use sensors which are not supported by Android. The SDK provides meaningful data from sensors in the Samsung Device.</p>
+								<p  class="sd2_paragraph01">Sensor Extension SDK supports the feature below.</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Ultraviolet(UV) Index</p></li>
+									<li><p>Ultraviolet(UV) Index</p></li>
+								</ul>
+								<p  class="sd2_paragraph01">According to further updates, the supported sensor will also be added.</p>
+								<h5 class="sd2_body_min_title2">UltraViolet Index</h5>
+								<p  class="sd2_paragraph01">The Ultra Violet feature provides UV Index from the outdoor environment.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_sensorextension01.jpg" alt="Figure 1: UV sensor" />
+									<span class="sd2_figure">Figure 1: UV sensor</span>
+								</div><!-- //img_c -->
+								<p  class="sd2_paragraph01">To measure the ultraviolet rays, the device uses the sensor located at the rear side of the phone.</p>
+								<p  class="sd2_paragraph01">The sensor needs to be placed directly under the sun for 5 seconds in order to measure the ultraviolet rays.</p>
+								<p  class="sd2_paragraph01">UV index values have 12 levels.</p>
+								<table summary="UV Index, Rating, Description" class="sd2_table">
+									<caption>UV index values have 12 levels.</caption>
+									<colgroup>
+										<col width="18%" />
+										<col width="22%" />
+										<col width="60%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">UV Index</th>
+											<th scope="col">Rating</th>
+											<th scope="col" class="none">Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>&lt; 2</td>
+											<td>Low</td>
+											<td class="none">No danger to the average person</td>
+										</tr>
+										<tr>
+											<td>3 ~ 5</td>
+											<td>Moderate</td>
+											<td class="none">Little risk of harm from unprotected sun exposure</td>
+										</tr>
+										<tr>
+											<td>6 ~ 7</td>
+											<td>High</td>
+											<td class="none">High risk of harm from unprotected sun exposure</td>
+										</tr>
+										<tr>
+											<td>8 ~ 10</td>
+											<td>Very High</td>
+											<td class="none">Very high risk of harm from unprotected sun exposure</td>
+										</tr>
+										<tr>
+											<td>11+</td>
+											<td>Extreme</td>
+											<td class="none">Extreme risk of harm from unprotected sun exposure</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- sd2_note_wrap -->
+								<div class="sd2_note_wrap">
+									<span class="sd2_title">Note</span>
+									<!-- note_con -->
+									<div class="sd2_note_con">
+										<p>In natural indoor environment, UV Index is observed to be almost at level 0.</p>
+									</div><!-- //note_con -->
+								</div><!-- //sd2_note_wrap -->
+								<h5 class="sd2_body_min_title2">HRM Sensor IR/RED Signal</h5>
+								<p class="sd2_paragraph01">The HRM Sensor is located on the rear panel of the phone. If you place your finger, measurement starts.</p>
+								<p class="sd2_paragraph01">The photoplethysmogram(PPG) signal means the amount back of IR / RED light that reflected from blood vessel in the finger.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/img_sensorextension02.jpg" alt="Figure 2: HRM sensor" />
+									<span class="sd2_figure">Figure 2: HRM sensor</span>
+								</div><!-- //img_c -->
+								<h5 class="sd2_body_min_title2">SDK Request</h5>
+								<p class="sd2_paragraph01">To get the Sensor Extension SDK:</p>
+								<!-- sd2_howto_wrap -->
+								<div class="sd2_howto_wrap sd2_howto_col_4 SDK">
+									<!-- sd2_howto_container -->
+									<ul class="sd2_howto_container ">
+										<!-- sd2_howto_item -->
+										<li class="sd2_howto_item sd2_howto_svc_ac_01">
+											<!-- sd2_howto_header -->
+											<div class="sd2_howto_header">
+												<!-- sd2_howto_title -->
+												<div class="sd2_howto_title">
+													Register <br />
+													Samsung Account
+												</div><!-- //sd2_howto_title -->
+												<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+											</div><!-- //sd2_howto_header -->
+											<!-- sd2_howto_cnt -->
+											<div class="sd2_howto_cnt">
+												Register Samsung Account <a href="#" class="sd2_link_go2">here.</a>
+											</div><!-- //sd2_howto_cnt -->
+										</li><!-- //sd2_howto_item -->
+										<!-- sd2_howto_item -->
+										<li class="sd2_howto_item sd2_howto_svc_ac_02">
+											<!-- sd2_howto_header -->
+											<div class="sd2_howto_header">
+												<!-- sd2_howto_title -->
+												<div class="sd2_howto_title">
+													Apply for<br />
+													SDK Request
+												</div><!-- //sd2_howto_title -->
+												<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+											</div><!-- //sd2_howto_header -->
+											<!-- sd2_howto_cnt -->
+											<div class="sd2_howto_cnt">
+												Complete required 
+												information and submit 
+												the <a href="#" class="sd2_link_go2">SDK Request</a> page
+											</div><!-- //sd2_howto_cnt -->
+										</li><!-- //sd2_howto_item -->
+										<li class="sd2_howto_item sd2_howto_svc_ac_03">
+											<!-- sd2_howto_header -->
+											<div class="sd2_howto_header">
+												<!-- sd2_howto_title -->
+												<div class="sd2_howto_title">
+													Approval
+													<br /><br />
+												</div><!-- //sd2_howto_title -->
+												<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+											</div><!-- //sd2_howto_header -->
+											<!-- sd2_howto_cnt -->
+											<div class="sd2_howto_cnt">
+												An approval mail is sent 
+												to you if there is no issue 
+												and you can download 
+												the SDK.
+											</div><!-- //sd2_howto_cnt -->
+										</li><!-- //sd2_howto_item -->
+										<li class="sd2_howto_item sd2_howto_svc_ac_05">
+											<!-- sd2_howto_header -->
+											<div class="sd2_howto_header">
+												<!-- sd2_howto_title -->
+												<div class="sd2_howto_title">
+													Develop Your App
+													<br /><br />
+												</div><!-- //sd2_howto_title -->
+												<!-- sd2_howto_dot --><div class="sd2_howto_dot"></div><!-- //sd2_howto_dot -->
+											</div><!-- //sd2_howto_header -->
+											<!-- sd2_howto_cnt -->
+											<div class="sd2_howto_cnt">
+												Develop your Application 
+												with Sensor Extension SDK.
+											</div><!-- //sd2_howto_cnt -->
+										</li><!-- //sd2_howto_item -->
+									</ul><!-- //sd2_howto_container -->
+								</div><!-- //sd2_howto_wrap -->
+								<h5 class="sd2_body_min_title2">Restrictions</h5>
+								<p class="">Sensor Extension SDK has the following restrictions:</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Ultraviolet Index</p>
+										<ul class="sd2_sub">
+											<li>Devices with Android 4.4 Kit Kat (API level 19) or higher required.</li>
+											<li>Only supported by Samsung device with Ultraviolet sensor.</li>
+										</ul>
+									</li>
+									<li><p>Ultraviolet Index</p>
+										<ul class="sd2_sub">
+											<li>Devices with Android 4.4 Kit Kat (API level 19) or higher required.</li>
+											<li>Only supported by Samsung device with Ultraviolet sensor.</li>
+										</ul>
+									</li>
+								</ul>
+							</div><!-- //sd2_overview_content -->
+						</div><!-- //sd2_overview_container -->
+					</div><!-- //sd2_overview_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+	<script type="text/javascript">
+		var more_container=null; 
+		var btn=null;
+		var now_h=0;
+		var all_h;
+		var more_list=null;
+		var classN="sd2_"; 
+
+		var init=function(container){
+			more_container=$(container); 
+			btn=more_container.next("."+classN+"more_less_btn").find("a");
+			all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
+			//all_h=more_container.find("."+classN+"overview_content").height();
+			console.log(all_h)
+			now_h=more_container.height();
+
+			eventDefine();
+		}
+
+		var eventDefine=function(){
+			btn.on("click", btn_click);
+		}
+
+		var btn_click=function(e){
+			var $this=$(this); 
+			if($this.hasClass(classN+"more")){
+				$this.removeClass(classN+"more").addClass(classN+"less"); 
+				$this.text("less");
+				more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
+			}else{
+				$this.removeClass(classN+"less").addClass(classN+"more"); 
+				$this.text("more");
+				more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
+			}
+			return false; 
+		}
+
+		init(".sd2_overview_container");
+	</script>
+</html>

@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+		<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+
+
+		<!-- Import common templates -->
+		<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function(){
+				jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+				$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+				$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+				$("#sd2_partial_lnb").load("/common/partials/lnb_device_galaxy.html?v="+(new Date()).getTime());
+				$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+				jQuery.ajaxSetup({async:true});
+			});
+			// ]]>
+		</script>
+		<!-- //Import common templates -->
+
+
+		<script type="text/javascript" src="/common/js/gnb.js"></script>
+		<script type="text/javascript" src="/common/js/lnb.js"></script>
+		<script type="text/javascript" src="/common/js/content.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<div id="sd2_wrap">
+			<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<div id="sd2_partial_gnb_1"></div>
+			<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+			<!-- header_2_wrap -->
+			<div class="sd2_header_2_wrap">
+				<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<div id="sd2_partial_gnb_2"></div>
+				<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+				<!-- dep3_wrap -->
+				<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+					<!-- dep3_container -->
+					<div class="sd2_dep3_container">
+						<h2><a href="#">SAMSUNG GALAXY</a></h2>
+					</div><!-- //dep3_container -->
+				</div><!-- //dep3_wrap -->
+			</div><!-- //header_2_wrap -->
+			<!-- content_wrap -->
+			<div class="sd2_content_wrap">
+				<!-- ***** IMPORT: sd2_partial_lnb ***** -->
+				<div id="sd2_partial_lnb"></div>
+				<!-- //***** IMPORT: sd2_partial_lnb ***** -->
+				<!-- substance_wrap -->
+				<div class="sd2_substance_wrap sd2_mb_40">
+					<!-- location -->
+					<div class="sd2_location sd2_con_margin">
+						<ol>
+							<li><a href="#">Devices</a></li>
+							<li><a href="#">Galaxy</a></li>
+							<li><a href="#">SDKs</a></li>
+							<li class="sd2_now"><a href="#">Image Filter</a></li>
+						</ol>
+					</div><!-- //location -->
+					<!-- page_title -->
+					<div class="sd2_page_title sd2_con_margin">
+						<h3>Image Filter</h3>
+					</div><!-- //page_title -->
+					<!-- ec_wrap -->
+					<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_essential">
+						<h4 class="sd2_body_min_title1">Essential Contents</h4>
+						<ul class="sd2_link_list sd2_line">
+							<li class="sd2_gray sd2_w100">
+								<a href="#" class="sd2_list_download_btn">
+									<div class="sd2_link_item">
+										Image Filter SDK 
+										<span class="sd2_version_date"><span class="sd2_version">Version : 1.0.1</span><span class="sd2_date">Sep 15, 2014</span></span>
+										<span class="sd2_down"></span>
+									</div>
+								</a>
+							</li>
+							<li class="sd2_line"><a href="http://img-developer.samsung.com/onlinedocs/sms/image-filter/index.html" class="sd2_blank" target="_blank">API Reference</a></li>
+							<li><a href="#" class="sd2_page">Release Note</a></li>
+							<li class="sd2_gray sd2_line"><a href="#"  class="sd2_page">Programming Guide</a></li>
+							<li class="sd2_gray"></li>
+						</ul>
+					</div><!-- //ec_wrap -->
+					<!-- overview_wrap -->
+					<div class="sd2_overview_wrap sd2_con_margin sd2_con_padding sd2_border_b sd2_pb_15" id="sd2_overView">
+						<!-- sd2_overview_container -->
+						<div class="sd2_overview_container" style="height: 400px">
+							<!-- sd2_overview_content -->
+							<div class="sd2_overview_content">
+								<h4 class="sd2_body_min_title1">Overview</h4>
+								<p class="sd2_paragraph01">Image Filter SDK offers you various types of filters for processing your images and applying various effects. You can apply filters such as Sepia, Pastel, and Cartoon effects.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_ImageFilter_01.jpg" alt="Figure 1: Applying various filters to an image" />
+									<span class="sd2_figure">Figure 1: Applying various filters to an image</span>
+								</div><!-- //img_c -->
+								<p class="sd2_paragraph01">You can use Image Filter SDK to:</p>
+								<ul class="sd2_con_list sd2_oneline sd2_narrow">
+									<li><p>choose from 33 filter effects</p></li>
+									<li><p>adjust filter levels</p></li>
+									<li><p>adjust the transparency</p></li>
+								</ul>
+								<h5 class="sd2_body_min_title2">Choosing a Filter Effect</h5>
+								<p class="sd2_paragraph01">Image Filter SDK offers you 33 filter effects. You can adjust the level of the filter effect for some of these filters.</p>
+								<p class="sd2_paragraph01">The following table lists the filters with and without level adjustments:</p>
+								<table class="sd2_table">
+									<caption>Table 1: Filters with and without level adjustment </caption>
+									<colgroup>
+										<col width="50%" />
+										<col width="50%" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th>Filters with level adjustment</th>
+											<th>Filters with no level adjustment</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<ul class="sd2_con_list sd2_oneline sd2_narrow">
+													<li><p>Blur</p></li>
+													<li><p>Bright</p></li>
+													<li><p>Cartoonize</p></li>
+													<li><p>Color sketch</p></li>
+													<li><p>Colorize</p></li>
+													<li><p>Dark</p></li>
+													<li><p>Faded color</p></li>
+													<li><p>Mosaic</p></li>
+													<li><p>Pastel sketch</p></li>
+													<li><p>Pen sketch</p></li>
+													<li><p>Pencil color sketch</p></li>
+													<li><p>Pencil pastel sketch</p></li>
+													<li><p>Pencil sketch</p></li>
+													<li><p>Posterize</p></li>
+													<li><p>Sepia</p></li>
+													<li><p>Soft glow</p></li>
+													<li><p>Vivid</p></li>
+												</ul>
+											</td>
+											<td class="vertical_t">
+												<ul class="sd2_con_list sd2_oneline sd2_narrow">
+													<li><p>Blue wash</p></li>
+													<li><p>Classic</p></li>
+													<li><p>Down light</p></li>
+													<li><p>Fusain</p></li>
+													<li><p>Gray</p></li>
+													<li><p>Magic pen</p></li>
+													<li><p>Negative</p></li>
+													<li><p>Nostalgia</p></li>
+													<li><p>Oil paint</p></li>
+													<li><p>Old photo</p></li>
+													<li><p>Pop art</p></li>
+													<li><p>Retro</p></li>
+													<li><p>Sunshine</p></li>
+													<li><p>Vignette</p></li>
+													<li><p>Vintage</p></li>
+													<li><p>Yellow glow</p></li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<span class="sd2_tb_script">Table 1: Filters with and without level adjustment</span>
+								<h5 class="sd2_body_min_title2">Adjusting Filter Levels</h5>
+								<p class="sd2_paragraph01">Image Filter SDK offers you the following filter levels for filters with level adjustment:</p>
+								<ul class="sd2_con_list sd2_oneline sd2_narrow">
+									<li><p>Very Small</p></li>
+									<li><p>Small</p></li>
+									<li><p>Medium</p></li>
+									<li><p>Large</p></li>
+									<li><p>Very Large</p></li>
+								</ul>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_ImageFilter_02.jpg" alt="Figure 2: Applying different filter levels to the sepia filter" />
+									<span class="sd2_figure">Figure 2: Applying different filter levels to the sepia filter</span>
+								</div><!-- //img_c -->
+								<h5 class="sd2_body_min_title2">Adjusting Transparency</h5>
+								<p class="sd2_paragraph01">You can adjust the level of transparency for an image by entering an Alpha value. The higher the Alpha value is, the less transparent the image.</p>
+								<!-- img_c -->
+								<div class="sd2_img_c sd2_m_b_25">
+									<img src="/images/galaxy/content/SMS_ImageFilter_03.jpg" alt="Figure 3: Adjusting image transparency" />
+									<span class="sd2_figure">Figure 3: Adjusting image transparency</span>
+								</div><!-- //img_c -->
+								<h5 class="sd2_body_min_title2">Restrictions</h5>
+								<p class="sd2_paragraph01">Image Filter SDK has the following restrictions:</p>
+								<ul class="sd2_con_list sd2_oneline">
+									<li><p>Devices with Android 4.1 Jelly Bean (API level 16) or higher support Image Filter.</p></li>
+								</ul>
+							</div><!-- //sd2_overview_content -->
+						</div><!-- //sd2_overview_container -->
+						<div class="sd2_more_less_btn sd2_close sd2_mt_30">
+							<a href="#" class="sd2_more">more</a>
+						</div>
+					</div><!-- //overview_wrap -->
+					<!-- sd2_td_wrap -->
+					<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
+						<h4 class="sd2_body_min_title1">Technical Document</h4>
+						<ul class="sd2_link_list2">
+							<li><a href="#" class="sd2_blank">API Reference</a></li>
+							<li><a href="#" class="sd2_page">Release Note</a></li>
+							<li><a href="#" class="sd2_page">Programming Guide</a></li>
+						</ul>
+					</div><!-- //sd2_td_wrap -->
+					<!-- sample_wrap -->
+					<div class="sd2_sample_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_samples">
+						<h4 class="sd2_body_min_title1">Samples</h4>
+						<ul class="sd2_link_list sd2_gray" >
+							<li class="sd2_w100"><a href="#" class="sd2_down">Image Filter<span class="sd2_bar">Sample App</span></a></li>
+						</ul>
+					</div><!-- //sample_wrap -->
+					<!-- sd2_video_wrap -->
+					<div class="sd2_video_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_video">
+						<h4 class="sd2_body_min_title1">Video</h4>
+						<ul class="sd2_video_list">
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt=""></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt=""></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<dl>
+										<dt><img src="/images/galaxy/content/video.png" alt=""></dt>
+										<dd>
+											<div class="sd2_title"><em>Title</em>Aug 27. 2014</div>
+											<div class="sd2_explain">Lorem Ipsum&nbsp;is simply dummy text of the printing and typesetting industry.</div>
+										</dd>
+									</dl>
+								</a>
+							</li>
+						</ul>
+					</div><!-- //sd2_video_wrap -->
+					<!-- faq_wrap -->
+					<div class="sd2_faq_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_faq">
+						<h4 class="sd2_body_min_title1">FAQ</h4>
+						<ul class="sd2_faq sd2_toggle_list">
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q01</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q02</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q03</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q04</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+							<li>
+								<!-- question_wrap -->
+								<div class="sd2_question_wrap">
+									<span class="sd2_num">Q05</span><a href="#" class="sd2_list">How does the gesture sensor work?</a><span class="sd2_arr"></span>
+								</div><!-- //question_wrap -->
+								<!-- answer_wrap -->
+								<div class="sd2_answer_wrap">
+									<!-- answer_container -->
+									<div class="sd2_answer_container">
+										<span class="sd2_answer">A</span>
+										<p>The gesture sensor transmitter emits infra-red rays that reflect off the device user’s hand. The gesture sensor receiver senses changes in these reflected infra-red rays. Air Gesture uses the data from the sensor, located to the right of the speaker on top of the device, to answer calls, select songs, and to move from one webpage to another with hand gestures.</p>
+									</div><!-- //answer_container -->
+								</div><!-- //answer_wrap -->
+							</li>
+						</ul>
+						<div class="sd2_paging">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+					</div><!-- //faq_wrap -->
+				</div><!-- //substance_wrap -->
+			</div><!-- //content_wrap -->
+			<!-- ***** IMPORT: sd2_partial_footer ***** -->
+			<div id="sd2_partial_footer"></div>
+			<!-- //***** IMPORT: sd2_partial_footer ***** -->
+		</div><!-- //wrap -->
+	</body>
+	
+</html>
