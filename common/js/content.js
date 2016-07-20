@@ -1,13 +1,27 @@
 "use strict";
-$(window).load(function(){
+$(document).ready(function(){
 	// 플러그인 호출
 	//$(".sd2_toggle_list").toggleList().openItem(0);
 	$(".sd2_toggle_list").showHidden();
 	$(".sd2_forum_list").fadeList();
 	$(".sd2_support_list").fadeList();
 	$(".sd2_select_btn").selectBox();
+
+	$(".sd2_show_line").showLine(false); // Code Show Line
+	$(".sd2_modal_opener").modalOpener(false); // Modal Opener
+	$(".sd2_pop_close").on("click", function(e) { // Modal Closer
+		e.preventDefault();
+		$(this).closest(".sd2_popup_modal_wrap").hide();
+
+		// Pause Youtube Iframe
+		$('.sd2_youtube').each(function(){
+			this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+		});
+	});
+});
+
+$(window).load(function(){
 	$(".sd2_more_less_btn").moreLess();
-	$(".sd2_show_line").showLine(false);
 });
 
 (function($){
@@ -257,6 +271,12 @@ $(window).load(function(){
 		return this;
 	}
 
+	/**
+	 * Show Liner (Using PrismJS)
+	 * @param selector
+	 * @param isShowLine
+	 * @constructor
+	 */
 	function ShowLine(selector, isShowLine){
 		this.showCheckbox=null;
 		if(window.Prism) {
@@ -306,6 +326,36 @@ $(window).load(function(){
 		return this;
 	}
 
+	/**
+	 * Modal Opener
+	 * @param selector
+	 * @constructor
+	 */
+	function ModalOpener(selector){
+		this.modalOpener=null;
+		this.init(selector);
+	}
+
+	ModalOpener.prototype.init=function(selector){
+		this.modalOpener=$(selector);
+		this.eventDefine();
+	}
+
+	ModalOpener.prototype.eventDefine=function(){
+
+		var objThis=this;
+		this.modalOpener.on("click", function(e){
+			e.preventDefault();
+			var target = $(this).attr("data-target");
+			$(target).show();
+		})
+
+	}
+	$.fn.modalOpener=function(){
+		this.each(function(index){
+			var modalOpener=new ModalOpener(this);
+		})
+		return this;
+	}
+
 })(jQuery)
-
-

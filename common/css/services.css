@@ -3,8 +3,6 @@
 
 /******services********/
 
-
-
 /*service banner*/
 .sd2_svc_banner_wrap{height:281px}
 .sd2_svc_banner_wrap .sd2_svc_banner_container{box-sizing: border-box; height:324px; overflow:hidden; position:relative }
@@ -20,30 +18,15 @@
 .sd2_svc_banner_wrap .sd2_svc_banner_container .sd2_btn_area a:hover, .sd2_svc_banner_wrap .sd2_svc_banner_container .sd2_btn_area a.sd2_other_bg:hover{color:#fff; border-color:#374971; background:#374971 !important; text-decoration:none}
 .sd2_learn_btn.sd2_top_margin{margin-top:34px}
 
-
-
-
 /*service button*/
 .sd2_svc_btn_wrap {position: relative}
 .sd2_svc_btn_wrap input.sd2_input-text{border:none; border-bottom: 1px solid #666; background:transparent; width:440px; font:12px 'sm-400'; color:#333; height:24px ; color:#666 ; line-height:24px; }
 .sd2_svc_btn_wrap a.sd2_btn_submit {position: absolute; right: 0; top: 0; display:inline-block; width:auto; height:24px;  background:#fff; border:1px solid #b9b9b9; color:#333; font:12px 'sm-400'; padding: 0 20px; line-height:24px; text-align:center; /*transition:all 0.sd2_1s*/; box-sizing:border-box;}
 
-
-
-
-
 /*smart home step table*/
 .sd2_table_smarthome td, .sd2_table_smarthome th {padding: 15px;}
 .sd2_table_smarthome .sd2_step_tit {font:14px 'sm-600'; color: #333; text-align: left;}
 .sd2_table_smarthome .sd2_step_no {font:14px 'sm-400'; color: #666}
-
-
-
-
-
-
-
-
 
 /*****content.css*****/
 .sd2_code {font-size: 14px; line-height: 1.5; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;}
