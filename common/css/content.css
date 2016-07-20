@@ -37,7 +37,7 @@ table.sd2_table .vertical_t{vertical-align:top}
 .sd2_popup_modal_wrap {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
-	z-index: 20 ; /* Sit on top */
+	z-index: 20; /* Sit on top */
 	padding-top: 100px; /* Location of the box */
 	left: 0;
 	top: 0;
@@ -105,6 +105,10 @@ table.sd2_table .vertical_t{vertical-align:top}
 .sd2_pop_wrap.sd2_video .sd2_video_down:hover .sd2_video_name{color:#0077c8; }
 .sd2_pop_wrap.sd2_video .sd2_video_down:hover .sd2_down{background-position:right -73px}
 
+/*rtl popup*/
+.sd2_pop_wrap.sd2_rtl.sd2_rtl_md{width:400px}
+.sd2_pop_wrap.sd2_rtl_lg{width:800px}
+
 /*paging*/
 .sd2_paging{text-align:right; }
 .sd2_paging a{font:13px 'sm-400'; display:inline-block; padding:5px; color:#333; }
@@ -171,7 +175,7 @@ table.sd2_table .vertical_t{vertical-align:top}
 .sd2_new_guide_wrap .sd2_new_guide_container .sd2_news ul li{position:relative; }
 .sd2_new_guide_wrap .sd2_new_guide_container .sd2_news ul li span{position:absolute;right:0 ; font-size:12px; color:#666}
 .sd2_new_guide_wrap .sd2_new_guide_container .sd2_guide h3{background:url(../../images/common/icon/guide_icon.sd2_png) no-repeat left top; padding-left: 84px }
-.sd2_new_guide_wrap .sd2_new_guide_container .sd2_guide li span{display:inline-block; padding-right:8px; border-right:1px solid #000; margin-right:8px;float:left; color:#000 ; font-family:'Open Sans'; font-size:14px; width:85px }
+.sd2_new_guide_wrap .sd2_new_guide_container .sd2_guide li span{display:inline-block; padding-right:8px; border-right:1px solid #000; margin-right:8px;float:left; color:#000 ; font-family:'sm-400'; font-size:14px; width:85px }
 .sd2_new_guide_wrap .sd2_new_guide_container .sd2_guide li a{width:354px}
 
 /*content_banner*/
@@ -241,8 +245,8 @@ table.sd2_table .vertical_t{vertical-align:top}
 .sd2_video_wrap .sd2_video_container .sd2_photo_list li{float:left; margin-left:28px; width:308px; }
 .sd2_video_wrap .sd2_video_container .sd2_photo_list li:first-child{margin-left:0}
 .sd2_video_wrap .sd2_video_container .sd2_photo_list li .sd2_photo{padding-bottom:11px; }
-.sd2_video_wrap .sd2_video_container .sd2_photo_list li .sd2_explain h4{font:16px 'Open Sans' ; line-height:1.2; padding-bottom:10px; text-align:center;  }
-.sd2_video_wrap .sd2_video_container .sd2_photo_list li .sd2_explain p{font:14px 'Open Sans'; line-height:1.3; text-align:center; }
+.sd2_video_wrap .sd2_video_container .sd2_photo_list li .sd2_explain h4{font:16px 'sm-400' ; line-height:1.2; padding-bottom:10px; text-align:center;  }
+.sd2_video_wrap .sd2_video_container .sd2_photo_list li .sd2_explain p{font:14px 'sm-400'; line-height:1.3; text-align:center; }
 .sd2_video_wrap .sd2_video_container .sd2_banner_btn_area{text-align:right;margin-top:33px !important;  }
 
 /*앱 디자인*/
@@ -458,7 +462,7 @@ a:hover .access{color:#0077c8; background-image:url(../../images/common/icon/acc
 
 .sd2_event_wrap{}
 .sd2_event_wrap .sd2_event .sd2_question_wrap a{padding-left:18px; padding-right:18px; max-width:600px }
-.sd2_event_wrap .sd2_event .sd2_question_wrap .sd2_date{font:12px 'Open Sans'; color:#666; display:inline-block;  padding:12px 17px 9px 0}
+.sd2_event_wrap .sd2_event .sd2_question_wrap .sd2_date{font:12px 'sm-400'; color:#666; display:inline-block;  padding:12px 17px 9px 0}
 .sd2_event_wrap .sd2_event .sd2_answer_container {padding:12px 25px 9px }
 .sd2_event_wrap .sd2_event  li.sd2_active .sd2_date{color:#fff}
 .sd2_event_wrap .sd2_event  li.sd2_active a:hover + .sd2_date{color:#fff;}
@@ -473,7 +477,7 @@ a:hover .access{color:#0077c8; background-image:url(../../images/common/icon/acc
 .sd2_forum_search_wrap{}
 .sd2_forum_search_wrap .sd2_forum_search_container{padding:84px 0 72px; }
 .sd2_forum_search_wrap .sd2_forum_search_container form{width:527px; margin:0 auto; border:1px solid #333; box-shadow:0 1px 1px 0 #cbcbcb}
-.sd2_forum_search_wrap .sd2_forum_search_container form input{border:none; background:transparent; width:440px; font:14px 'Open Sans'; color:#333; height:34px ; color:#666 ; line-height:34px; }
+.sd2_forum_search_wrap .sd2_forum_search_container form input{border:none; background:transparent; width:440px; font:14px 'sm-400'; color:#333; height:34px ; color:#666 ; line-height:34px; }
 .sd2_forum_search_wrap .sd2_forum_search_container .sd2_form_wrap{position:relative; margin:0 20px;  }
 .sd2_forum_search_wrap .sd2_forum_search_container .sd2_form_wrap button{position:absolute; right:0; top:0; width:36px; height:36px;  font-size:0; border:none; outline:none; background:#fff url(../../images/community/search_icon.png) no-repeat center center; cursor:pointer}
 .sd2_forum_search_wrap .sd2_forum_search_container p{text-align:center; color:#333; font:16px 'sm-600'; margin-top:13px}
