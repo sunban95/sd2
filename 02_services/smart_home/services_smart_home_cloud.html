@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
-	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
 	<!-- Import common templates -->
 	<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
@@ -92,7 +92,7 @@
 						</div><!-- //img_c -->
 						<h4 class="sd2_body_min_title1">Smart Home Data Model</h4>
 						<p class="sd2_paragraph01 sd2_mb_30">The Smart Home Data Model is a data structure formatted as JSON to represent Samsung Smart Home devices like refrigerators, washers, air conditioners, air purifiers, robot vacuum cleaners, dryers, and ovens.</p>
-						<h5 class="sd2_body_min_title2 sd2_mb_30">Steps to integrate the Partner Cloud and Smart Home Cloud</h5>
+						<h5 class="sd2_body_min_title2 sd2_mt_0 sd2_mb_30">Steps to integrate the Partner Cloud and Smart Home Cloud</h5>
 						<table class="sd2_table sd2_table_smarthome">
 							<colgroup>
 								<col width="150px"/><col/>
@@ -183,7 +183,7 @@
 										If your request for Partnership Request is approved, you will receive an approval e-mail.
 									</div><!-- //sd2_howto_cnt -->
 								</li><!-- //sd2_howto_item -->
-								<li class="sd2_howto_item sd2_howto_svc_04">
+								<li class="sd2_howto_item sd2_howto_svc_05">
 									<!-- sd2_howto_header -->
 									<div class="sd2_howto_header">
 										<!-- sd2_howto_title -->
@@ -198,7 +198,7 @@
 										Develop your application and server together with the API specification and reference document
 									</div><!-- //sd2_howto_cnt -->
 								</li><!-- //sd2_howto_item -->
-								<li class="sd2_howto_item sd2_howto_svc_04">
+								<li class="sd2_howto_item sd2_howto_svc_09">
 									<!-- sd2_howto_header -->
 									<div class="sd2_howto_header">
 										<!-- sd2_howto_title -->
@@ -232,7 +232,7 @@
 						</div><!-- //sd2_howto_wrap -->
 					</div><!-- //sd2_overview_content -->
 				</div><!-- //sd2_overview_container -->
-				<div class="sd2_more_less_btn sd2_close">
+				<div class="sd2_more_less_btn sd2_close sd2_mt_20">
 					<a href="#" class="sd2_more">more</a>
 				</div>
 			</div><!-- //overview_wrap -->
@@ -267,49 +267,13 @@
 				</div>
 			</div><!-- //sm_wrap -->
 			<!-- sa_wrap -->
-			<div class="sd2_sa_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_submit">
+			<div class="sd2_sa_wrap sd2_con_margin sd2_con_padding " id="sd2_submit">
 				<h4 class="sd2_body_min_title1">Submit Your App</h4>
 				<div class="sd2_svc_btn_wrap">
 					<p class="sd2_paragraph01">Once your application is completed by using the Smart Home Cloud API, verification is needed for<br/Service provision. To verify, click Submit.</p>
 					<a href="#" class="sd2_btn_submit">Submit</a>
 				</div>
 			</div><!-- //sa_wrap -->
-			<!-- con_ban_small_wrap -->
-			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
-				<!-- con_ban_small_container -->
-				<div class="sd2_con_ban_small_container">
-					<!-- con_ban_txt -->
-					<div class="sd2_con_ban_txt">
-						<p class="sd2_ban_title">Devices</p>
-						<p class="sd2_ban_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br />do eiusmod tempor incididunt ut labore ...)</p>
-						<div class="sd2_con_btn">
-							<a href="#" >Learn more</a>
-						</div>
-					</div><!-- //con_ban_txt -->
-					<!-- con_ban_img -->
-					<div class="sd2_con_ban_img">
-						<img src="../../images/common/icon/banner_img.png"  alt="Devices" />
-					</div><!-- //con_ban_img -->
-				</div><!-- //con_ban_small_container -->
-			</div><!-- //con_banner_wrap -->
-			<!-- con_ban_small_wrap -->
-			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
-				<!-- con_ban_small_container -->
-				<div class="sd2_con_ban_small_container">
-					<!-- con_ban_txt -->
-					<div class="sd2_con_ban_txt">
-						<p class="sd2_ban_title">Looking for Community?</p>
-						<p class="sd2_ban_txt">Meet other developers in the forums. Share information through <br />the Samsung Developer Site, and participate actively in the forums.</p>
-						<div class="sd2_con_btn">
-							<a href="#">Services Forum</a>
-						</div>
-					</div><!-- //con_ban_txt -->
-					<!-- con_ban_img -->
-					<div class="sd2_con_ban_img">
-						<img src="../../images/common/icon/club_icon_con.png"  alt="Community?" />
-					</div><!-- //con_ban_img -->
-				</div><!-- //con_ban_small_container -->
-			</div><!-- //con_banner_wrap -->
 		</div><!-- //substance_wrap -->
 	</div><!-- //content_wrap -->
 	<!-- ***** IMPORT: sd2_partial_footer ***** -->
@@ -317,42 +281,4 @@
 	<!-- //***** IMPORT: sd2_partial_footer ***** -->
 </div><!-- //wrap -->
 </body>
-<script type="text/javascript">
-	var more_container=null;
-	var btn=null;
-	var now_h=0;
-	var all_h;
-	var more_list=null;
-	var classN="sd2_";
-
-	var init=function(container){
-		more_container=$(container);
-		btn=more_container.next("."+classN+"more_less_btn").find("a");
-		all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
-		console.log(all_h)
-		now_h=more_container.height();
-
-		eventDefine();
-	}
-
-	var eventDefine=function(){
-		btn.on("click", btn_click);
-	}
-
-	var btn_click=function(e){
-		var $this=$(this);
-		if($this.hasClass(classN+"more")){
-			$this.removeClass(classN+"more").addClass(classN+"less");
-			$this.text("less");
-			more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
-		}else{
-			$this.removeClass(classN+"less").addClass(classN+"more");
-			$this.text("more");
-			more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
-		}
-		return false;
-	}
-
-	init(".sd2_overview_container");
-</script>
 </html>

@@ -8,8 +8,8 @@
       display: table-cell;
       padding-right: 2px; }
       .sd2_howto_wrap .sd2_howto_container .sd2_howto_item .sd2_howto_header {
-        border-bottom: 1px solid #3f3f3f;
         padding-bottom: 54px;
+        margin-bottom: 12px;
         text-align: center;
         position: relative; }
         .sd2_howto_wrap .sd2_howto_container .sd2_howto_item .sd2_howto_header .sd2_howto_title {
@@ -18,27 +18,34 @@
       .sd2_howto_wrap .sd2_howto_container .sd2_howto_item .sd2_howto_dot {
         position: absolute;
         left: 50%;
-        bottom: -4px;
+        bottom: -16px;
         margin-left: -3px;
         width: 6px;
         height: 7px;
         background: url(../../images/services/content/ico_howto_dot.png) no-repeat center center; }
       .sd2_howto_wrap .sd2_howto_container .sd2_howto_item .sd2_howto_cnt {
+        border-top: 1px solid #3f3f3f;
         font-size: 12px;
         line-height: 1.6;
         padding: 14px 10px 0 10px; }
     .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_01 .sd2_howto_header {
-      background: url(../../images/services/content/ico_howto_01.png) no-repeat center bottom 12px; }
+      background: url(../../images/services/content/ico_howto_01.png) no-repeat center bottom; }
     .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_02 .sd2_howto_header {
-      background: url(../../images/services/content/ico_howto_02.png) no-repeat center bottom 12px; }
+      background: url(../../images/services/content/ico_howto_02.png) no-repeat center bottom; }
     .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_03 .sd2_howto_header {
-      background: url(../../images/services/content/ico_howto_03.png) no-repeat center bottom 12px; }
+      background: url(../../images/services/content/ico_howto_03.png) no-repeat center bottom; }
     .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_04 .sd2_howto_header {
-      background: url(../../images/services/content/ico_howto_04.png) no-repeat center bottom 12px; }
+      background: url(../../images/services/content/ico_howto_04.png) no-repeat center bottom; }
     .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_05 .sd2_howto_header {
-      background: url(../../images/services/content/ico_howto_05.png) no-repeat center bottom 12px; }
+      background: url(../../images/services/content/ico_howto_05.png) no-repeat center bottom; }
     .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_06 .sd2_howto_header {
-      background: url(../../images/services/content/ico_howto_06.png) no-repeat center bottom 13px; }
+      background: url(../../images/services/content/ico_howto_06.png) no-repeat center bottom; }
+    .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_07 .sd2_howto_header {
+      background: url(../../images/services/content/ico_howto_07.png) no-repeat center bottom; }
+    .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_08 .sd2_howto_header {
+      background: url(../../images/services/content/ico_howto_08.png) no-repeat center bottom; }
+    .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_09 .sd2_howto_header {
+      background: url(../../images/services/content/ico_howto_09.png) no-repeat center bottom; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_01 .sd2_howto_header {
         background-image: url(../../images/services/content/ico_howto_01@2x.png);
@@ -57,7 +64,16 @@
         background-size: 35px 35px; }
       .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_06 .sd2_howto_header {
         background-image: url(../../images/services/content/ico_howto_06@2x.png);
-        background-size: 37px 35px; } }
+        background-size: 37px 35px; }
+      .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_07 .sd2_howto_header {
+        background-image: url(../../images/services/content/ico_howto_07@2x.png);
+        background-size: 35px 35px; }
+      .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_08 .sd2_howto_header {
+        background-image: url(../../images/services/content/ico_howto_08@2x.png);
+        background-size: 35px 35px; }
+      .sd2_howto_wrap .sd2_howto_container .sd2_howto_item.sd2_howto_svc_09 .sd2_howto_header {
+        background-image: url(../../images/services/content/ico_howto_09@2x.png);
+        background-size: 35px 35px; } }
 
 .sd2_howto_wrap.sd2_howto_col_2 .sd2_howto_item {
   width: 50%; }
@@ -78,26 +94,24 @@
   padding-bottom: 14px; }
 
 /*service landing*/
-.sd2_substance_wrap.sd2_svc_landing {
+.sd2_svc_banner_wrap.sd2_svc_landing {
+  height: 300px;
   background: url(../../images/services/content/img_landing_banner.png) no-repeat right top; }
 
-.sd2_svc_landing .sd2_svc_banner_wrap {
+.sd2_svc_banner_wrap.sd2_svc_landing .sd2_svc_banner_container {
   height: 300px; }
 
-.sd2_svc_landing .sd2_svc_banner_wrap .sd2_svc_banner_container {
-  height: 300px; }
-
-.sd2_svc_landing .sd2_svc_banner_wrap .sd2_svc_banner_container .sd2_banner_txt {
+.sd2_svc_banner_wrap.sd2_svc_landing .sd2_svc_banner_container .sd2_banner_txt {
   padding-top: 92px; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   .sd2_substance_wrap.sd2_svc_landing {
     background-image: url(../../images/services/content/img_landing_banner@2x.png);
-    background-size: 246px 385px; } }
+    background-size: 260px 300px; } }
 /*service feature*/
 .sd2_svc_feature_wrap {
   padding: 40px 28px;
-  margin: 0 0 0 24px;
+  margin: 0 60px 0 24px;
   position: relative; }
   .sd2_svc_feature_wrap .sd2_svc_feature_container {
     position: relative; }
@@ -119,23 +133,26 @@
   .sd2_svc_feature_wrap .sd2_feature_icon {
     position: absolute;
     width: 286px;
-    padding-top: 92px;
-    line-height: 16px;
-    height: 18px;
+    height: 90px;
+    text-indent: -9999px;
     display: inline-block;
     text-align: center; }
 
 .sd2_svc_feature_wrap.sd2_svc_feature_left {
   padding-right: 0; }
+  .sd2_svc_feature_wrap.sd2_svc_feature_left .sd2_svc_feature_container .sd2_feature_txt_wrap {
+    padding-right: 286px; }
   .sd2_svc_feature_wrap.sd2_svc_feature_left .sd2_feature_icon {
-    top: 40px;
+    top: 55px;
     right: 0; }
 
 .sd2_svc_feature_wrap.sd2_svc_feature_right {
   padding-left: 0;
   text-align: right; }
+  .sd2_svc_feature_wrap.sd2_svc_feature_right .sd2_svc_feature_container .sd2_feature_txt_wrap {
+    padding-left: 286px; }
   .sd2_svc_feature_wrap.sd2_svc_feature_right .sd2_feature_icon {
-    top: 40px;
+    top: 55px;
     left: 0; }
 
 .sd2_svc_feature_wrap.sd2_svc_feature_gray {
@@ -221,7 +238,9 @@
     height: auto; }
   .sd2_post_thumb .sd2_post_cnt .sd2_post_title {
     font: 16px 'sm-600';
-    margin-bottom: 23px; }
+    margin-bottom: 13px; }
+    .sd2_post_thumb .sd2_post_cnt .sd2_post_title .sd2_new {
+      padding-bottom: 3px; }
   .sd2_post_thumb .sd2_post_cnt .sd2_post_txt {
     margin: 7px 0 0 0; }
   .sd2_post_thumb .sd2_post_cnt .sd2_post_txt:last-child {
@@ -238,5 +257,37 @@
   margin-left: 30px; }
 .sd2_post_thumb.sd2_post_right .sd2_post_cnt {
   padding-right: 200px; }
+
+/*service device banner*/
+.sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container {
+  background: #f4f4f4;
+  box-sizing: border-box;
+  padding: 35px 27px;
+  position: relative;
+  display: table; }
+  .sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container .sd2_con_ban_txt {
+    padding-right: 45px;
+    display: table-cell;
+    vertical-align: middle; }
+    .sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container .sd2_con_ban_txt .sd2_ban_title {
+      font: 22px 'sm-600';
+      margin-bottom: 10px; }
+    .sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container .sd2_con_ban_txt .sd2_ban_txt {
+      font: 14px 'sm-400';
+      line-height: 1.6; }
+  .sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container .sd2_con_ban_img_outer {
+    display: table-cell;
+    vertical-align: middle;
+    background: url(../../images/services/brd_banner.png) no-repeat left center; }
+    .sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container .sd2_con_ban_img_outer a:hover {
+      color: #AAA; }
+    .sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container .sd2_con_ban_img_outer .sd2_con_ban_img {
+      padding-left: 45px;
+      display: table-cell;
+      vertical-align: bottom; }
+      .sd2_svc_dvc_banner_wrap .sd2_svc_dvc_banner_container .sd2_con_ban_img_outer .sd2_con_ban_img .sd2_con_ban_caption {
+        text-align: center;
+        font: 14px 'sm-400';
+        padding-top: 10px; }
 
 /*# sourceMappingURL=services.css.map */

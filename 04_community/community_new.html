@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SAMSUNG DEVELOPERS</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/common/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
+	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
+	<script type="text/javascript" src="/common/js/lib/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
+	<!-- Import common templates -->
+	<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
+	<script type="text/javascript">
+		//<![CDATA[
+		$(document).ready(function(){
+			jQuery.ajaxSetup({async:false}); // Sync를 불러와서 실제 Include 효과
+			$("#sd2_partial_gnb_1").load("/common/partials/gnb_1.html?v="+(new Date()).getTime());
+			$("#sd2_partial_gnb_2").load("/common/partials/gnb_2.html?v="+(new Date()).getTime());
+			$("#sd2_partial_footer").load("/common/partials/footer.html?v="+(new Date()).getTime());
+			jQuery.ajaxSetup({async:true});
+		});
+		// ]]>
+	</script>
+	<!-- //Import common templates -->
+	<script type="text/javascript" src="/common/js/gnb.js"></script>
+	<script type="text/javascript" src="/common/js/lnb.js"></script>
+	<script type="text/javascript" src="/common/js/content.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div id="sd2_wrap">
+	<!-- ***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<div id="sd2_partial_gnb_1"></div>
+	<!-- //***** IMPORT: sd2_partial_gnb_1 ***** -->
+	<!-- header_2_wrap -->
+	<div class="sd2_header_2_wrap">
+		<!-- ***** IMPORT: sd2_partial_gnb_2 ***** -->
+		<div id="sd2_partial_gnb_2"></div>
+		<!-- //***** IMPORT: sd2_partial_gnb_2 ***** -->
+		<!-- dep3_wrap -->
+		<div class="sd2_dep3_wrap sd2_sub_gnb_bg">
+			<!-- dep3_container -->
+			<div class="sd2_dep3_container">
+				<h2><a href="community_index.html">COMMUNITY</a></h2>
+				<ul>
+					<li class="sd2_active"><a href="community_galaxy.html">Galaxy</a></li>
+					<li><a href="#">Smart TV</a></li>
+					<li><a href="#">Z</a></li>
+					<li><a href="#">Gear</a></li>
+					<li><a href="#">Printer</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Open Talk</a></li>
+				</ul>
+			</div><!-- //dep3_container -->
+		</div><!-- //dep3_wrap -->
+	</div><!-- //header_2_wrap -->
+	<!-- forum_top_wrap -->
+	<div class="sd2_forum_top_wrap">
+		<!-- forum_top_container -->
+		<div class="sd2_forum_top_container">
+			<h2 class="sd2_forum_top_title">Search for Existing anwers Before you ask</h2>
+			<!-- forum_top_search_wrap -->
+			<div class="sd2_forum_top_search_wrap">
+				<input type="text" placeholder="search in galaxy" class="sd2_input_txt" id="search_top" />
+				<button type="button" class="sd2_forum_top_search">search</button>
+			</div><!-- //forum_top_search_wrap -->
+		</div><!-- //forum_top_container -->
+	</div><!-- //forum_top_wrap -->
+	<!-- forum_title_wrap -->
+	<div class="sd2_forum_title_wrap">
+		<!-- forum_title_container -->
+		<h3>New Thread</h3>
+	</div><!-- //forum_title_wrap -->
+	<!-- form_write_wrap -->
+	<div class="sd2_forum_write_wrap">
+		<!-- form_write_container -->
+		<div class="sd2_forum_list_container">
+			ghhh
+		</div><!-- //form_write_container -->
+	</div><!-- //form_write_wrap -->
+	<!-- ***** IMPORT: sd2_partial_footer ***** -->
+	<div id="sd2_partial_footer"></div>
+	<!-- //***** IMPORT: sd2_partial_footer ***** -->
+</div><!-- //wrap -->
+</body>
+<script type="text/javascript">
+	var cate_btn=null;
+	var boxWrap=null;
+	var listItem=null;
+	var searchBtn=null;
+
+	var init=function(){
+		btn=$(".forum_header button");
+		boxWrap=$(".box_wrap");
+		listItem=boxWrap.find(".page_sel_box ul li");
+		searchBtn=$(".forum_search");
+
+		eventDefine();
+	}
+
+	var eventDefine=function(){
+		btn.on("click", boxToggle);
+		listItem.on("click", listItemSel);
+		searchBtn.on("click", searchShow);
+	}
+
+	var boxToggle=function(e){
+		var $this=$(this);
+		var name=$this.attr("name");
+		var box=boxWrap.find('div[data-name='+name+']');
+		box.toggle();
+		$this.toggleClass("sd2_active");
+	}
+
+	var listItemSel=function(e){
+		var txt=$(this).text();
+		var pageBtn=btn.filter(".page_sel");
+		pageBtn.text(txt);
+		$(this).parents(".page_sel_box").css("display", "none");
+		pageBtn.removeClass("sd2_active");
+		return false;
+	}
+
+	var searchShow=function(){
+		var $this=$(this);
+		$this.parent().addClass("sd2_active");
+		$this.prev().focus();
+	}
+	init()
+
+</script>
+</html>

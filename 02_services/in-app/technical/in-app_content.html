@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/prism.css" />
-	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/common/js/lib/prism.js"></script>
 	<!-- Import common templates -->
@@ -62,7 +62,7 @@
 				<h3>In App Content <span class="sd2_page_title_side">Sep 12, 2013</span></h3>
 			</div><!-- //page_title -->
 			<!-- sd2_con_margin, sd2_con_padding -->
-			<div class="sd2_con_margin sd2_con_padding">
+			<div class="sd2_con_margin sd2_con_padding sd2_pb_0">
 				<ul class="sd2_link_list sd2_line">
 					<li class="sd2_gray sd2_w100">
 						<a href="#" class="sd2_list_download_btn">
@@ -79,13 +79,13 @@
 				<h4 class="sd2_body_min_title1">About This Document</h4>
 				<p class="sd2_paragraph01">This article is an exploratory note to the InAppContent sample application. The InAppContent sample application is intended to present possible usage of the Samsung In-App Purchase Library in an application written in the client-server model.</p>
 				<p class="sd2_paragraph01 sd2_mb_40">The Samsung In-App Purchase Library is also called Plasma or the Plasma Library. We will use the shorter, Plasma throughout this document.</p>
-				<h5 class="sd2_body_min_title2">Prerequisites</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Prerequisites</h5>
 				<p class="sd2_paragraph01">In order to take advantage of this developer guide you should already have an intermediate knowledge of the Android SDK, a basic knowledge of the Servlet API and/or Google App Engine using Java (e.g. the level enough to be able to write a simple web application using Google App Engine).</p>
 				<p class="sd2_paragraph01 sd2_mb_40">As this is not an introductory tutorial, some initial knowledge of Samsung In-App Purchase library is also needed. If you do not meet this requirement please read The Plasma Programming Guide which can be obtained as PDF on <a href="http://developer.samsung.com/android/tools-sdks/In-App-Purchase-Library" target="_blank" class="sd2_link_go">http://developer.samsung.com/android/tools-sdks/In-App-Purchase-Library</a> web page. It is also recommended to complete one of the introductory tutorials linked from that page (for example: <a href="http://developer.samsung.com/android/technical-docs/In-App-Purchase-using-Plasma-in-Android" target="_blank" class="sd2_link_go">http://developer.samsung.com/android/technical-docs/In-App-Purchase-using-Plasma-in-Android</a>).</p>
-				<h5 class="sd2_body_min_title2">Attachments</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Attachments</h5>
 				<p class="sd2_paragraph01">This article comes with two eclipse projects. One for an Android Application and one for the server side web application. These are /InAppContentAndroid and /InAppContentServer accordingly. You can import them by selecting File > Import… from the Eclipse menu and then on the dialog selecting General > Existing Projects into Workspace.</p>
 				<p class="sd2_paragraph01">You should have installed the Android SDK Tools r21.1 and Eclipse ADT Plugin 21.1.0 to work with the Android Project. They both can be obtained from <a href="http://developer.android.com/sdk/index.html" target="_blank" class="sd2_link_go">http://developer.android.com/sdk/index.html</a>. To work with the server side project you should have the Google Plugin for Eclipse, appropriate to your Eclipse version installed on your computer. If you do not have it you may download it from <a href="https://developers.google.com/eclipse/docs/getting_started" target="_blank" class="go">https://developers.google.com/eclipse/docs/getting_started</a>.</p>
-				<p class="sd2_paragraph01 sd2_mb_40">Additionally, the server side code utilizes the Jackson JSON parsing library, which should be downloaded separately from <a href="http://jackson.codehaus.org/1.9.11/jackson-all-1.9.11.jar" target="_blank" class="sd2_link_go">http://jackson.codehaus.org/1.9.11/jackson-all-1.9.11.jar and put into the InAppContentServer/war/WEB-INF/lib folder</a>.</p>
+				<p class="sd2_paragraph01 sd2_mb_0">Additionally, the server side code utilizes the Jackson JSON parsing library, which should be downloaded separately from <a href="http://jackson.codehaus.org/1.9.11/jackson-all-1.9.11.jar" target="_blank" class="sd2_link_go">http://jackson.codehaus.org/1.9.11/jackson-all-1.9.11.jar and put into the InAppContentServer/war/WEB-INF/lib folder</a>.</p>
 			</div><!-- //sd2_guide_wrap -->
 			<!-- sd2_guide_wrap -->
 			<div class="sd2_guide_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
@@ -105,7 +105,7 @@
 					<img src="/images/services/content/img_in_app_cnt_02.gif" width="613" height="456" alt="[Scheme 2]" />
 					<p class="sd2_figure">[Scheme 2]</p>
 				</div><!-- //img_c -->
-				<p class="sd2_paragraph01">Caution: As the payment id value for a specific item is passed from the client application using custom HTTP headers, enabling SSL for paid content requests is then crucial. This applies to verification requests, too.</p>
+				<p class="sd2_paragraph01 sd2_mb_0">Caution: As the payment id value for a specific item is passed from the client application using custom HTTP headers, enabling SSL for paid content requests is then crucial. This applies to verification requests, too.</p>
 			</div><!-- //sd2_guide_wrap -->
 			<!-- sd2_guide_wrap -->
 			<div class="sd2_guide_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
@@ -140,7 +140,7 @@
 				<p class="sd2_paragraph01">After creating a group, click on its name to add items to it. You will be taken to the page as on the Screen 2, where you can define “virtual items” which than your application will sell to its users.</p>
 				<p class="sd2_paragraph01 sd2_mb_30">As you see on Screen 2, there are already four items defined in group, used by the InAppContent sample application.</p>
 				<!-- img_c -->
-				<div class="sd2_img_c">
+				<div class="sd2_img_c sd2_mb_0">
 					<img src="/images/services/content/img_in_app_sc_02.gif" width="627" height="556" alt="[Screen 2]" />
 					<p class="sd2_figure">[Screen 2]</p>
 				</div><!-- //img_c -->
@@ -152,10 +152,10 @@
 				<p class="sd2_paragraph01">A user can also navigate from the options menu to the two remaining “top level” activities: the ItemsListActivity and the PurchaseHistoryActivity. There is also a service which sends the newly purchased ticket to the server.</p>
 				<p class="sd2_paragraph01">The ItemsListActivity displays a list of “access ticket” items from Samsung In-App Purchase service. From there, a user gets to the activity which allows purchasing a new item. Also the activities for managing locally stored tickets can be reached from there.</p>
 				<p class="sd2_paragraph01 sd2_mb_40">The PurchaseHistoryActivity lists all items bought by current Samsung Apps user for the group id which used by this application.</p>
-				<h5 class="sd2_body_min_title2">Local database</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Local database</h5>
 				<p class="sd2_paragraph01">The local database consists of only one table whose rows correspond to the AccessTicket class properties. You may wonder why local persistence is needed at all, while the purchased items can be fetched directly from the Plasma object. First of all, the AccesTicket class also contains some additional information describing server side status (such as “expired” or “verified”) of the “access ticket” item. It also stores a verification URL and params (which cannot be retrieved from the library’s PurchasedItemInformation object after purchasing operation has been finished). Another reason is that although the Plasma object allows iterating over all purchased items, it does not offer more precise query methods.</p>
 				<p class="sd2_paragraph01 sd2_mb_40">All operations on the local database are performed with use of the AccessTicketDbHelper class.</p>
-				<h5 class="sd2_body_min_title2">Browsing Content</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Browsing Content</h5>
 				<p class="sd2_paragraph01">Browsing the server content is done exclusively by the ContentReaderActivity class. In fact it uses WebView for browsing pages and simply intercepts the WebViews’s requests (by providing a custom WebViewClient implementation) to add a custom header listing, to all non-expired, verified “access ticket” in format as below.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
@@ -238,7 +238,7 @@
 	}</code></pre>
 					<p class="sd2_figure">[Code 3]</p>
 				</div><!-- //sd2_code_wrap -->
-				<h5 class="sd2_body_min_title2">Purchasing A New “Access Ticket” Item</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Purchasing A New “Access Ticket” Item</h5>
 				<p class="sd2_paragraph01">Purchasing ticket is a two step process which is conducted by three components together: the BuyTicketItemActivity, the AccessTicketVerificationService and the AccessTicketActivity.</p>
 				<p class="sd2_paragraph01">The process starts in the BuyTicketItemActivity, which the user use can reach either by clicking a button in the accessdenied.jsp page or by navigating from the options menu to ItemsListActivity and then choosing the item to buy from a list of items.</p>
 				<p class="sd2_paragraph01">In the BuyTicketItemActivity a user may buy a new “access ticket” for the given item id, only if there are no other valid tickets for the same item id (if there are any, a user can jump to AccessTicketsActivity to manage tickets associated with this item id – see section Managing “Access Tickets”).</p>
@@ -252,7 +252,7 @@
 	}</code></pre>
 					<p class="sd2_figure">[Code 5]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">A ticket is bought in Samsung In-App Purchase service using a Plasma object.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">A ticket is bought in Samsung In-App Purchase service using a Plasma object.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_6" id="show_line_6" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_6">Show Lines</label>
@@ -292,7 +292,7 @@
 });</code></pre>
 					<p class="sd2_figure">[Code 6]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">The registered PlasmaListener’s onPurchaseItemInitialized method stores provided PurchaseTicket objects for later use. Then in the onPurchaseItemFinished method a new access ticket entry in the database table is created based on the information retrieved both from PurchaseTicket and PurchasedItemInformation objects.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">The registered PlasmaListener’s onPurchaseItemInitialized method stores provided PurchaseTicket objects for later use. Then in the onPurchaseItemFinished method a new access ticket entry in the database table is created based on the information retrieved both from PurchaseTicket and PurchasedItemInformation objects.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_7" id="show_line_7" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_7">Show Lines</label>
@@ -337,7 +337,7 @@
 }</code></pre>
 					<p class="sd2_figure">[Code 7]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">After the ticket is successfully purchased with the In-App Purchase library and saved into the local database, it is time to send it to the server. The user is asked with a Dialog if he or she wants to do it immediately or leave it for later moment (possibly because of temporarily unstable network connection). If the user wants to send the ticket for verification on the server he or she is redirected to the AccessTicketActivity. The goal for adding this additional activity is to provide a “navigation point” to which a user could come back later if verification failed or when he or she postponed it intentionally. The activity is started with an intent with a data URI from which a particular purchase id can be retrieved (this purchase id identifies a particular AccessTicket row in the local database). With this activity the user can manage particular AccessTicket entry in the local database, not only verify a new ticket but also remove an old expired ticket. However, because consistency between client and server applications is very important, the activity does not send verification requests on its own but starts a service to this job, and waits until it broadcasts the result of the operation.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">After the ticket is successfully purchased with the In-App Purchase library and saved into the local database, it is time to send it to the server. The user is asked with a Dialog if he or she wants to do it immediately or leave it for later moment (possibly because of temporarily unstable network connection). If the user wants to send the ticket for verification on the server he or she is redirected to the AccessTicketActivity. The goal for adding this additional activity is to provide a “navigation point” to which a user could come back later if verification failed or when he or she postponed it intentionally. The activity is started with an intent with a data URI from which a particular purchase id can be retrieved (this purchase id identifies a particular AccessTicket row in the local database). With this activity the user can manage particular AccessTicket entry in the local database, not only verify a new ticket but also remove an old expired ticket. However, because consistency between client and server applications is very important, the activity does not send verification requests on its own but starts a service to this job, and waits until it broadcasts the result of the operation.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_8" id="show_line_8" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_8">Show Lines</label>
@@ -438,20 +438,20 @@ public List&lt;NameValuePair&gt; asRequestParameters() {
 }</code></pre>
 					<p class="sd2_figure">[Code 8]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01 sd2_mb_40">The AccessTicketVerificationService sends a request to the server side application which in turn verifies the reported transaction on the Samsung Apps server. Finally the service updates the status of the verified AccessTicket in the local database, upon a server response with the status of the operation. From now on, a successfully verified “access ticket” item can be used by a client application to access paid content pages.</p>
-				<h5 class="sd2_body_min_title2">Managing “Access Tickets”</h5>
+				<p class="sd2_paragraph01 sd2_mt_0 sd2_mb_40">The AccessTicketVerificationService sends a request to the server side application which in turn verifies the reported transaction on the Samsung Apps server. Finally the service updates the status of the verified AccessTicket in the local database, upon a server response with the status of the operation. From now on, a successfully verified “access ticket” item can be used by a client application to access paid content pages.</p>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Managing “Access Tickets”</h5>
 				<p class="sd2_paragraph01">Managing tickets, addresses two actions: removal and verification. A user can browse purchased “access tickets” in two ways.</p>
 				<p class="sd2_paragraph01">A user can browse all “access ticket” items ever bought by selecting “Purchase History” from the options menu. This brings the user to the PurchaseHistoryActivity. This activity simply lists all purchased items associated to a user account in the Samsung In-App Purchase service for the group id which the application uses. The activity loads items by portions using the Loading List Library, which has been introduced in the Batch Loading List Examples developer guide, which can be found on the Samsung Developers web site. Selecting a particular item from the list brings the user to the AccessTicketActivity opened for the given purchase id, where, if the corresponding row for a given purchase id exists in the local database, a user can remove the given “access ticket” or verify an unverified “access ticket” as described in the previous section.</p>
 				<p class="sd2_paragraph01">The user can also browse “access tickets” by item category. To do that, they must select the “Items List” from the options menu which opens the ItemsListActivity. This activity lists all items defined in the Samsung In-App Purchase service for the group id used by the application. Selecting one of the displayed items, moves the user to the AccessTicketsActivity, listing all tickets stored in the local database for the given item id (which is retrieved from the intent which started this activity). The activity also enables filtering “access tickets” by its status value (for example: “verified” or “expired”). Selecting a particular item moves the user to the AccessTicketActivity (which was already described in the previous section) which is opened for specific AccessTicket identified by the purchase id.</p>
-				<p class="sd2_paragraph01">Notice that the elements listed in AccessTicketsActivity and PurchaseHistoryActivity are not of the same “type”. The difference is subtle but important. The AccessTicketsActivity lists all entries which exist in the local database. These are used by the application and contain some additional information specific to the application and not provided by the Samsung In-App Purchase service such as expiration status. Also removing an access ticket means removing the entry from the local database. On the other hand the PurchaseHistoryActivity lists purchased items managed by the Samsung In-App Purchase service. These cannot be removed by the user and there is no guarantee that the corresponding row in a client’s local database exists (either due to explicit removal by the user or due to an error). They can be thought of as the history track of transactions.</p>
+				<p class="sd2_paragraph01 sd2_mb_0">Notice that the elements listed in AccessTicketsActivity and PurchaseHistoryActivity are not of the same “type”. The difference is subtle but important. The AccessTicketsActivity lists all entries which exist in the local database. These are used by the application and contain some additional information specific to the application and not provided by the Samsung In-App Purchase service such as expiration status. Also removing an access ticket means removing the entry from the local database. On the other hand the PurchaseHistoryActivity lists purchased items managed by the Samsung In-App Purchase service. These cannot be removed by the user and there is no guarantee that the corresponding row in a client’s local database exists (either due to explicit removal by the user or due to an error). They can be thought of as the history track of transactions.</p>
 			</div><!-- //sd2_guide_wrap -->
 			<!-- sd2_guide_wrap -->
 			<div class="sd2_guide_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
 				<h4 class="sd2_body_min_title1">The Server Side</h4>
-				<p class="sd2_paragraph01 sd2_mb_40">The server side part of the project is a Java web application as specified by the Servlet API. It also uses a Java Persistence API for database storage. To make deployment easy it has been developed as a Google AppEngine Java web application. However it does not use any GAE features which are incompatible with above mentioned standard APIs. Thus, it should be eligible for deployment in any servlet container and JPA provider with only a few configuration changes. No adjustments in java code should be necessary. In most cases the configuration changes will be limited to setting a different persistence provider and provider specific properties in the /src/META-INF/persistence.xml descriptor file. Another important configuration job is to enable SSL. As it has been said before, enabling SSL for paid content requests is crucial as the payment id for specific items is passed from the client application with use of custom HTTP headers. Enabling SSL in a web server is a vendor specific issue not a part of any standard specification.</p>
-				<h5 class="sd2_body_min_title2">Enabling SSL in Google App Engine Web Application</h5>
+				<p class="sd2_paragraph01 sd2_mb_30">The server side part of the project is a Java web application as specified by the Servlet API. It also uses a Java Persistence API for database storage. To make deployment easy it has been developed as a Google AppEngine Java web application. However it does not use any GAE features which are incompatible with above mentioned standard APIs. Thus, it should be eligible for deployment in any servlet container and JPA provider with only a few configuration changes. No adjustments in java code should be necessary. In most cases the configuration changes will be limited to setting a different persistence provider and provider specific properties in the /src/META-INF/persistence.xml descriptor file. Another important configuration job is to enable SSL. As it has been said before, enabling SSL for paid content requests is crucial as the payment id for specific items is passed from the client application with use of custom HTTP headers. Enabling SSL in a web server is a vendor specific issue not a part of any standard specification.</p>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Enabling SSL in Google App Engine Web Application</h5>
 				<p class="sd2_paragraph01">Enabling SSL in Google App Engine web application is very simple. In /war/WEB-INF/appengine-web.xml add &lt;ssl-enabled&gt;true&lt;/ssl-enabled&gt; somewhere inside the appengine-web-app node. This is setting a “vendor specific” (as the appengine-web.xml descriptor is vendor specific, too).</p>
-				<p class="sd2_paragraph01 sd2_mb_30">Next to vendor specific settings a standard security-constraint is set in web.xml descriptor file.</p>
+				<p class="sd2_paragraph01 sd2_mb_20">Next to vendor specific settings a standard security-constraint is set in web.xml descriptor file.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_9" id="show_line_9" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_9">Show Lines</label>
@@ -466,8 +466,8 @@ public List&lt;NameValuePair&gt; asRequestParameters() {
 &lt;/security-constraint&gt;</code></pre>
 					<p class="sd2_figure">[Code 9]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01 sd2_mb_40">This is a standard setting specified by the Servlet API and it should be left untouched when deployed to other environments than GAE.</p>
-				<h5 class="sd2_body_min_title2">Project Overview</h5>
+				<p class="sd2_paragraph01 sd2_mt_0 sd2_mb_30">This is a standard setting specified by the Servlet API and it should be left untouched when deployed to other environments than GAE.</p>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Project Overview</h5>
 				<p class="sd2_paragraph01">The server side part of the application is pretty straightforward. Basically it consists of three main parts:</p>
 				<ul class="sd2_con_list sd2_oneline">
 					<li><p>A simple servlet which is an endpoint for verification requests from client applications.</p></li>
@@ -475,8 +475,8 @@ public List&lt;NameValuePair&gt; asRequestParameters() {
 					<li><p>Two entity classes and a utility class for performing database operations which are used by the two former components.</p></li>
 				</ul>
 				<p class="sd2_paragraph01">All these classes are in the com.sprc.example.inappcontent.server package. Under the /src directory you can see another package com.sprc.example.inappcontent.shared with the SharedConstants class which contains constants used by both the client and the server and which you already know from the Android client application description.</p>
-				<p class="sd2_paragraph01 sd2_mb_40">There is still one important thing to mention. Basically a “content page” can be any resource on the server, from static HTML pages to dynamic content generated by a servlet, as long as its servlet path matches url-mapping for AccessFilter instance. However, the Google App Engine ignores filter mappings pointing at static resources, so in this hosting environment JSP files must be used instead of plain HTML files.</p>
-				<h5 class="sd2_body_min_title2">Persistent Entities</h5>
+				<p class="sd2_paragraph01 sd2_mb_30">There is still one important thing to mention. Basically a “content page” can be any resource on the server, from static HTML pages to dynamic content generated by a servlet, as long as its servlet path matches url-mapping for AccessFilter instance. However, the Google App Engine ignores filter mappings pointing at static resources, so in this hosting environment JSP files must be used instead of plain HTML files.</p>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Persistent Entities</h5>
 				<p class="sd2_paragraph01">The server must keep the information about purchased tickets to be able to distinguish legal and illegal requests. The JPA standard is used for persistence. The base entity class is VerifiedTicket. It is a simple bean which stores mainly data about purchased item obtained from responses to the verification request sent to the Samsung Apps server. Next to this data it has two more properties registrationTimestamp and expirationTimestamp, which are used for some local bookkeeping. The registrationTimestamp is set when the entity is saved for the first time. The expirationTimestamp is set when the entity is used for the first time. Its value is evaluated according to the current timestamp and the corresponding init-param defined in web.xml (see section “The AccessFilter class”).</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
@@ -515,9 +515,9 @@ public class VerifiedTicket {
 }</code></pre>
 					<p class="sd2_figure">[Code 10]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">Once the ticket has expired it is moved to another database table for historic data. This table is associated with the ExpiredTicket entity which extends VerifiedTicket and basically is a copy of it. This is why the supertype was annotated with @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS). Creating an additional table for used tickets is reasonable as queries for valid tickets are performed much more frequently.</p>
-				<p class="sd2_paragraph01 sd2_mb_40">The other classes access persistent data with use of the EntityManagerUtil class, which stores an instance of EntityManagerFactory. It defines also some common query methods.</p>
-				<h5 class="sd2_body_min_title2">The AccessFilter class</h5>
+				<p class="sd2_paragraph01 sd2_mt_0">Once the ticket has expired it is moved to another database table for historic data. This table is associated with the ExpiredTicket entity which extends VerifiedTicket and basically is a copy of it. This is why the supertype was annotated with @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS). Creating an additional table for used tickets is reasonable as queries for valid tickets are performed much more frequently.</p>
+				<p class="sd2_paragraph01 sd2_mb_30">The other classes access persistent data with use of the EntityManagerUtil class, which stores an instance of EntityManagerFactory. It defines also some common query methods.</p>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">The AccessFilter class</h5>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_11" id="show_line_11" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_11">Show Lines</label>
@@ -543,7 +543,7 @@ public class VerifiedTicket {
 &lt;/filter&gt;</code></pre>
 					<p class="sd2_figure">[Code 11]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">Each filter instance requires four init-params:</p>
+				<p class="sd2_paragraph01 sd2_mt_0">Each filter instance requires four init-params:</p>
 				<ul class="sd2_con_list sd2_oneline">
 					<li><p>itemId – this is the item id defined in the Samsung App Seller’s account.</p></li>
 					<li><p>itemName – the name of item which will be displayed to user when redirected to the accessdenied page. This should be the same as the name defined for the item in the Samsung Apps Seller’s account.</p></li>
@@ -560,7 +560,7 @@ public class VerifiedTicket {
 &lt;/filter-mapping&gt;</code></pre>
 					<p class="sd2_figure">[Code 12]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">The filter-mapping entry links pages which require purchasing to an “access ticket” item with the filter instance having a corresponding itemId init-param.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">The filter-mapping entry links pages which require purchasing to an “access ticket” item with the filter instance having a corresponding itemId init-param.</p>
 				<p class="sd2_paragraph01">To understand how this filter works let’s step through its doFilter method body.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
@@ -590,7 +590,7 @@ if(hasPermissionCookie(httpRequest, conf.mTicketItemId)) {
 }</code></pre>
 					<p class="sd2_figure">[Code 15]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">If the request has a valid cookie set by this filter it just calls doFilter on FilterChain to fetch requested page. However if it does not, a deeper test including a database hit is needed.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">If the request has a valid cookie set by this filter it just calls doFilter on FilterChain to fetch requested page. However if it does not, a deeper test including a database hit is needed.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_16" id="show_line_16" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_16">Show Lines</label>
@@ -608,7 +608,7 @@ if(accessHeaderValue != null) {
 		}</code></pre>
 					<p class="sd2_figure">[Code 16]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">If the ticket is used for the first time the filter sets an expiration time according to the proper init-param from the web.xml. After that it updates the entry in the database.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">If the ticket is used for the first time the filter sets an expiration time according to the proper init-param from the web.xml. After that it updates the entry in the database.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_17" id="show_line_17" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_17">Show Lines</label>
@@ -626,7 +626,7 @@ else {
 }</code></pre>
 					<p class="sd2_figure">[Code 17]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">If the ticket is expired it is moved from the table with verified tickets to the one with expired tickets. (Notice that the access to the database is done with use of methods imported from the EntityManagerUtil class.) The filter also adds a proper request attribute to tell the “accessdenied” page that it should inform the client application (with JavascriptInterface feature of the WebView component) that this payment id is expired and it should update its status in the client’s local database. Otherwise just let the request reach its target page by calling chain.doFilter(req, resp). In this case the filter also adds a “permission cookie” to the response object in order to avoid hitting the database in the oncoming requests.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">If the ticket is expired it is moved from the table with verified tickets to the one with expired tickets. (Notice that the access to the database is done with use of methods imported from the EntityManagerUtil class.) The filter also adds a proper request attribute to tell the “accessdenied” page that it should inform the client application (with JavascriptInterface feature of the WebView component) that this payment id is expired and it should update its status in the client’s local database. Otherwise just let the request reach its target page by calling chain.doFilter(req, resp). In this case the filter also adds a “permission cookie” to the response object in order to avoid hitting the database in the oncoming requests.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_18" id="show_line_18" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_18">Show Lines</label>
@@ -635,8 +635,8 @@ else {
 redirectToBuyTicket(req, resp);</code></pre>
 					<p class="sd2_figure">[Code 18]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01 sd2_mb_40">If none of these conditions are fulfilled the request is redirected to the accessdenied page. This page is served with a status 403 Forbidden message. In its HTML it contains the button which triggers buying a proper item on the client application (with use of JavascriptInterface feature of the WebView component).</p>
-				<h5 class="sd2_body_min_title2">The TicketVerfificationServlet class</h5>
+				<p class="sd2_paragraph01 sd2_mt_0 sd2_mb_40">If none of these conditions are fulfilled the request is redirected to the accessdenied page. This page is served with a status 403 Forbidden message. In its HTML it contains the button which triggers buying a proper item on the client application (with use of JavascriptInterface feature of the WebView component).</p>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">The TicketVerfificationServlet class</h5>
 				<p class="sd2_paragraph01">The TicketVerfificationServlet is responsible for saving information about tickets sent by client applications. The servlet does not require any special initialization in the web.xml descriptor. Let’s follow its doPost method body to understand how it works.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
@@ -647,7 +647,7 @@ redirectToBuyTicket(req, resp);</code></pre>
 			EntityManager entityManager = createEntityManager();</code></pre>
 					<p class="sd2_figure">[Code 19]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">First it creates an EntityManager instance which will be used for queries.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">First it creates an EntityManager instance which will be used for queries.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_20" id="show_line_20" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_20">Show Lines</label>
@@ -657,7 +657,7 @@ if(paymentId == null) {
 }</code></pre>
 					<p class="sd2_figure">[Code 20]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">Then it gets the payment id from request parameters.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">Then it gets the payment id from request parameters.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_21" id="show_line_21" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_21">Show Lines</label>
@@ -671,7 +671,7 @@ if(expiredTicketExists(entityManager, paymentId)) {
 }</code></pre>
 					<p class="sd2_figure">[Code 21]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">After that, it checks if the client application tries to verify an already verified but not expired ticket. When could such a request happen? Possibly when the ticket has been verified, but the former response has not reached the client application. Maybe it was due to a network error? Sending the “verified status response” will not spoil anything but it will enable the client to adjust its local database to reflect the actual state on the server. However, if the payment id corresponds to an already expired ticket, then an exception is thrown.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">After that, it checks if the client application tries to verify an already verified but not expired ticket. When could such a request happen? Possibly when the ticket has been verified, but the former response has not reached the client application. Maybe it was due to a network error? Sending the “verified status response” will not spoil anything but it will enable the client to adjust its local database to reflect the actual state on the server. However, if the payment id corresponds to an already expired ticket, then an exception is thrown.</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_22" id="show_line_22" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_22">Show Lines</label>
@@ -692,7 +692,7 @@ else {
 }</code></pre>
 					<p class="sd2_figure">[Code 22]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">It builds the URL to the Samsung Apps server based on parameters sent by the client and sends a request as specified by the URL. The parameters sent by the client are a verification URL and params obtained from Plasma’s PurchaseTicket as specified in the Plasma Programming Guide (see <a href="http://developer.samsung.com/android/tools-sdks/In-App-Purchase-Library" target="_blank" class="go">http://developer.samsung.com/android/tools-sdks/In-App-Purchase-Library</a>). The Samsung Apps server answers with a JSON structure which looks like this:</p>
+				<p class="sd2_paragraph01 sd2_mt_0">It builds the URL to the Samsung Apps server based on parameters sent by the client and sends a request as specified by the URL. The parameters sent by the client are a verification URL and params obtained from Plasma’s PurchaseTicket as specified in the Plasma Programming Guide (see <a href="http://developer.samsung.com/android/tools-sdks/In-App-Purchase-Library" target="_blank" class="go">http://developer.samsung.com/android/tools-sdks/In-App-Purchase-Library</a>). The Samsung Apps server answers with a JSON structure which looks like this:</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_23" id="show_line_23" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_23">Show Lines</label>
@@ -701,14 +701,14 @@ ID":"000000041131","status":"true","purchaseDate":"2012-06-19
 15:13:10","itemDesc":"ITM2"}</code></pre>
 					<p class="sd2_figure">[Code 23]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">Or, in the case of failure, simply like this:</p>
+				<p class="sd2_paragraph01 sd2_mt_0">Or, in the case of failure, simply like this:</p>
 				<!-- sd2_code_wrap -->
 				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_24" id="show_line_24" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_24">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">{"status": "false"}</code></pre>
 					<p class="sd2_figure">[Code 24]</p>
 				</div><!-- //sd2_code_wrap -->
-				<p class="sd2_paragraph01">If the Samsung Apps server confirmed that the ticket has been purchased then the servlet saves it to the local database and finally sends the “verified status response”. Otherwise the “rejected status response” is sent.</p>
+				<p class="sd2_paragraph01 sd2_mt_0">If the Samsung Apps server confirmed that the ticket has been purchased then the servlet saves it to the local database and finally sends the “verified status response”. Otherwise the “rejected status response” is sent.</p>
 				<p class="sd2_paragraph01">Due to this possibility for verifying purchase operations on the Samsung Apps server developing applications in client-server model with the Plasma Library is also easy. Assuming this feature was lacking, verification of client payments on the server would be bigger challenge.</p>
 			</div><!-- //sd2_guide_wrap -->
 			<!-- sd2_guide_wrap -->

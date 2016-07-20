@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/prism.css" />
-	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/common/js/lib/prism.js"></script>
 	<!-- Import common templates -->
@@ -68,20 +68,20 @@
 				<h4 class="sd2_body_min_title1">Samsung Internet for Android 4.0</h4>
 				<p class="sd2_paragraph01 sd2_mb_40">The following features have been added in Samsung Internet for Android 4.0.</p>
 				<h4 class="sd2_body_min_title1">Custom Tabs</h4>
-				<p class="sd2_paragraph01 sd2_mb_30">Apps often need to provide users with a way to view web pages. Until now, it was either embed a WebView inside your app, or launch a browser, and make the user come back to your app later. App developers can have more control over the overall web experience without using Android WebView by launching a light-weight Custom Tab provided by Samsung Internet for Android.</p>
+				<p class="sd2_paragraph01 sd2_mb_0">Apps often need to provide users with a way to view web pages. Until now, it was either embed a WebView inside your app, or launch a browser, and make the user come back to your app later. App developers can have more control over the overall web experience without using Android WebView by launching a light-weight Custom Tab provided by Samsung Internet for Android.</p>
 				<!-- img_c -->
 				<div class="sd2_img_c sd2_mb_30">
 					<img src="/images/services/content/s_internet_webdeveloper01_160119.jpg" width="384" height="423" alt="Custom Tabs" />
 				</div><!-- //img_c -->
 				<p class="sd2_paragraph01">The followings are customizable for Custom Tabs:</p>
-				<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 					<li><p>Menu items</p></li>
 					<li><p>Toolbar color</p></li>
 				</ul>
-				<h5 class="sd2_body_min_title2">Samsung Internet Custom Tabs Service Connection</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Samsung Internet Custom Tabs Service Connection</h5>
 				<p class="sd2_paragraph01">Client apps can use the sample code below for connecting to Custom Tabs service provided. If bindService() throws an exception, Custom Tabs is not supported in the installed version. The package name must be set to Samsung Internet’s package name i.e. "com.sec.android.app.sbrowser"</p>
 				<!-- sd2_code_wrap -->
-				<div class="sd2_code_wrap sd2_mb_40">
+				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_1" id="show_line_1" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_1">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Package name of Samsung Internet
 public static final String SAMSUNG_INTERNET_PACKAGE_NAME = "com.sec.android.app.sbrowser";
@@ -93,10 +93,10 @@ serviceIntent.setPackage(SAMSUNG_INTERNET_PACKAGE_NAME);
 context.bindService(serviceIntent, mServiceConnection, Context.BIND_AUTO_CREATE |
 Context.BIND_WAIVE_PRIORITY);</code></pre>
 				</div><!-- //sd2_code_wrap -->
-				<h5 class="sd2_body_min_title2">Launching a Custom Tab</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Launching a Custom Tab</h5>
 				<p class="sd2_paragraph01">Once binding the Custom Tabs service, you can use an ACTION_VIEW Intent to launch a Custom Tab from your app.</p>
 				<!-- sd2_code_wrap -->
-				<div class="sd2_code_wrap sd2_mb_40">
+				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_1" id="show_line_2" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_2">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Package name of Samsung Internet
 public static final String SAMSUNG_INTERNET_PACKAGE_NAME = "com.sec.android.app.sbrowser";
@@ -108,10 +108,10 @@ serviceIntent.setPackage(SAMSUNG_INTERNET_PACKAGE_NAME);
 context.bindService(serviceIntent, mServiceConnection, Context.BIND_AUTO_CREATE |
 Context.BIND_WAIVE_PRIORITY);</code></pre>
 				</div><!-- //sd2_code_wrap -->
-				<h5 class="sd2_body_min_title2">Customizing Menu Items</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Customizing Menu Items</h5>
 				<p class="sd2_paragraph01">Client apps can add customized menu items to the Custom Tab. The menu items are added using an array of bundles that consist of menu texts and pending Intents.</p>
 				<!-- sd2_code_wrap -->
-				<div class="sd2_code_wrap sd2_mb_40">
+				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_1" id="show_line_3" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_3">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Key for title string for custom menu item
 public static final String CUSTOM_TABS_MENU_TITLE =
@@ -130,10 +130,10 @@ menuItem.putParcelable(CUSTOM_TABS_PENDING_INTENT, pendingIntent);
 menuItemBundleList.add(menuItem);
 intent.putParcelableArrayList(CUSTOM_TABS_EXTRA_MENU_ITEMS, menuItemBundleList);</code></pre>
 				</div><!-- //sd2_code_wrap -->
-				<h5 class="sd2_body_min_title2">Customizing Toolbar Color</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Customizing Toolbar Color</h5>
 				<p class="sd2_paragraph01">The color of the Custom Tab’s tool bar can be changed to be in sync in caller apps’ theme using Intent extra.</p>
 				<!-- sd2_code_wrap -->
-				<div class="sd2_code_wrap sd2_mb_40">
+				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_1" id="show_line_4" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_4">Show Lines</label>
 					<pre class="line-numbers"><code class="language-java">// Intent extra for changing the color for tool bar. Color of type int indicates a Color.
 private static final String CUSTOM_TABS_TOOLBAR_COLOR = "android.support.customtabs.extra.TOOLBAR_COLOR";
@@ -141,8 +141,8 @@ intent.putExtra(CUSTOM_TABS_TOOLBAR_COLOR, color);</code></pre>
 				</div><!-- //sd2_code_wrap -->
 				<h4 class="sd2_body_min_title1">Service Worker</h4>
 				<p class="sd2_paragraph01 sd2_mb_30">Service Worker implementation in Samsung Internet for Android 4.0 is based on Chromium 44.2403 with some additions and changes.</p>
-				<h5 class="sd2_body_min_title2">Additions</h5>
-				<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Additions</h5>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 					<li><p class="sd2_mb_10">Client manipulation</p>
 						<ul class="sd2_con_list sd2_oneline">
 							<li><p>Client.id</p></li>
@@ -166,8 +166,8 @@ intent.putExtra(CUSTOM_TABS_TOOLBAR_COLOR, color);</code></pre>
 						</ul>
 					</li>
 				</ul>
-				<h5 class="sd2_body_min_title2">Changes</h5>
-				<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Changes</h5>
+				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 					<li><p class="sd2_mb_10">Client manipulation</p>
 						<ul class="sd2_con_list sd2_oneline">
 							<li><p>Client.postMessage(message, transfer) will result in a ServiceWorkerMessageEvent being fired on navigator.serviceWorker instead of a MessageEvent being fired on the client’s global window object.</p></li>
@@ -232,7 +232,7 @@ intent.putExtra(CUSTOM_TABS_TOOLBAR_COLOR, color);</code></pre>
 				</div><!-- //img_c -->
 				<p class="sd2_paragraph01">Use standard HTML forms and avoid overriding the ‘enter’ key to make the best use of this feature.</p>
 				<!-- sd2_code_wrap -->
-				<div class="sd2_code_wrap sd2_mb_40">
+				<div class="sd2_code_wrap sd2_mb_30">
 					<input type="checkbox" name="show_line_1" id="show_line_5" class="sd2_show_line"><label class="sd2_show_line_label" for="show_line_5">Show Lines</label>
 					<pre class="line-numbers"><code class="language-html">&lt;form action="example_form.asp"&gt;
 ID: &lt;input type="text" name="UserName" value="username">&lt;br/&gt;
@@ -240,7 +240,7 @@ Password: &lt;input type="password" name="PassWord" value="password">&lt;br/&gt;
 &lt;input type="submit" value="Submit"&gt;
 &lt;/form&gt;</code></pre>
 				</div><!-- //sd2_code_wrap -->
-				<h4 class="sd2_body_min_title1 sd2_mb_30">Audio Notification</h4>
+				<h4 class="sd2_body_min_title1 sd2_mt_0 sd2_mb_30">Audio Notification</h4>
 				<!-- img_c -->
 				<div class="sd2_img_c sd2_mb_30">
 					<img src="/images/services/content/s_internet_webdeveloper06_160119.jpg" width="700" height="299" alt="Audio Notification" />

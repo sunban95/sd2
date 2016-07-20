@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/layout.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
-	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
 	<!-- Import common templates -->
 	<!-- ***** 퍼블리싱 제작을 위한 단순 HTML 페이지를 불러오는 기능으로 실제 구현시 프로젝트에 해당되는 방법으로 Include 해야합니다. ***** -->
@@ -61,6 +61,7 @@
 			<!-- ec_wrap -->
 			<div class="sd2_ec_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_essential">
 				<h4 class="sd2_body_min_title1">Essential Contents</h4>
+				<h5 class="sd2_body_min_title2 sd2_mt_10">Android</h5>
 				<ul class="sd2_link_list sd2_line sd2_mb_30">
 					<li class="sd2_gray sd2_w100">
 						<a href="#" class="sd2_list_download_btn">
@@ -71,7 +72,14 @@
 							</div>
 						</a>
 					</li>
-					<li class="sd2_w100">
+					<li class="sd2_line"><a href="technical/android/smart_connectivity_android_release.html" class="sd2_page">Release Note</a></li>
+					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_gray sd2_line"><a href="technical/android/smart_connectivity_android_guide.html" class="sd2_page">Programming Guide</a></li>
+					<li class="sd2_gray"></li>
+				</ul>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Tizen</h5>
+				<ul class="sd2_link_list sd2_line sd2_mb_30">
+					<li class="sd2_gray sd2_w100">
 						<a href="#" class="sd2_list_download_btn">
 							<div class="sd2_link_item">
 								SmartConnect_Tizen_C++_V2.2.21.18_Release.7z
@@ -80,6 +88,13 @@
 							</div>
 						</a>
 					</li>
+					<!--<li class="sd2_line"><a href="technical/tizen/smart_connectivity_tizen_release.html" class="sd2_page">Release Note</a></li>
+					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_gray sd2_line"><a href="technical/tizen/smart_connectivity_tizen_guide.html" class="sd2_page">Programming Guide</a></li>
+					<li class="sd2_gray"></li>-->
+				</ul>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Windows</h5>
+				<ul class="sd2_link_list sd2_line">
 					<li class="sd2_gray sd2_w100">
 						<a href="#" class="sd2_list_download_btn">
 							<div class="sd2_link_item">
@@ -89,24 +104,10 @@
 							</div>
 						</a>
 					</li>
-				</ul>
-				<h5 class="sd2_body_min_title2">Android</h5>
-				<ul class="sd2_link_list sd2_line sd2_mb_30">
-					<li class="sd2_gray sd2_line"><a href="technical/android/smart_connectivity_android_release.html" class="sd2_page">Release Note</a></li>
-					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class="sd2_line"><a href="technical/android/smart_connectivity_android_guide.html" class="sd2_page">Programming Guide</a></li>
-				</ul>
-				<h5 class="sd2_body_min_title2">Tizen</h5>
-				<ul class="sd2_link_list sd2_line sd2_mb_30">
-					<li class="sd2_gray sd2_line"><a href="technical/tizen/smart_connectivity_tizen_release.html" class="sd2_page">Release Note</a></li>
-					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class="sd2_line"><a href="technical/tizen/smart_connectivity_tizen_guide.html" class="sd2_page">Programming Guide</a></li>
-				</ul>
-				<h5 class="sd2_body_min_title2">Windows</h5>
-				<ul class="sd2_link_list sd2_line">
-					<li class="sd2_gray sd2_line"><a href="technical/windows/smart_connectivity_windows_release.html" class="sd2_page">Release Note</a></li>
-					<li class="sd2_gray"><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
-					<li class="sd2_line"><a href="technical/windows/smart_connectivity_windows_guide.html" class="sd2_page">Programming Guide</a></li>
+					<!--<li class="sd2_line"><a href="technical/windows/smart_connectivity_windows_release.html" class="sd2_page">Release Note</a></li>
+					<li class=""><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
+					<li class="sd2_gray sd2_line"><a href="technical/windows/smart_connectivity_windows_guide.html" class="sd2_page">Programming Guide</a></li>
+					<li class="sd2_gray"></li>-->
 				</ul>
 			</div><!-- //ec_wrap -->
 			<!-- overview_wrap -->
@@ -133,43 +134,43 @@
 							<img src="/images/services/content/img2_connectivity_150722.jpg" width="662" height="227" alt="Figure 1 Introduction of Smart Connectivity SDK" />
 							<div class="sd2_figure">Figure 1 Introduction of Smart Connectivity SDK</div>
 						</div><!-- //img_c -->
-						<p class="sd2_paragraph01 sd2_mb_40">Smart Connectivity SDK offers the following features:</p>
-						<h5 class="sd2_body_min_title2">Group Management</h5>
-						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+						<p class="sd2_paragraph01 sd2_mb_30">Smart Connectivity SDK offers the following features:</p>
+						<h5 class="sd2_body_min_title2 sd2_mt_0">Group Management</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 							<li><p>SDK provides API to create unique groupID, which can be used for forming a group.</p></li>
 							<li><p>Joining into a group by groupID.</p></li>
 							<li><p>Display the list of joined groups.</p></li>
 							<li><p>Provides a list of group ID’s created by particular user.</p></li>
 							<li><p>Extend the lifetime of groupID.</p></li>
 						</ul>
-						<h5 class="sd2_body_min_title2">Peer Management</h5>
-						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+						<h5 class="sd2_body_min_title2 sd2_mt_0">Peer Management</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 							<li><p>Provides an API to list the peers associated with a particular groupID.</p></li>
 							<li><p>Provides an API to get the peer information.</p></li>
 						</ul>
-						<h5 class="sd2_body_min_title2">Connection Management</h5>
-						<ul class="sd2_con_list sd2_oneline sd2_mb_40">
+						<h5 class="sd2_body_min_title2 sd2_mt_0">Connection Management</h5>
+						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 							<li><p>Peer devices which are using same groupID and connected to each other can list all active connection information.</p></li>
 						</ul>
-						<h5 class="sd2_body_min_title2">Messaging Capability</h5>
+						<h5 class="sd2_body_min_title2 sd2_mt_0">Messaging Capability</h5>
 						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 							<li><p>The peers belongs to same group can send and receive the messages from other peers without creating a data channel.</p></li>
 						</ul>
 						<!-- img_c -->
-						<div class="sd2_img_c sd2_mb_40">
+						<div class="sd2_img_c sd2_mb_30">
 							<img src="/images/services/content/img3_connectivity_150722.jpg" width="662" height="274" alt="Figure 2 Send message without connection" />
 							<div class="sd2_figure">Figure 2 Send message without connection</div>
 						</div><!-- //img_c -->
-						<h5 class="sd2_body_min_title2">Data Sharing</h5>
+						<h5 class="sd2_body_min_title2 sd2_mt_0">Data Sharing</h5>
 						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 							<li><p>The peers can share the data each other after establishing a data channel.</p></li>
 						</ul>
 						<!-- img_c -->
-						<div class="sd2_img_c sd2_mb_40">
+						<div class="sd2_img_c sd2_mb_30">
 							<img src="/images/services/content/img4_connectivity_150722.jpg" width="660" height="342" alt="Figure 3 File transfer between peers" />
 							<div class="sd2_figure">Figure 3 File transfer between peers</div>
 						</div><!-- //img_c -->
-						<h5 class="sd2_body_min_title2">Data Encryption</h5>
+						<h5 class="sd2_body_min_title2 sd2_mt_0">Data Encryption</h5>
 						<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 							<li><p>The peers can enable or disable the encryption of data before sharing to other peers.</p></li>
 						</ul>
@@ -290,26 +291,26 @@
 						</div><!-- //pre_paragraph_wrap -->
 					</div><!-- //sd2_overview_content -->
 				</div><!-- //sd2_overview_container -->
-				<div class="sd2_more_less_btn sd2_close">
+				<div class="sd2_more_less_btn sd2_close sd2_mt_20">
 					<a href="#" class="sd2_more">more</a>
 				</div>
 			</div><!-- //overview_wrap -->
 			<!-- td_wrap -->
 			<div class="sd2_td_wrap sd2_con_margin sd2_con_padding sd2_border_b" id="sd2_technical">
 				<h4 class="sd2_body_min_title1">Technical Document</h4>
-				<h5 class="sd2_body_min_title2">Android</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Android</h5>
 				<ul class="sd2_link_list2 sd2_mb_20">
 					<li><a href="technical/android/smart_connectivity_android_release.html" class="sd2_page">Release Note</a></li>
 					<li><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
 					<li><a href="technical/android/smart_connectivity_android_guide.html" class="sd2_page">Programming Guide</a></li>
 				</ul>
-				<h5 class="sd2_body_min_title2">Tizen</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Tizen</h5>
 				<ul class="sd2_link_list2 sd2_mb_20">
 					<li><a href="technical/tizen/smart_connectivity_tizen_release.html" class="sd2_page">Release Note</a></li>
 					<li><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
 					<li><a href="technical/tizen/smart_connectivity_tizen_guide.html" class="sd2_page">Programming Guide</a></li>
 				</ul>
-				<h5 class="sd2_body_min_title2">Windows</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Windows</h5>
 				<ul class="sd2_link_list2 sd2_mb_20">
 					<li><a href="technical/windows/smart_connectivity_windows_release.html" class="sd2_page">Release Note</a></li>
 					<li><a href="http://img-developer.samsung.com/onlinedocs/scs/index.html" target="_blank" class="sd2_blank">API Reference</a></li>
@@ -413,7 +414,7 @@
 				</div>
 			</div><!-- //faq_wrap -->
 			<!-- event_wrap -->
-			<div class="sd2_event_wrap sd2_con_margin sd2_con_padding sd2_pb_0" id="sd2_event">
+			<div class="sd2_event_wrap sd2_con_margin sd2_con_padding " id="sd2_event">
 				<h4 class="sd2_body_min_title1">Event material</h4>
 				<ul class="sd2_event sd2_toggle_list">
 					<li>
@@ -431,42 +432,6 @@
 					</li>
 				</ul>
 			</div><!--// event_wrap -->
-			<!-- con_ban_small_wrap -->
-			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
-				<!-- con_ban_small_container -->
-				<div class="sd2_con_ban_small_container">
-					<!-- con_ban_txt -->
-					<div class="sd2_con_ban_txt">
-						<p class="sd2_ban_title">Devices</p>
-						<p class="sd2_ban_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br />do eiusmod tempor incididunt ut labore ...)</p>
-						<div class="sd2_con_btn">
-							<a href="#" >Learn more</a>
-						</div>
-					</div><!-- //con_ban_txt -->
-					<!-- con_ban_img -->
-					<div class="sd2_con_ban_img">
-						<img src="../../images/common/icon/banner_img.png"  alt="Devices" />
-					</div><!-- //con_ban_img -->
-				</div><!-- //con_ban_small_container -->
-			</div><!-- //con_banner_wrap -->
-			<!-- con_ban_small_wrap -->
-			<div class="sd2_con_ban_small_wrap sd2_con_margin sd2_con_padding sd2_pb_0" >
-				<!-- con_ban_small_container -->
-				<div class="sd2_con_ban_small_container">
-					<!-- con_ban_txt -->
-					<div class="sd2_con_ban_txt">
-						<p class="sd2_ban_title">Looking for Community?</p>
-						<p class="sd2_ban_txt">Meet other developers in the forums. Share information through <br />the Samsung Developer Site, and participate actively in the forums.</p>
-						<div class="sd2_con_btn">
-							<a href="#">Services Forum</a>
-						</div>
-					</div><!-- //con_ban_txt -->
-					<!-- con_ban_img -->
-					<div class="sd2_con_ban_img">
-						<img src="../../images/common/icon/club_icon_con.png"  alt="Community?" />
-					</div><!-- //con_ban_img -->
-				</div><!-- //con_ban_small_container -->
-			</div><!-- //con_banner_wrap -->
 		</div><!-- //substance_wrap -->
 	</div><!-- //content_wrap -->
 	<!-- ***** IMPORT: sd2_partial_footer ***** -->
@@ -474,42 +439,4 @@
 	<!-- //***** IMPORT: sd2_partial_footer ***** -->
 </div><!-- //wrap -->
 </body>
-<script type="text/javascript">
-	var more_container=null;
-	var btn=null;
-	var now_h=0;
-	var all_h;
-	var more_list=null;
-	var classN="sd2_";
-
-	var init=function(container){
-		more_container=$(container);
-		btn=more_container.next("."+classN+"more_less_btn").find("a");
-		all_h=more_container.find("."+classN+"overview_content")[0].scrollHeight;
-		console.log(all_h)
-		now_h=more_container.height();
-
-		eventDefine();
-	}
-
-	var eventDefine=function(){
-		btn.on("click", btn_click);
-	}
-
-	var btn_click=function(e){
-		var $this=$(this);
-		if($this.hasClass(classN+"more")){
-			$this.removeClass(classN+"more").addClass(classN+"less");
-			$this.text("less");
-			more_container.animate({"height":all_h+"px"}, 850, "easeInOutQuad");
-		}else{
-			$this.removeClass(classN+"less").addClass(classN+"more");
-			$this.text("more");
-			more_container.animate({"height":now_h+"px"}, 670, "easeOutCubic");
-		}
-		return false;
-	}
-
-	init(".sd2_overview_container");
-</script>
 </html>

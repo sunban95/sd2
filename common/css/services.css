@@ -6,7 +6,7 @@
 
 
 /*service banner*/
-.sd2_svc_banner_wrap{width:100%; height:281px}
+.sd2_svc_banner_wrap{height:281px}
 .sd2_svc_banner_wrap .sd2_svc_banner_container{box-sizing: border-box; height:324px; overflow:hidden; position:relative }
 .sd2_svc_banner_wrap .sd2_svc_banner_container .sd2_banner_txt{float:left; padding:50px 0 0 0;  box-sizing:border-box; height:100%; position:relative; }
 .sd2_svc_banner_wrap .sd2_svc_banner_container .sd2_banner_txt p{font-family:'sm-400'; color:#333}
@@ -39,6 +39,12 @@
 
 
 
+
+
+
+
+
+
 /*****content.css*****/
 .sd2_code {font-size: 14px; line-height: 1.5; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;}
 i, .sd2_italic {font-style: italic;}
@@ -54,3 +60,21 @@ strong {font-weight: 800;}
 
 /*code*/
 .sd2_code_wrap label.sd2_show_line_label {margin-left: 5px; font-size: 12px; color: #666;}
+
+
+
+
+
+
+
+
+
+/*포럼글쓰기*/
+.sd2_forum_top_wrap {background: #e9e9e9; padding: 17px 0;}
+.sd2_forum_top_wrap .sd2_forum_top_container {width:980px; margin:0 auto; position: relative}
+.sd2_forum_top_wrap .sd2_forum_top_container .sd2_forum_top_title {font:22px 'sm-400'; line-height: 24px; color: #333;}
+.sd2_forum_top_wrap .sd2_forum_top_container .sd2_forum_top_search_wrap {position: absolute; right: 52px; top: 0;  border-bottom: 1px solid #666;  width:280px;}
+.sd2_forum_top_wrap .sd2_forum_top_container .sd2_forum_top_search_wrap input.sd2_input_txt {border:none; background:transparent; font:12px 'sm-400'; color:#333; width:256px; height:24px; line-height:24px;}
+.sd2_forum_top_wrap .sd2_forum_top_container .sd2_forum_top_search_wrap .sd2_forum_top_search {width:23px; height:21px; font-size:0; background: transparent url(../../images/community/forum_search.png) no-repeat center center; position:absolute; right:0; top:0;}
+
+.sd2_forum_write_wrap .sd2_forum_list_container {width:1000px; margin:0 auto; padding-top: 45px;}

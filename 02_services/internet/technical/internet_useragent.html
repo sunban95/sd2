@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="/common/css/content.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/services.css" />
 	<link rel="stylesheet" type="text/css" href="/common/css/prism.css" />
-	<script type="text/javascript" src="/common/js/lib/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/common/js/lib/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="/common/js/lib/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/common/js/lib/prism.js"></script>
 	<!-- Import common templates -->
@@ -63,9 +63,9 @@
 			</div><!-- //page_title -->
 			<!-- sd2_guide_wrap -->
 			<div class="sd2_guide_wrap sd2_con_margin sd2_con_padding sd2_pb_0">
-				<h5 class="sd2_body_min_title2">Samsung Internet User-Agent String Format</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Samsung Internet User-Agent String Format</h5>
 				<!-- sd2_code_wrap -->
-				<div class="sd2_code_wrap sd2_mb_20">
+				<div class="sd2_code_wrap sd2_mb_30">
 					<pre class=""><code class="language-none">Mozilla/$(MOZILA_VER) ($(DEVICE_TYPE); $(OS); $(PLATFORM) $(PLATFORM_VER);
 SAMSUNG $(MODEL_NAME) Build/$(BUILD_TAG)) AppleWebKit/$(APPLEWEBKIT_VER)
 (KHTML, like Gecko) $(APP_NAME)/$(APP_VER) (Chrome/$(CHROME_VER))
@@ -121,9 +121,9 @@ $(UX RECOMMEND) Safari/$(SAFARI_VER)</code></pre>
 						<td>Optional</td>
 					</tr>
 				</table>
-				<h5 class="sd2_body_min_title2">Samsung Web Application User-Agent String Format</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Samsung Web Application User-Agent String Format</h5>
 				<!-- sd2_code_wrap -->
-				<div class="sd2_code_wrap sd2_mb_20">
+				<div class="sd2_code_wrap sd2_mb_30">
 					<pre class=""><code class="language-none">Mozilla/$(MOZILA_VER) ($(DEVICE_TYPE); $(OS); $(PLATFORM) $(PLATFORM_VER);
 SAMSUNG $(MODEL_NAME) Build/$(BUILD_TAG)) AppleWebKit/$(APPLEWEBKIT_VER)
 (KHTML, like Gecko) Version/$(PLATFORM_VER) (Chrome/$(CHROME_VER))
@@ -146,7 +146,7 @@ $(UX RECOMMEND) Safari/$(SAFARI_VER)</code></pre>
 				</table>
 				<p class="sd2_paragraph01">※ if the $(PLATFORM_VER) is less than 4.0, than it is not a Web Application.</p>
 				<p class="sd2_paragraph01 sd2_mb_40">Other fields are same with Web browser.</p>
-				<h5 class="sd2_body_min_title2">Samsung Internet for Smart-TV User-Agent String Format</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Samsung Internet for Smart-TV User-Agent String Format</h5>
 				<p class="sd2_paragraph01">Please check below for existing Samsung Internet for SmartTV UA.</p>
 				<p class="sd2_paragraph01">Identify the Samsung Internet for SmartTV by using the “SMART-TV” keyword.</p>
 				<table class="sd2_table sd2_mb_40">
@@ -178,7 +178,7 @@ $(UX RECOMMEND) Safari/$(SAFARI_VER)</code></pre>
 						<td>Mozilla/5.0 (SmartHub; SMART-TV; U; Linux/SmartTV) AppleWebKit/531.2 (KHTML, like Gecko) Web Browser/1.0 SmartTV Safari/531.2+</td>
 					</tr>
 				</table>
-				<h5 class="sd2_body_min_title2">User-Agent(UA) String Examples</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">User-Agent(UA) String Examples</h5>
 				<p class="sd2_paragraph01">Previous: UA String used in devices before 2015</p>
 				<p class="sd2_paragraph01">Current: New UA String used in</p>
 				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
@@ -210,7 +210,7 @@ $(UX RECOMMEND) Safari/$(SAFARI_VER)</code></pre>
 				<ul class="sd2_con_list sd2_oneline sd2_mb_30">
 					<li><p>Current: Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-G925K Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile VR Safari/537.36</p></li>
 				</ul>
-				<h5 class="sd2_body_min_title2">Content Guide</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Content Guide</h5>
 				<ul class="sd2_con_list sd2_oneline sd2_mb_20">
 					<li><p class="sd2_mb_10">Request for Mobile Content</p>
 						<ul class="sd2_con_list sd2_oneline">
@@ -252,7 +252,7 @@ $(UX RECOMMEND) Safari/$(SAFARI_VER)</code></pre>
 						<td>PC</td><td>-</td><td>Android or Tizen</td><td>-</td>
 					</tr>
 				</table>
-				<h5 class="sd2_body_min_title2">Test Guide</h5>
+				<h5 class="sd2_body_min_title2 sd2_mt_0">Test Guide</h5>
 				<ul class="sd2_con_list sd2_oneline">
 					<li><p>Samsung recommends the use of Chrome development tool or Chrome's user agent switcher extension to verify the contents on the Samsung web browser. Refer to Chrome developer site. Change to the example UA strings.<br/><a href="http://developer.chrome.com/devtools/docs/device-mode#screen-emulator" target="_blank" class="sd2_link_go">http://developer.chrome.com/devtools/docs/device-mode#screen-emulator</a></p></li>
 					<li><p class="sd2_mb_10">Step 1. Open the test web page on the desktop Chrome Browser.</p>
